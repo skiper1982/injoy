@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 
 Theme Name: Autospazio
@@ -66,3 +67,69 @@ header nav a.on{background-color: #080808;color:white;padding: 0px 10px}
 
 /*Footer*/
 footer{width: 100%;height:115px;background-color: #080808}
+=======
+/*
+
+Theme Name: Autospazio
+Theme URI: http://www.autospazio.com/
+Description: 
+Author: manglesoft.com
+Author URI: http://www.autospazio.com/
+Version: 1.0
+Tags:
+
+License:
+License URI:
+	
+*/
+@import url('css/reset.css');
+@import url('css/stickyFooter.css');
+body{font-size: 12pt;font-family:"Lato",sans-serif}
+a {text-decoration: none}
+.container{width: 1280px;margin: 0px auto}
+.clear{clear:both}
+
+/*header*/
+header{height: 108px;border-bottom: 3px solid #080808;}
+header nav{position: relative;top:76px;}
+header nav a{float: left;color:#383838;font-weight: bold;margin: 0px 25px}
+header nav a.on{background-color: #080808;color:white;padding: 0px 10px}
+
+
+
+/*Contacto*/
+
+#contact .principal .container{padding: 56px 0}
+#contact .principal h1{font-weight: 100;display: inline-block;vertical-align: top;width: 100%;font-size: 32px;line-height: 33px;color: #6e6e6e}
+#contact .principal h1 span{font-size: 43px;font-weight: 100}
+#contact .map{width: 100%;height: 400px;overflow: hidden;}
+#contact .formulario{padding: 38px 0;color: #6E6E6E;width: 920px;margin: 0px auto}
+#contact .formulario .container{overflow: hidden;width: 920px}
+#contact form{width: 52%;float: left;}
+#contact .address{float: right;width: 367px;border-radius: 5px;border: 1px solid #D4D4D4;padding: 27px}
+#contact section.container{height: 1250px;padding-top: 55px}
+#contact form input{float: left;width: 194px;margin:0 12px 20px 0;height: 26px;padding: 0 11px;border: solid 1px #D4D4D4;border-radius: 6px}
+#contact form label{float: left;width: 40%;font-weight: 600;font-size: 12px}
+#contact form textarea{float: left;width: 333px;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+#contact h2{width: 95%;padding: 25px 2.5%;display: block;background:#E6E6E6;margin: 63px 0;font-size: 13px;font-weight: 600px;border-radius: 5px;}
+#contact form .title{margin-bottom: 34px;font-size: 18px;font-weight: 700;color: black;line-height: 26px}
+#contact form .title span{font-size: 19px}
+#contact form .submit{cursor: pointer;width: 104px;margin-top: 20px;color: black;display: block;font-size: 14px;padding:  7px 0;text-align: center;border-radius: 7px;font-weight: 600;height: 35px;font-family: "open sans",sans-serif}
+#contact .address .title{font-size: 24px;font-weight: 700;line-height: 27px;color:black }
+#contact .address .title span{font-size: 19px;font-weight: normal;}
+#contact .address .telefonos p{padding-left: 9%}
+#contact .address .telefonos .title{font-size: 20px;background: url(img/telephone_icon.png) no-repeat center left;height: 45px;padding: 8px 55px;margin-top: 30px}
+#contact .address  p{color: black}
+#contact .address .tel{color: #6E6E6E}
+
+/*Galeries*/
+
+.container-galleries{width: 1125px;margin: 0px auto}
+.container-galleries .dot-points{width: 100%;border-bottom-style:dotted;height: 2px;border-color:#080808;border-width:2px;margin: 20px 0px}
+.container-galleries h1{font-size: 20px;font-weight:bold;width: 121px;margin: 0px auto;background-color: #080808;color: white;padding: 5px 10px;margin-top:20px;}
+
+
+
+/*Footer*/
+footer{width: 100%;height:115px;background-color: #080808}
+>>>>>>> 2d9c6f6dc286a02f30bb38d6d16818d7bb8e912e
