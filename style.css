@@ -20,7 +20,10 @@ a {text-decoration: none}
 .clear{clear:both}
 
 /*header*/
+header{height: 108px;border-bottom: 3px solid #080808;}
+header nav{position: relative;top:76px;}
 header nav a{float: left;color:#383838;font-weight: bold;margin: 0px 25px}
+header nav a.on{background-color: #080808;color:white;padding: 0px 10px}
 
 
 
