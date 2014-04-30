@@ -25,8 +25,15 @@ header nav{position: relative;top:76px;}
 header nav a{float: left;color:#383838;font-weight: bold;margin: 0px 25px}
 header nav a.on{background-color: #080808;color:white;padding: 0px 10px}
 
+/*about us*/
+#contenido {
+  float: left;
+  width: 40%;
+}
+#imagen {
 
-
+  width: 50%;
+}
 /*Contacto*/
 
 #contact .principal .container{padding: 56px 0}
