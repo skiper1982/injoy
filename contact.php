@@ -14,13 +14,13 @@
 			<form id='form1' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
 			<p class='title'>Contactanos</p>
 			<input type='text' name='Name' id='Name' class='gris2' required>
-			<label for='Name'><?= $lang=="es"?"Nombre":"Name"; ?></label>
+			<label for='Name'>Nombre</label>
 			<div class='clear'></div>
 			<input type='email' name='Email' id='Email' class='gris2' required>
 			<label for='Email'>Email</label>
 			<div class='clear'></div>
 			<input type='text' name='subject' id='subject' class='gris2' required>
-			<label for='subject'><?= $lang=="es"?"Asunto":"Subject"; ?></label>
+			<label for='subject'>Asunto</label>
 			<div class='clear'></div>
 			<textarea  name='Message' id='Message' class='gris2'></textarea>
 			<div class='clear'></div>
