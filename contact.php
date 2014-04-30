@@ -12,7 +12,7 @@
 	<section class='formulario'>
 		<div class='container'>
 			<form id='form1' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
-			<p class='title'><?= $lang=="es"?"Póngase en contacto con nosotros:":"Send us a message:"?><br/><span><?= $lang=="es"?"Forma de Contacto":"Contact Form"?></span></p>
+			<p class='title'>Contactanos</p>
 			<input type='text' name='Name' id='Name' class='gris2' required>
 			<label for='Name'><?= $lang=="es"?"Nombre":"Name"; ?></label>
 			<div class='clear'></div>
@@ -30,19 +30,19 @@
 
 		</form>
 		<div class='address'>
-			<p class='title'><?= $lang=="es"?"Informacion de Contacto":"Contact Information" ?><br/><span><?= $lang=="es"?"¿Cómo llegar?":"How to get here?"?></span></p>
+			<p class='title'>Información de contacto</span></p>
 			<p></p>
 
 			<div class='telefonos'>
-				<p class='title'><?= $lang=="es"?"Teléfonos":"Telephones"?></p>
+				<p class='title'>Teléfonos</p>
 				<p>Cancún:</p>
 				<p class='tel'>52 (998) 849-4223</p>
 				<p class='tel'>52 (998) 848-7972</p>
 
-				<p><?= $lang=="es"?"Llame Gratis desde México":"Toll Free From México"?></p>
+				<p>Llame Gratis desde México</p>
 				<p class='tel'> 01-800-681-1527</p>
 
-				<p><?= $lang=="es"?"Llame Gratis desde EU & Canada":"Toll Free From US & Canada"?></p>
+				<p>Llame Gratis desde EU & Canada</p>
 				<p class='tel'>1-800-895-6301</p>
 
 			</div>
