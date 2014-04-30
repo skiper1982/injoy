@@ -5,5 +5,7 @@
 ?>
 <?php get_header(); ?>
 <div class='clear'></div>
-<?php the_content() ?>
+<div class='container'>
+	<?php the_content() ?>
+</div>
 <?php get_footer(); ?>
