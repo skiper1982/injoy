@@ -24,7 +24,7 @@
 			<div class='clear'></div>
 			<textarea  name='Message' id='Message' class='gris2'></textarea>
 			<div class='clear'></div>
-			<input type="submit" class='submit gris2' value="<?= $lang=="es"?"Enviar":"Send" ?>">
+			<input type="submit" class='submit gris2' value="Enviar">
 			<p class='success note' style='display:none'><?= $lang=="es"?"Mensaje Enviado, Gracias !":"Mensaje Enviado, Gracias !"?></p>
 			<p class='error note' style='display:none'><?= $lang=="es"?"Error Intente de nuevo":"Error"?></p>
 
