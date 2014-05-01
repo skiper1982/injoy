@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 <div id="contenedor">
 <div id="contenido">
-<h1>ACERCA DE NOSOTROS </h1>
+<h1>ACERCA DE NOSOTROS</h1>
 <p>
 AutoSpazio Performance Studio provee servicios de diseño fotografía aplicado en el mercado automotríz.
 
