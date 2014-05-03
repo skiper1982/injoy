@@ -5,9 +5,9 @@
 ?>
 <?php get_header(); ?>
 <div id="container">
-	<div id="contenido">
-	  <h1>ACERCA DE NOSOTROS</h1>
-	  <p>
+	<div class="contenido">
+	  <h1 class="titleabout">ACERCA DE NOSOTROS</h1>
+	  <p class="aboutus">
 		AutoSpazio Performance Studio provee servicios de diseño fotografía aplicado en el mercado automotríz.
 		Disfrutamos mucho trabajar para compañías y equipos de carreras que se toman muy en serio su trabajo con unos objetivos ambiciosos.
 		Esa es la razón principal por la cual demandan tanta atención a los detalles, lo que nos impulsa a seguir creciendo con ellos para brindar siempre las mejores soluciones con un personal y único estilo para aplicar a cada cliente.
