@@ -25,7 +25,7 @@
 			foreach ($menus as $menu) { ?>
 				<?php $on=$menu->object_id == $post->ID || $menu->object_id == $post->post_parent?"on":""; ?>
 				<?php if($i == 3){ ?>
-					<li><a href='/' class='logo'><img src='' /></a></li>
+					<li><a href='/' class='logo'><img src='<?php bloginfo('template_directory')?>/img/logo.png' /></a></li>
 					<li><a href='<?= $menu->url ?>' class='<?= $on ?>' ><?= $menu->title ?></a></li>
 				<?php }else{ ?>
 					<li><a href='<?= $menu->url ?>' class='<?= $on ?>'><?= $menu->title ?></a></li>
