@@ -29,13 +29,16 @@ header nav a.logo img{position: absolute;width: 147px;top:-70px;}
 header nav li a.last{margin-right: 0px}
 
 /*Home*/
-#home .banner{width: auto;}
+#home .banner{width: auto;padding-bottom: 2px}
 #home .banner img{margin: 0px auto;width: 1280px;display: block;}
 #home .mini-images{width: 1282px;margin: 0px auto}
 #home .mini-images img.slide1{width: 426px}
 #home .mini-images img.slide2{width: 210px}
 #home .mini-images img.slide3{width: 426px}
 #home .mini-images img.slide4{width: 207px}
+#home .content{width: 936px;height: 220px;margin: 0px auto;font-family: 'open sans';text-align: center;padding: 24px 0px;cl }
+#home .content h1{font-weight: bolder;font-size: 18px;letter-spacing: 3.2px;color:#141414;margin-bottom: 12px}
+#home .content p{font-size: 14px;color:#9B9B9B;}
 
 /*about us*/
 .contenido {margin-left: 85px;text-align: left;float: left;width: 38%;}
