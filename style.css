@@ -25,30 +25,15 @@ header nav{position: relative;top:76px;}
 header nav a{float: left;color:#383838;font-weight: bold;margin: 0px 25px}
 header nav a.on{background-color: #080808;color:white;padding: 0px 10px}
 
+/*Home*/
+#home .banner{height: 372px}
+#home .banner img{height: 372px;margin: 0px auto;width: auto;display: block;}
+
 /*about us*/
-.contenido {
-  margin-left: 85px;
-  text-align: left;
-  float: left;
-  width: 38%;
-}
-.imagen {
-  margin-left: 80px;
-  float: left;
-  width: 50%;
-}
-.aboutus{
-  font-family:"Open Sans Condensed Light" ;
-  font-size:16px;
-  letter-spacing: 1px;
-  line-height: 100%;
-}
-.titleabout{
-  font-family: monospace;
-  font-size: 100%; 
-  font-weight: bolder;
-  line-height: 300%;
-}
+.contenido {margin-left: 85px;text-align: left;float: left;width: 38%;}
+.imagen {margin-left: 80px;float: left;width: 50%;}
+.aboutus{font-family:"Open Sans Condensed Light" ;font-size:16px;letter-spacing: 1px;line-height: 100%;}
+.titleabout{font-family: monospace;font-size: 100%; font-weight: bolder;line-height: 300%;}
 /*fin about us*/
 
 /*Contacto*/
