@@ -29,8 +29,8 @@ header nav a.logo img{position: absolute;width: 147px;top:-70px;}
 header nav li a.last{margin-right: 0px}
 
 /*Home*/
-#home .banner{width: auto;padding-bottom: 2px}
-#home .banner img{margin: 0px auto;width: 1280px;display: block;}
+#home .banner{width: auto;padding-bottom: 2px;height: 372px;overflow: hidden;position: relative;width: 1280px;margin: 0px auto}
+#home .banner img{margin: 0px auto;width: 1280px;display: block;position: absolute;top:0px;}
 #home .mini-images{width: 1282px;margin: 0px auto}
 #home .mini-images img.slide1{width: 426px}
 #home .mini-images img.slide2{width: 210px}

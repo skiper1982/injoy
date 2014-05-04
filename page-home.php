@@ -5,8 +5,13 @@
 ?>
 <?php get_header(); ?>
 <div id='home'>
-	<div class='banner'>
-		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' />
+	<div class='banner style1'>
+		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' class='on' />
+		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none' />
+		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
+		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
+		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
+		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
 	</div>
 	<div class='mini-images'>
 		<img src='<?php bloginfo('template_directory')?>/img/slide2.png' class='slide1' />
@@ -14,6 +19,9 @@
 		<img src='<?php bloginfo('template_directory')?>/img/slde-3.png' class='slide3' />
 		<img src='<?php bloginfo('template_directory')?>/img/slide4.png' class='slide4' />
 	</div>
+
+
+
 	<div class='content'>
 		<h1>· CREMOS SOLUCIONES EXCLUSIVAS  A LAS NECESIDADES DE NUETROS CLIENTES ·</h1>
 		<p>
