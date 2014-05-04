@@ -28,8 +28,13 @@ header nav a.logo{display: block;height: 1px;width: 185px;margin: 0px 46px 0px 1
 header nav a.logo img{position: absolute;width: 147px;top:-70px;}
 
 /*Home*/
-#home .banner{height: 372px}
-#home .banner img{height: 372px;margin: 0px auto;width: auto;display: block;}
+#home .banner{width: auto;}
+#home .banner img{margin: 0px auto;width: 1280px;display: block;}
+#home .mini-images{width: 1280px;margin: 0px auto}
+#home .mini-images img.slide1{width: 426px}
+#home .mini-images img.slide2{width: 210px}
+#home .mini-images img.slide3{width: 426px}
+#home .mini-images img.slide4{width: 207px}
 
 /*about us*/
 .contenido {margin-left: 85px;text-align: left;float: left;width: 38%;}
