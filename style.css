@@ -39,6 +39,7 @@ header nav li a.last{margin-right: 0px}
 #home .content{width: 936px;height: 220px;margin: 0px auto;font-family: 'open sans';text-align: center;padding: 24px 0px;cl }
 #home .content h1{font-weight: bolder;font-size: 18px;letter-spacing: 3.2px;color:#141414;margin-bottom: 12px}
 #home .content p{font-size: 14px;color:#9B9B9B;}
+#home .box-bullets{background-image: url(./img/bara_slide.png);display: block;width: 251px;height: 35px;position: absolute;bottom: 0px;right: 0px}
 
 /*about us*/
 .contenido {margin-left: 85px;text-align: left;float: left;width: 38%;}
