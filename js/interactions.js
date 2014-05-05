@@ -12,7 +12,7 @@ function init_move_banner1(){
 }
 function move_banner1(right){
 	clearTimeout(timer_banner_1);
-	var imgs = $(".banner.style1 img");
+	var imgs = $(".bannerbanner.style1 img");
 		var size =imgs.size();
 		if(size>1){
 			var actual= $(".banner.style1 img.on").index();
