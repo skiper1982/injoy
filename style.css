@@ -29,7 +29,7 @@ header nav a.logo img{position: absolute;width: 147px;top:-70px;}
 header nav li a.last{margin-right: 0px}
 
 /*Home*/
-#home .banner{width: auto;padding-bottom: 2px;height: 372px;overflow: hidden;position: relative;width: 1280px;margin: 0px auto}
+#home .banner{width: auto;padding-bottom: 2px;height: 370px;overflow: hidden;position: relative;width: 1280px;margin: 0px auto}
 #home .banner img{margin: 0px auto;width: 1280px;display: block;position: absolute;top:0px;}
 #home .mini-images{width: 1282px;margin: 0px auto}
 #home .mini-images img.slide1{width: 426px}
@@ -42,10 +42,13 @@ header nav li a.last{margin-right: 0px}
 #home .box-bullets{background-image: url(./img/bara_slide.png);display: block;width: 251px;height: 35px;position: absolute;bottom: 0px;right: 0px}
 
 /*about us*/
-.contenido {margin-left: 85px;text-align: left;float: left;width: 38%;}
-.imagen {margin-left: 80px;float: left;width: 50%;}
-.aboutus{font-family:"Open Sans Condensed Light" ;font-size:16px;letter-spacing: 1px;line-height: 100%;}
-.titleabout{font-family: monospace;font-size: 100%; font-weight: bolder;line-height: 300%;}
+
+#about-us .contenido {margin-left: 85px;text-align: left;float: left;width: 45%;}
+#about-us .banner{width: auto;padding-bottom: 2px;height: 395px;overflow: hidden;position: relative;width: 1280px;margin: 0px auto}
+#about-us .banner img{margin: 0px auto;width: 1280px;display: block;position: relative;top:0px;}
+#about-us .imagen {margin-left: 30px;float: left;width: 50%;}
+#about-us .aboutus{margin-left: 52px;font-size: 14px;color:#9B9B9B;font-weight: lighter; margin-top:0px; line-height: 18px}
+#about-us .titleabout{margin-left: 52px; font-weight: bolder;font-size: 18px;letter-spacing: 0.5px;color:#141414;margin-bottom: 05px}
 /*fin about us*/
 
 /*Contacto*/
