@@ -18,7 +18,7 @@
 	  </p>
 	</div>
 	<div id="imagen">
-		 <img src="http://localhost/blog2/wp-content/uploads/2014/04/imagen.png">
+		 <img src='<?php bloginfo('template_directory')?>/img/imagen.png' />
 	</div>
 </div>
 <?php get_footer(); ?>
