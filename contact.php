@@ -14,13 +14,13 @@
 			<form id='form1' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
 			<p class='title'>Contactanos</p>
 			<input type='text' name='Name' id='Name' class='gris2' required>
-			<label for='Name'>Nombre</label>
+			<label for='Name'>Name (required)</label>
 			<div class='clear'></div>
 			<input type='email' name='Email' id='Email' class='gris2' required>
-			<label for='Email'>Email</label>
+			<label for='Email'>Email (required)</label>
 			<div class='clear'></div>
 			<input type='text' name='subject' id='subject' class='gris2' required>
-			<label for='subject'>Asunto</label>
+			<label for='subject'>Subject</label>
 			<div class='clear'></div>
 			<textarea  name='Message' id='Message' class='gris2'></textarea>
 			<div class='clear'></div>
@@ -30,8 +30,8 @@
 
 		</form>
 		<div class='address'>
-			<p class='title'>Información de contacto</span></p>
-			<p></p>
+			<p class='title'>Contact Information</span></p>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
 
 			<div class='telefonos'>
 				<p class='title'>Teléfonos</p>
