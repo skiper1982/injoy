@@ -51,6 +51,18 @@ header nav li a.last{margin-right: 0px}
 #about-us .titleabout{margin-left: 52px; font-weight: bolder;font-size: 18px;letter-spacing: 0.5px;color:#141414;margin-bottom: 05px}
 /*fin about us*/
 
+/*services*/
+#services .banner{width: auto;padding-bottom: 2px;height: 370px;overflow: hidden;position: relative;width: 1280px;margin: 0px auto}
+#services .banner img{margin: 0px auto;width: 1280px;display: block;position: relative;top:0px;}
+#services .imagen {margin-left: 37px;float: left;margin-top: 0px; width: 270px;}
+#services .contenido {width: 100%;height: 400px;margin: 0px auto;font-family: 'open sans';text-align: center;padding: 24px 0px;cl }
+#services .texto{font-size: 14px;color:#9B9B9B;font-weight: lighter; margin-top:0px; line-height: 18px}
+#services .titleservices{margin-left: 50px; font-weight: bolder;font-size: 18px;letter-spacing: 0.5px;color:#141414;margin-bottom: 05px}
+#services .contentder{{width: 100%;height: 400px;margin: 0px auto;font-family: 'open sans';text-align: center;padding: 24px 0px;cl}
+#services .mini-images{width: 1282px;margin: 0px auto}
+#services .mini-images img.slide1{width: 111px}
+
+/*fin services*/
 /*Contacto*/
 
 #contact .principal .container{padding: 0 0}
