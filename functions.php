@@ -17,7 +17,7 @@ function service_info_func($attrs,$content = ""){
 		$title = '';
 	}
 
-	$dir = get_bloginfo('template_directory').'/img/services1.png';
+	$dir = get_bloginfo('template_directory')."/img/{$attrs['image']}.png";
 	return "
 		<div class='colum'>
 			<div class='space'>$title</div>
