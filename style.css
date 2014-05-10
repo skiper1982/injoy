@@ -82,25 +82,30 @@ header nav li a.last{margin-right: 0px}
 #contact .principal .container{padding: 0 0}
 #contact .principal h1{font-weight: 100;display: inline-block;vertical-align: top;width: 100%;font-size: 32px;line-height: 33px;color: #6e6e6e}
 #contact .principal h1 span{font-size: 43px;font-weight: 100}
-#contact .map{width: 100%;height: 370px;overflow: hidden;margen-bottom:0px;}
-#contact .formulario{padding: 38px 0;color: #6E6E6E;width: 920px;margin: 0px auto}
+#contact .map{width: 100%;height: 374px;overflow: hidden;margen-bottom:0px;border: 1px solid black;}
+#contact .formulario{padding: 28px 0;color: #6E6E6E;width: 920px;margin: 0px auto}
 #contact .formulario .container{overflow: hidden;width: 920px}
 #contact form{width: 52%;float: left;}
-#contact .address{float: right;width: 368px;height: 306px;border-radius: 0px;border: 1px solid #D4D4D4;padding: 27px;}
+#contact .address{float: right;width: 370px;height: 304px;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;background-color: #F9F9F9}
 #contact section.container{height: 1250px;padding-top: 55px}
-#contact form input{float: left;width: 194px;margin:0 12px 20px 0;height: 26px;padding: 0 11px;border: solid 1px #D4D4D4;border-radius: 6px}
+#contact form input{float: left;width: 194px;margin:0 12px 18px 0;height: 26px;padding: 0 11px;border: solid 1px #D4D4D4;border-radius: 6px}
 #contact form label{float: left; width: 40%;font-weight: 600;font-size: 12px}
 #contact form textarea{float: left;width: 333px;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
 #contact h2{width: 95%;padding: 25px 2.5%;display: block;background:#E6E6E6;margin: 63px 0;font-size: 13px;font-weight: 600px;border-radius: 5px;}
-#contact form .title{margin-left: 13px;margin-bottom: 34px;font-size: 18px;font-weight: 700;color: black;line-height: 26px}
+#contact form .title{margin-left: 3px;margin-bottom: 15px;margin-top:10px;font-size: 18px;font-weight: 700;color: black;line-height: 26px}
 #contact form .title span{font-size: 19px}
 #contact form .submit{cursor: pointer;width: 104px;margin-top: 20px;color: black;display: block;font-size: 14px;padding:  7px 0;text-align: center;border-radius: 7px;font-weight: 600;height: 35px;font-family: "open sans",sans-serif}
-#contact .address .title{font-size: 18px;font-weight: 700;line-height: 27px;color:black }
+#contact .address .title{font-size: 18px;font-weight: 700;line-height: 27px;color:black;margin-bottom: 16px }
 #contact .address .title span{font-size: 19px;font-weight: normal;}
-#contact .address .telefonos p{padding-left: 9%}
+#contact .address .direccion, #contact .address .telefonos, #contact .address .hours{margin-bottom: 10px;margin-left: 22px}
+#contact .address .direccion p, #contact .address .telefonos p, contact .address .hours p{line-height: 16px}
+
+#contact .address .telefonos p{}
 #contact .address .telefonos .title{font-size: 20px;background: url(img/telephone_icon.png) no-repeat center left;height: 45px;padding: 8px 55px;margin-top: 30px}
-#contact .address  p{font-size: 12px;color:#9B9B9B;font-weight: lighter; margin-top:0px; line-height: 15px}
+#contact .address  p{font-size: 12px;color:#9B9B9B;font-weight: lighter; margin-top:0px; line-height: 14px}
 #contact .address .tel{color: #6E6E6E}
+#contact .address .text{margin-bottom:20px}
+#contant .address .bottom{margin-bottom: 10px}
 
 /*Galeries*/
 

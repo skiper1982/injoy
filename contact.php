@@ -7,45 +7,46 @@
 <div class='clear'></div>
 <div id='contact'>
 	<div class='map'>
-		<iframe style='width:100%;border:none;overflow:hidden;height:100%'  src="https://maps.google.com.mx/maps/ms?msa=0&amp;msid=206393643423893916463.0004ea9e62a8c608dad9e&amp;ie=UTF8&amp;t=h&amp;ll=21.150635,-86.772079&amp;spn=0.06564,0.17149&amp;z=13&amp;output=embed"></iframe>
+		<!-- <iframe style='width:100%;border:none;overflow:hidden;height:100%'  src="https://maps.google.com.mx/maps/ms?msa=0&amp;msid=206393643423893916463.0004ea9e62a8c608dad9e&amp;ie=UTF8&amp;t=h&amp;ll=21.150635,-86.772079&amp;spn=0.06564,0.17149&amp;z=13&amp;output=embed"></iframe> -->
 	</div>
 	<section class='formulario'>
 		<div class='container'>
 			<form id='form1' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
 			<p class='title'>Contactanos</p>
-			<input type='text' name='Name' id='Name' class='gris2' required>
-			<label for='Name'>Name (required)</label>
+			<p><input type='text' name='Name' id='Name' class='gris2' required></p>
+			<p><label for='Name'>Name (required)</label></p>
 			<div class='clear'></div>
-			<input type='email' name='Email' id='Email' class='gris2' required>
-			<label for='Email'>Email (required)</label>
+			<p><input type='email' name='Email' id='Email' class='gris2' required></p>
+			<p><label for='Email'>Email (required)</label></p>
 			<div class='clear'></div>
-			<input type='text' name='subject' id='subject' class='gris2' required>
-			<label for='subject'>Subject</label>
+			<p><input type='text' name='subject' id='subject' class='gris2' required></p>
+			<p><label for='subject'>Subject</label></p>
 			<div class='clear'></div>
-			<textarea  name='Message' id='Message' class='gris2'></textarea>
+			<p><textarea  name='Message' id='Message' class='gris2'></textarea></p>
 			<div class='clear'></div>
-			<input type="submit" class='submit gris2' value="Enviar">
+			<p><input type="submit" class='submit gris2' value="Enviar"></p>
 			<p class='success note' style='display:none'><?= $lang=="es"?"Mensaje Enviado, Gracias !":"Mensaje Enviado, Gracias !"?></p>
 			<p class='error note' style='display:none'><?= $lang=="es"?"Error Intente de nuevo":"Error"?></p>
 
 		</form>
 		<div class='address'>
 			<p class='title'>Contact Information</span></p>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
+			<p class='text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
+
+			<div class='direccion'>
+				<p>Armistice Building</p>
+				<p>Kuningan Raya Street</p>
+				<p>Jakarta, JKT 1220</p>
+				<p>PO BOX 1234</p>
+			</div>
 
 			<div class='telefonos'>
-				<p class='title'>Teléfonos</p>
-				<p>Cancún:</p>
-				<p class='tel'>52 (998) 849-4223</p>
-				<p class='tel'>52 (998) 848-7972</p>
-
-				<p>Llame Gratis desde México</p>
-				<p class='tel'> 01-800-681-1527</p>
-
-				<p>Llame Gratis desde EU & Canada</p>
-				<p class='tel'>1-800-895-6301</p>
-
+				<p>Phone: + 621 55566671</p>
 			</div>
+			<div class='hours'>
+				<p>Mon-Fri: 8:00 until 17:00</p>
+				<p>Sat: 10:00 until 16:00</p>
+			</div>			
 		</div>
 		</div>
 	</section>
