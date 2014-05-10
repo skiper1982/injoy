@@ -17,18 +17,6 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>
 		<?php endwhile; endif;?>		
-		<!--div class='colum'>
-			<div class='space'><h1 class="titleservices">CONOCE NUESTROS SERVICIOS</h1></div>
-			<img src='<?php bloginfo('template_directory')?>/img/services1.png' class='slide1' />
-		</div>
-		<div class='colum'>
-			<div class='space'></div>
-			<img src='<?php bloginfo('template_directory')?>/img/services2.png' class='slide1' />
-		</div>
-		<div class='colum'>
-			<div class='space'></div>
-			<img src='<?php bloginfo('template_directory')?>/img/services3.png' class='slide1' />
-		</div-->
 		<div class='clear'></div>			
 	</div>
 </div>

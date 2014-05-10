@@ -12,7 +12,14 @@
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
-		<div class='box-bullets'></div>
+		<div class='box-bullets'>
+			<a href='#' class='bullets on'></a>
+			<a href='#' class='bullets'></a>
+			<a href='#' class='bullets'></a>
+			<a href='#' class='bullets'></a>
+			<a href='#' class='bullets'></a>
+			<a href='#' class='bullets'></a>
+		</div>
 	</div>
 	<div class='mini-images'>
 		<img src='<?php bloginfo('template_directory')?>/img/slide2.png' class='slide1' />

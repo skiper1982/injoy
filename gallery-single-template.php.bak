@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 	<div id="container" class="site-content">
 		<div id="content" class="hentry">
 			<?php global $post, $wp_query;
@@ -15,9 +14,9 @@
 			if ( $second_query->have_posts() ) : while ( $second_query->have_posts() ) : $second_query->the_post(); ?>
 				<h1 class="home_page_title entry-header"><?php the_title(); ?></h1>
 				<div class="gallery_box_single entry-content">
-					<?php //the_content(); 
+					<?php the_content(); 
 					$posts = get_posts( array(
-						"showposts"			=> 20,
+						"showposts"			=> -1,
 						"what_to_show"		=> "posts",
 						"post_status"		=> "inherit",
 						"post_type"			=> "attachment",
@@ -89,7 +88,7 @@
 				<?php comments_template(); ?>
 			</div>			
 		</div>
-	<?php //get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 	<script type="text/javascript">
 		(function($){
 			$(document).ready(function(){

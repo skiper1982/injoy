@@ -28,4 +28,36 @@ function service_info_func($attrs,$content = ""){
 		</div>
 	";
 }
+
+function get_mes($mes,$lang)
+{
+	switch($mes)
+	{
+		case 1:
+			$aux=$lang=="es"?"Enero":"January";break;
+		case 2:
+			$aux=$lang=="es"?"Febrero":"February";break;
+		case 3:
+			$aux=$lang=="es"?"Marzo":"March";break;
+		case 4:
+			$aux=$lang=="es"?"Abril":"April";break;
+		case 5:
+			$aux=$lang=="es"?"Mayo":"May";break;
+		case 6:
+			$aux=$lang=="es"?"Junio":"Jun";break;
+		case 7:
+			$aux=$lang=="es"?"Julio":"July";break;
+		case 8:
+			$aux=$lang=="es"?"Agosto":"August";break;
+		case 9:
+			$aux=$lang=="es"?"Septiembre":"September";break;
+		case 10:
+			$aux=$lang=="es"?"Octubre":"October";break;
+		case 11:
+			$aux=$lang=="es"?"Noviembre":"November";break;
+		case 12:
+			$aux=$lang=="es"?"Diciembre":"December";break;
+	}
+	return $aux;
+}
 ?>

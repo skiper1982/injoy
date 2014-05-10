@@ -12,7 +12,7 @@ function init_move_banner1(){
 }
 function move_banner1(right){
 	clearTimeout(timer_banner_1);
-	var imgs = $(".bannerbanner.style1 img");
+	var imgs = $(".banner.style1 img");
 		var size =imgs.size();
 		if(size>1){
 			var actual= $(".banner.style1 img.on").index();
@@ -22,8 +22,10 @@ function move_banner1(right){
 			imgs.eq(actual).fadeOut(800,function()
 			{
 				$(this).removeClass("on");
+				$('#home .box-bullets .bullets.on').removeClass('on')
+				$('#home .box-bullets .bullets').eq(next).addClass('on')
 				imgs.eq(next).addClass("on");
-				timer_banner_1=setTimeout("init_move_banner1()",8000);
+				timer_banner_1=setTimeout("init_move_banner1()",6500);
 			});
 		}
 }
