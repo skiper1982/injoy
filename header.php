@@ -1,4 +1,3 @@
-<?php $lang= 'es' ?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -38,5 +37,5 @@
 			<?php $i++; }  ?>
 		</ul>
 	</nav>
-</div>
+	</div>
 </header>

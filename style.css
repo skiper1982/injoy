@@ -21,6 +21,7 @@ a {text-decoration: none}
 
 /*header*/
 header{height: 108px;border-bottom: 3px solid #080808;}
+header .container{width: 1114px}
 header nav{position: relative;top:71px;width: 1114px;margin: 0px auto}
 header nav a{float: left;color:#383838;font-weight: bold;margin: 0px 54px 0px 0px}
 header nav a.on{background-color: #080808;color:white;padding: 3px 10px;margin-left: -15px}

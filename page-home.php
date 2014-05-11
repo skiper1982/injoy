@@ -4,7 +4,6 @@
 */
 ?>
 <?php get_header(); ?>
-<?php $lang= 'es' ?>
 <div id='home'>
 	<div class='banner style1'>
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' class='on' />
