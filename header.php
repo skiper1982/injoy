@@ -1,3 +1,4 @@
+<?php $lang= 'es' ?>
 <!DOCTYPE html>
 <html >
 <head>

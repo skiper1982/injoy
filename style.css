@@ -120,11 +120,11 @@ header nav li a.last{margin-right: 0px}
 #blog h2{margin-top:12px;}
 #blog .container{overflow: hidden;}
 #blog .archives{width: 18%;float: left;margin-right: 2%}
-#blog .social{width: 26%;float: right;}
+#blog .social{float: left;width: 300px;padding-left: 21px;padding-right: 21px}
 #blog .social .social_buttons{text-align: center;width: 100%}
 #blog .social .social_buttons a{width: 18%;display: inline-block;}
 #blog .social .social_buttons img{max-width: 100%}
-#blog .posts{width: 524px;float: left;border-left: 2px solid #E4E1E3;}
+#blog .posts{width: 540px;float: left;border-left: 2px solid #E4E1E3;border-right: 2px solid #E4E1E3;}
 #blog .posts article{margin-bottom: 20px;margin-left: 11px}
 /*#blog .posts .image{width: 300px;height: 300px;display: block;}*/
 
@@ -137,7 +137,7 @@ header nav li a.last{margin-right: 0px}
 #blog .archives ul li{margin-left: 10%}
 #blog .archives ul li a{color: black}
 #blog .archives ul li a:first-letter{text-transform: uppercase;}
-#blog article h2 a{color:black;font-size: 19px;line-height: 19px;font-weight: bold;}
+#blog article h2 a{color:black;font-size: 19px;line-height: 19px;font-weight: bold;font-family: 'open sans'}
 #blog article .autor{font-size:11px;color: black}
 #blog article .autor span{}
 #blog article .autor span a{color: #609FD5}
@@ -146,24 +146,22 @@ header nav li a.last{margin-right: 0px}
 #blog article a.img{}
 #blog article a.img img{}
 #blog article .content{margin-bottom: 15px;margin-top:15px;font-size: 14px;color:#AFAFAF;}
-#blog article a.read_more{color:#AFAFAF}
+#blog article a.read_more{color:#AFAFAF;font-family: 'open sans'}
 
-#blog .social .tabs{overflow: hidden;}
-#blog .social .tabs ul{margin-bottom: 15px;overflow: hidden;}
-#blog .social .tabs ul li{float: left;width: 31%;text-align: center;margin-right: 3%;}
-#blog .social .tabs ul li.last-child{margin-right: 0}
-#blog .social .tabs ul li a{padding: 3px 0;font-size: 19px;color: white;width: 100%;height: 100%;display: block;background: #609FD5}
-#blog .social .tabs .tab{display: none;}
-#blog .social .tabs #tab_3 p a{color: black}
-#blog .social .tabs #tab_3 p a:hover{text-decoration: underline;color: #609FD5}
-#blog .social .tabs .tab.on{display: block;}
-#blog .social .separador{margin: 30px 0}
-#blog .social .tabs .tab .post{margin-bottom: 10px}
-/*#blog .social .tabs .tab a{color:black }*/
-#blog .social .tabs .tab .post p{line-height: 19px;color: black}
-#blog .social .tabs .tab .post p.date{color: #939598}
-#blog .social .redes a.header{font-size: 20px;display: block;width: 100%;padding: 2px 15px;background:#609FD5;color: white;margin-top: 10px}
-#blog .social .redes .box{text-align: center;padding: 10px 0}
+#blog .social .search{width: 100%;height: 37px;display: block;}
+#blog .social .snet{margin-bottom: 36px}
+#blog .social .snet .facebook{border: 1px #3D4F95 solid;width: 80px;height: 86px;display: block;float: left;margin-right: 8px;border-radius: 3px}
+#blog .social .snet .twitter{border: 1px #00CAF3 solid;width: 80px;height: 86px;display: block;float: left;margin-right: 8px;border-radius: 3px}
+#blog .social .snet .irc{border: 1px #FD7000 solid;width: 80px;height: 86px;display: block;float: left;border-radius: 3px}
+#blog .social .cat .tab{padding:5px 7px;margin-right:9px;display: block;float: left;color:black;font-size: 11px;font-family: 'open sans'}
+#blog .social .cat .tab{border:2px solid #E4E1E3}
+#blog .social .cat .tab.on{background-color: black;color:white;border:2px solid black}
+#blog .social .cat .post-cat{display: none;width: 100%;min-height: 178px;padding:24px 18px;background-color: white}
+#blog .social .cat .post-cat .image{width: 52px;height: 52px;display: block;float: left;margin-right: 15px}
+#blog .social .cat .post-cat .article{float: left;}
+#blog .social .cat .post-cat .article .title{color: black;font-family: 'open sans';font-size: 11px;font-weight: bold}
+#blog .social .cat .post-cat .article .date{color: #C4C4C6;font-size: 10px;font-weight: bold;}
+#blog .social .cat .post-cat.on{display: block;}
 
 /*Footer*/
 footer{width: 100%;height:115px;background-color: #080808}
