@@ -16,7 +16,7 @@ License URI:
 @import url('css/stickyFooter.css');
 body{font-size: 12pt;font-family:'open sans'}
 a {text-decoration: none}
-.container{width: 1280px;margin: 0px auto}
+.container{width: 862px;margin: 0px auto}
 .clear{clear:both}
 
 /*header*/
@@ -113,7 +113,54 @@ header nav li a.last{margin-right: 0px}
 .container-galleries .dot-points{width: 100%;border-bottom-style:dotted;height: 2px;border-color:#080808;border-width:2px;margin: 20px 0px}
 .container-galleries h1{font-size: 20px;font-weight:bold;width: 121px;margin: 0px auto;background-color: #080808;color: white;padding: 5px 10px;margin-top:20px;}
 
+/*Blog*/
+#blog .banner{width: 1280px;margin: 0px auto}
+#blog .banner img{width:1280px;height: 217px;position: relative;top:0px;}
+#blog .container{overflow: hidden;padding-top: 20px}
+#blog .archives{width: 18%;float: left;margin-right: 2%}
+#blog .social{width: 26%;float: right;}
+#blog .social .social_buttons{text-align: center;width: 100%}
+#blog .social .social_buttons a{width: 18%;display: inline-block;}
+#blog .social .social_buttons img{max-width: 100%}
+#blog .posts{width: 52%;float: left;}
+#blog .posts article{margin-bottom: 20px}
 
+#blog .gallery{overflow: hidden;position: relative;width: 100%;margin: 0 auto;max-width: 1434px;height: 368px}
+#blog .gallery p.title{text-transform: uppercase;position: absolute;font-size: 161px;font-weight: 100;line-height: 172px;text-align: center;width: 100%;color: white;opacity: .5}
+#blog .gallery img{position: absolute;}
+
+#blog .separador{height: 2px;background: #d2d1d2;width: 100%}
+#blog .archives .separador{margin: 20px 0}
+#blog .archives ul li{margin-left: 10%}
+#blog .archives ul li a{color: black}
+#blog .archives ul li a:first-letter{text-transform: uppercase;}
+#blog article h2 a{color:black;font-size: 28px;line-height: 35px;font-weight: 600}
+#blog article .autor{color: #939598;}
+#blog article .autor span{color: #609FD5}
+#blog article .autor span a{color: #609FD5}
+#blog article .line-icon{background: #d2d1d2;width: 100%;margin: 10px 0;height: 2px}
+#blog article .date{color: #939598}
+#blog article a.img{display: block;width: 100%;margin: 30px 0}
+#blog article a.img img{max-width: 100%;margin: 0 auto;display: block;height: auto !important}
+#blog article .content{margin-bottom: 15px;line-height: normal;}
+#blog article a.read_more{display: inline-block;padding: 5px 10px;background: #0077BC;color: white;width: auto;}
+
+#blog .social .tabs{overflow: hidden;}
+#blog .social .tabs ul{margin-bottom: 15px;overflow: hidden;}
+#blog .social .tabs ul li{float: left;width: 31%;text-align: center;margin-right: 3%;}
+#blog .social .tabs ul li.last-child{margin-right: 0}
+#blog .social .tabs ul li a{padding: 3px 0;font-size: 19px;color: white;width: 100%;height: 100%;display: block;background: #609FD5}
+#blog .social .tabs .tab{display: none;}
+#blog .social .tabs #tab_3 p a{color: black}
+#blog .social .tabs #tab_3 p a:hover{text-decoration: underline;color: #609FD5}
+#blog .social .tabs .tab.on{display: block;}
+#blog .social .separador{margin: 30px 0}
+#blog .social .tabs .tab .post{margin-bottom: 10px}
+/*#blog .social .tabs .tab a{color:black }*/
+#blog .social .tabs .tab .post p{line-height: 19px;color: black}
+#blog .social .tabs .tab .post p.date{color: #939598}
+#blog .social .redes a.header{font-size: 20px;display: block;width: 100%;padding: 2px 15px;background:#609FD5;color: white;margin-top: 10px}
+#blog .social .redes .box{text-align: center;padding: 10px 0}
 
 /*Footer*/
 footer{width: 100%;height:115px;background-color: #080808}

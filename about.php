@@ -5,11 +5,8 @@
 ?>
 <?php get_header(); ?>
 <div id="about-us">
-	<div class='banner style2'>
+	<div class='banner'>
 		<img src='<?php bloginfo('template_directory')?>/img/sliderabout.png' class='on' />
-		<img src='<?php bloginfo('template_directory')?>/img/sliderabout.png' style='display:none' />
-		
-		<div class='box-bullets'></div>
 	</div>
 	<div class='content'>
  		<div class="contenido">
