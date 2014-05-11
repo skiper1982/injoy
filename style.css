@@ -145,8 +145,8 @@ header nav li a.last{margin-right: 0px}
 #blog article .date{color: black;font-size: 10px;font-weight: bold;}
 #blog article a.img{}
 #blog article a.img img{}
-#blog article .content{margin-bottom: 15px;line-height: normal;}
-#blog article a.read_more{display: inline-block;padding: 5px 10px;background: #0077BC;color: white;width: auto;}
+#blog article .content{margin-bottom: 15px;margin-top:15px;font-size: 14px;color:#AFAFAF;}
+#blog article a.read_more{color:#AFAFAF}
 
 #blog .social .tabs{overflow: hidden;}
 #blog .social .tabs ul{margin-bottom: 15px;overflow: hidden;}

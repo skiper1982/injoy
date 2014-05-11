@@ -24,8 +24,7 @@
 							<h2><a href='<?php the_permalink() ?>' title='<?php the_title()?>'><?= the_title()?></a></h2>
 							<p class='date'><?= get_mes(get_the_time('n'),$lang) ?> <?php the_time('j') ?>, <?php the_time('Y') ?></p>
 							<p class='autor'><?= $lang=="es"?"Por":"By"?> <span><?php the_author();?></span> <?php the_tags( $lang=="es"?"en ":"in "."<span>",", ","</span>.")?></p>
-							<div class='content'> <?php the_excerpt();?> </div>
-							<a class='read_more' href='<?php the_permalink() ?>'><?= $lang=="es"?"Leer más":"Continue Reading"?></a>
+							<div class='content'> <?php the_excerpt();?> <a class='read_more' href='<?php the_permalink() ?>'>[...]</a> </div>
 						</article>
 					<?php //}
 				}
