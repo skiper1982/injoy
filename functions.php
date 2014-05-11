@@ -1,6 +1,6 @@
 <?php
 add_action('init','register_menus');
-add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails' );
 add_shortcode('service_info','service_info_func');
 function register_menus() {
 	register_nav_menus(array(
@@ -34,30 +34,33 @@ function get_mes($mes,$lang)
 	switch($mes)
 	{
 		case 1:
-			$aux=$lang=="es"?"Enero":"January";break;
+			$aux=$lang=="es"?"ENERO":"JANUARY";break;
 		case 2:
-			$aux=$lang=="es"?"Febrero":"February";break;
+			$aux=$lang=="es"?"FEBRERO":"FEBRUARY";break;
 		case 3:
-			$aux=$lang=="es"?"Marzo":"March";break;
+			$aux=$lang=="es"?"MARZ0":"March";break;
 		case 4:
-			$aux=$lang=="es"?"Abril":"April";break;
+			$aux=$lang=="es"?"ABRIL":"APRIL";break;
 		case 5:
-			$aux=$lang=="es"?"Mayo":"May";break;
+			$aux=$lang=="es"?"MAYO":"MAY";break;
 		case 6:
-			$aux=$lang=="es"?"Junio":"Jun";break;
+			$aux=$lang=="es"?"JUNIO":"JUN";break;
 		case 7:
-			$aux=$lang=="es"?"Julio":"July";break;
+			$aux=$lang=="es"?"JULIO":"JULY";break;
 		case 8:
-			$aux=$lang=="es"?"Agosto":"August";break;
+			$aux=$lang=="es"?"AGOSTO":"AUGUSY";break;
 		case 9:
-			$aux=$lang=="es"?"Septiembre":"September";break;
+			$aux=$lang=="es"?"SEPTIEMBRE":"SEPTEMBER";break;
 		case 10:
-			$aux=$lang=="es"?"Octubre":"October";break;
+			$aux=$lang=="es"?"OCTUBRE":"OCTOBER";break;
 		case 11:
-			$aux=$lang=="es"?"Noviembre":"November";break;
+			$aux=$lang=="es"?"NOVIEMBRE":"NOVEMBER";break;
 		case 12:
-			$aux=$lang=="es"?"Diciembre":"December";break;
+			$aux=$lang=="es"?"DICIEMBRE":"DECEMBER";break;
 	}
 	return $aux;
+}
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'blog-thumb', 509, 338 ); 
 }
 ?>

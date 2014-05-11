@@ -111,19 +111,22 @@ header nav li a.last{margin-right: 0px}
 
 .container-galleries{width: 1125px;margin: 0px auto}
 .container-galleries .dot-points{width: 100%;border-bottom-style:dotted;height: 2px;border-color:#080808;border-width:2px;margin: 20px 0px}
-.container-galleries h1{font-size: 20px;font-weight:bold;width: 121px;margin: 0px auto;background-color: #080808;color: white;padding: 5px 10px;margin-top:20px;}
+.container-galleries h1{font-size: 20px;font-weight:bold;width: 121px;margin: 0px auto;background-color: black;color: white;padding: 5px 10px;margin-top:20px;}
 
 /*Blog*/
-#blog .banner{width: 1280px;margin: 0px auto}
+#blog .space{width: 100%;height: 13px;display: block;}
+#blog .banner{width: 1280px;margin: 0px auto 27px;height: 217px}
 #blog .banner img{width:1280px;height: 217px;position: relative;top:0px;}
-#blog .container{overflow: hidden;padding-top: 20px}
+#blog h2{margin-top:12px;}
+#blog .container{overflow: hidden;}
 #blog .archives{width: 18%;float: left;margin-right: 2%}
 #blog .social{width: 26%;float: right;}
 #blog .social .social_buttons{text-align: center;width: 100%}
 #blog .social .social_buttons a{width: 18%;display: inline-block;}
 #blog .social .social_buttons img{max-width: 100%}
-#blog .posts{width: 52%;float: left;}
-#blog .posts article{margin-bottom: 20px}
+#blog .posts{width: 524px;float: left;border-left: 2px solid #E4E1E3;}
+#blog .posts article{margin-bottom: 20px;margin-left: 11px}
+/*#blog .posts .image{width: 300px;height: 300px;display: block;}*/
 
 #blog .gallery{overflow: hidden;position: relative;width: 100%;margin: 0 auto;max-width: 1434px;height: 368px}
 #blog .gallery p.title{text-transform: uppercase;position: absolute;font-size: 161px;font-weight: 100;line-height: 172px;text-align: center;width: 100%;color: white;opacity: .5}
@@ -134,14 +137,14 @@ header nav li a.last{margin-right: 0px}
 #blog .archives ul li{margin-left: 10%}
 #blog .archives ul li a{color: black}
 #blog .archives ul li a:first-letter{text-transform: uppercase;}
-#blog article h2 a{color:black;font-size: 28px;line-height: 35px;font-weight: 600}
-#blog article .autor{color: #939598;}
-#blog article .autor span{color: #609FD5}
+#blog article h2 a{color:black;font-size: 19px;line-height: 19px;font-weight: bold;}
+#blog article .autor{font-size:11px;color: black}
+#blog article .autor span{}
 #blog article .autor span a{color: #609FD5}
 #blog article .line-icon{background: #d2d1d2;width: 100%;margin: 10px 0;height: 2px}
-#blog article .date{color: #939598}
-#blog article a.img{display: block;width: 100%;margin: 30px 0}
-#blog article a.img img{max-width: 100%;margin: 0 auto;display: block;height: auto !important}
+#blog article .date{color: black;font-size: 10px;font-weight: bold;}
+#blog article a.img{}
+#blog article a.img img{}
 #blog article .content{margin-bottom: 15px;line-height: normal;}
 #blog article a.read_more{display: inline-block;padding: 5px 10px;background: #0077BC;color: white;width: auto;}
 
