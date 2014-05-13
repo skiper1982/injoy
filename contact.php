@@ -12,17 +12,17 @@
 	<section class='formulario'>
 		<div class='container'>
 			<form id='form1' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
-			<p class='title'>Contactanos</p>
+			<p class='title'>Contáctanos:</p>
 			<p><input type='text' name='Name' id='Name' class='gris2' required></p>
-			<p><label for='Name'>Nombre (Requerido)</label></p>
+			<p><label for='Name'>Name (Required)</label></p>
 			<div class='clear'></div>
 			<p><input type='email' name='Email' id='Email' class='gris2' required></p>
-			<p><label for='Email'>Email (Requerido)</label></p>
+			<p><label for='Email'>Email (Required)</label></p>
 			<div class='clear'></div>
 			<p><input type='text' name='subject' id='subject' class='gris2' required></p>
-			<p><label for='subject'>Asunto (Requerido)</label></p>
+			<p><label for='subject'>Subject</label></p>
 			<div class='clear'></div>
-			<p><label for='message'>Mensaje (Requerido)</label></p>
+			<p><label for='message'></label></p>
 			<p><textarea  name='Message' id='Message' class='gris2'></textarea></p>
 			<div class='clear'></div>
 			<p><input type="submit" class='submit gris2' value="Enviar"></p>

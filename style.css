@@ -86,7 +86,7 @@ header nav li a.last{margin-right: 0px}
 #contact .principal h1{font-weight: 100;display: inline-block;vertical-align: top;width: 100%;font-size: 32px;line-height: 33px;color: #6e6e6e}
 #contact .principal h1 span{font-size: 43px;font-weight: 100}
 #contact .map{width: 100%;height: 374px;overflow: hidden;margen-bottom:0px;border: 1px solid black;}
-#contact .formulario{padding: 28px 0;color: #6E6E6E;width: 920px;margin: 0px auto}
+#contact .formulario{padding: 22px 0;color: #6E6E6E;width: 920px;margin: 0px 228px}
 #contact .formulario .container{overflow: hidden;width: 920px}
 #contact form{width: 52%;float: left;}
 #contact .address{float: right;width: 370px;height: 304px;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;background-color: #F9F9F9}
@@ -95,7 +95,7 @@ header nav li a.last{margin-right: 0px}
 #contact form label{float: left; width: 40%;font-weight: 600;font-size: 12px}
 #contact form textarea{float: left;width: 333px;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
 #contact h2{width: 95%;padding: 25px 2.5%;display: block;background:#E6E6E6;margin: 63px 0;font-size: 13px;font-weight: 600px;border-radius: 5px;}
-#contact form .title{margin-left: 3px;margin-bottom: 15px;margin-top:10px;font-size: 18px;font-weight: 700;color: black;line-height: 26px}
+#contact form .title{margin-left: 3px;margin-bottom: 15px;margin-top:10px;font-size: 17px;font-weight: 700;color: black;line-height: 26px}
 #contact form .title span{font-size: 19px}
 #contact form .submit{cursor: pointer;width: 104px;margin-top: 20px;color: black;display: block;font-size: 14px;padding:  7px 0;text-align: center;border-radius: 7px;font-weight: 600;height: 35px;font-family: "open sans",sans-serif}
 #contact .address .title{font-size: 18px;font-weight: 700;line-height: 27px;color:black;margin-bottom: 16px }
