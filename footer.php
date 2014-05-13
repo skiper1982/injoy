@@ -2,6 +2,20 @@
 <?php wp_footer(); ?> 
 <footer><div class='container'>
 	<img src='<?php bloginfo('template_directory')?>/img/logo-footer.png' class='footer' />
+	<div class='address'>
+		<p class='autospazio'>AutoSpazio</p>
+		<p>Ciudad de México, México</p>
+	</div>
+	<div class='social'>
+		<a href='#' class='facebook left'></a>
+		<a href='#' class='twitter left'></a>
+		<a href='#' class='pinterest left'></a>
+		<a href='#' class='plus left'></a>
+		<div class='clear'></div>
+		<br />
+		<p>Copyright <a href='http://www.rankeauno.com/'>RankeaUno</a> 2014</p>
+	</div>
+
 </div></footer>
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.js' ></script>
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.ui.js'></script>
