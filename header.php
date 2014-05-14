@@ -10,6 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,100italic,300italic,400italic,900,700italic,900italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'>
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico" type="image/x-icon"/>
+
 	<?php wp_head(); ?>	
 </head>
 <body>
