@@ -36,9 +36,9 @@
 		<aside class='social'>
 			<div class='search'><?php get_search_form(); ?></div>
 			<div class='snet'>
-				<div class='facebook'></div>
-				<div class='twitter'></div>
-				<div class='irc'></div>
+				<div class='facebook'><img src='<?php bloginfo('template_directory')?>/img/fb.png'></div>
+				<div class='twitter'><img src='<?php bloginfo('template_directory')?>/img/twitter2.png'></div>
+				<div class='irc'><img src='<?php bloginfo('template_directory')?>/img/rss.png'></div>
 				<div class='clear'></div>
 			</div>
 			<div class='cat'>

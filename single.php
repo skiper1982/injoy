@@ -35,13 +35,13 @@
 		<aside class='social'>
 			<div class='search'><?php get_search_form(); ?></div>
 			<div class='snet'>
-				<div class='facebook'></div>
-				<div class='twitter'></div>
-				<div class='irc'></div>
+				<div class='facebook'><img src='<?php bloginfo('template_directory')?>/img/fb.png'></div>
+				<div class='twitter'><img src='<?php bloginfo('template_directory')?>/img/twitter2.png'></div>
+				<div class='irc'><img src='<?php bloginfo('template_directory')?>/img/rss.png'></div>
 				<div class='clear'></div>
 			</div>
 			<div class='cat'>
-				<a href='#' class='tab on'>Recientes</a>
+				<a href='#' class='tab on'>Recent</a>
 				<div class='clear'></div>
 				<div class='post-cat on'>
 					<div class='image'><?php if ( has_post_thumbnail() ) { the_post_thumbnail(array(52,52)); } ?></div>
