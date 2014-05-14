@@ -7,8 +7,8 @@
 <div id='home'>
 	<div class='banner style1'>
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' class='on' />
-		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none' />
-		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
+		<img src='<?php bloginfo('template_directory')?>/img/sliderabout.png' style='display:none' />
+		<img src='<?php bloginfo('template_directory')?>/img/sliderservices.png' style='display:none'/>
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>
 		<img src='<?php bloginfo('template_directory')?>/img/slide1.png' style='display:none'/>

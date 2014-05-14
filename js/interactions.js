@@ -5,7 +5,7 @@ var px3=-32;
 var timer;
 var aux;
 $(document).ready(function(e){
-	timer_banner_1=setTimeout("init_move_banner1()",8000);
+	timer_banner_1=setTimeout("init_move_banner1()",6000);
         
       $("#contact #form1").submit(function(e){
             e.preventDefault();
@@ -41,7 +41,24 @@ $(document).ready(function(e){
 	});
 
 	$(".check-field").addClass("empty");
-      
+
+	$('#home .box-bullets a.bullets').click(function(e){
+		e.preventDefault()
+		var next = $(this).index()
+		clearTimeout(timer_banner_1);
+		$('#home .box-bullets .bullets.on').removeClass('on')
+		$('#home .box-bullets .bullets').eq(next).addClass('on')
+
+		var imgs = $(".banner.style1 img");
+		var actual= $(".banner.style1 img.on").index();
+		imgs.eq(next).show();
+		imgs.eq(actual).fadeOut(6000,function(){
+				timer_banner_1=setTimeout("init_move_banner1()",6000);
+				imgs.removeClass("on")
+				imgs.eq(next).addClass("on")
+		});		
+	})
+
 });
 function init_move_banner1(){
 	move_banner1(true);
@@ -50,7 +67,7 @@ function move_banner1(right){
 	clearTimeout(timer_banner_1);
 	var imgs = $(".banner.style1 img");
 		var size =imgs.size();
-		if(size>1){
+		//if(size>1){
 			var actual= $(".banner.style1 img.on").index();
 			var next =right?(actual+1)%size:actual-1;
 			next=next<0?size-1:next;
@@ -61,7 +78,7 @@ function move_banner1(right){
 				$('#home .box-bullets .bullets.on').removeClass('on')
 				$('#home .box-bullets .bullets').eq(next).addClass('on')
 				imgs.eq(next).addClass("on");
-				timer_banner_1=setTimeout("init_move_banner1()",6500);
+				timer_banner_1=setTimeout("init_move_banner1()",6000);
 			});
-		}
+		//}
 }
