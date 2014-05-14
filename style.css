@@ -128,7 +128,7 @@ header nav li a.last{margin-right: 0px}
 #blog .social .social_buttons{text-align: center;width: 100%}
 #blog .social .social_buttons a{width: 18%;display: inline-block;}
 #blog .social .social_buttons img{max-width: 100%}
-#blog .posts{width: 540px;float: left;border-left: 2px solid #E4E1E3;border-right: 2px solid #E4E1E3;}
+#blog .posts{width: 540px;float: left;border-left: 2px solid #E4E1E3;border-right: 2px solid #E4E1E3;min-height: 600px}
 #blog .posts article{margin-bottom: 20px;margin-left: 11px}
 /*#blog .posts .image{width: 300px;height: 300px;display: block;}*/
 
@@ -152,7 +152,9 @@ header nav li a.last{margin-right: 0px}
 #blog article .content{margin-bottom: 15px;margin-top:15px;font-size: 14px;color:#AFAFAF;}
 #blog article a.read_more{color:#AFAFAF;font-family: 'open sans'}
 
-#blog .social .search{width: 100%;height: 37px;display: block;}
+#blog .social .search{width: 254px;height: 40px;display: block;margin-bottom: 32px;position: relative;}
+#blog .social .search .label{color:#A3A8AC;border-bottom: 1px solid #C8C8C8;padding: 10px;width: 254px;border-top: 1px solid #E5E5E5;border-left: 1px solid #E5E5E5;border-right: 1px solid #E5E5E5;}
+#blog .social .search .submit{background: url("./img/bnt_input.png") repeat scroll 0 0 transparent;border: medium none;height: 23px;width: 30px;right: 1px;top:7px;position: absolute;}
 #blog .social .snet{margin-bottom: 36px}
 #blog .social .snet .facebook{border: 1px #3D4F95 solid;width: 80px;height: 86px;display: block;float: left;margin-right: 8px;border-radius: 3px}
 #blog .social .snet .twitter{border: 1px #00CAF3 solid;width: 80px;height: 86px;display: block;float: left;margin-right: 8px;border-radius: 3px}

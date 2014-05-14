@@ -14,13 +14,13 @@
 			<form id='form1' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
 			<p class='title'>Contáctanos:</p>
 			<p><input type='text' name='Name' id='Name' class='gris2' required></p>
-			<p><label for='Name'>Name (Required)</label></p>
+			<p><label for='Name'>Nombre (Requerido)</label></p>
 			<div class='clear'></div>
 			<p><input type='email' name='Email' id='Email' class='gris2' required></p>
-			<p><label for='Email'>Email (Required)</label></p>
+			<p><label for='Email'>Email (Requerido)</label></p>
 			<div class='clear'></div>
 			<p><input type='text' name='subject' id='subject' class='gris2' required></p>
-			<p><label for='subject'>Subject</label></p>
+			<p><label for='subject'>Asunto (Requerido)</label></p>
 			<div class='clear'></div>
 			<p><label for='message'></label></p>
 			<p><textarea  name='Message' id='Message' class='gris2'></textarea></p>
@@ -31,9 +31,12 @@
 
 		</form>
 		<div class='address'>
-			<p class='title'>Contact Information</span></p>
-			<p class='text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
-
+			<p class='title'>Información de Contacto</span></p>
+			<div class='text'>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; endif;?>
+			</div>
 			<div class='direccion'>
 				<p>Armistice Building</p>
 				<p>Kuningan Raya Street</p>

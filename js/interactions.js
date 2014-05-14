@@ -6,6 +6,42 @@ var timer;
 var aux;
 $(document).ready(function(e){
 	timer_banner_1=setTimeout("init_move_banner1()",8000);
+        
+      $("#contact #form1").submit(function(e){
+            e.preventDefault();
+            $.post($(this).attr("action"),{
+                  subject : $("#subject").val(),
+                 	Message : $("#Message").val(),
+                  Email : $("#Email").val(),
+                 	Name : $("#Name").val()   
+           	},function(r){
+                  $(".note").hide();
+                  $("." + r).show();
+           });
+     });	
+
+	$(".check-field").focus(function(e){
+		if($(this).hasClass("empty")){
+			$(this).val("").addClass("full");
+		}
+		if($(this).hasClass("label")){
+			$(this).prev().addClass("hidden");
+		}
+	}).focusout(function(e){
+		var val = $.trim($(this).val());
+		if(val == ""){
+			$(this).val($(this).attr("title"));
+			$(this).addClass("empty").removeClass("full");
+			if($(this).hasClass("label")){
+				$(this).prev().removeClass("hidden");
+			}
+		}else{
+			$(this).addClass("full").removeClass("empty");
+		}
+	});
+
+	$(".check-field").addClass("empty");
+      
 });
 function init_move_banner1(){
 	move_banner1(true);
