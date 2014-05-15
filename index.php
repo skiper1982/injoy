@@ -37,11 +37,11 @@
 			<div class='search'><?php get_search_form(); ?></div>
 			<div class='snet'>
 				<div class='facebook'><img src='<?php bloginfo('template_directory')?>/img/fb.png'>
-				<?php echo get_fans(); echo "Fans"?>
+				<p class="textoF"><?php echo get_fans(); ?> <p class="textoF">Fans</p>
 				</div>
 				<div class='twitter'><img src='<?php bloginfo('template_directory')?>/img/twitter2.png'>
-				<?php $twitter = twitter_user_info("lmartineza82");//pasamos el nombre de usuario de twitter y despues imprimimos el numero de seguidores 
-				echo $twitter['followers_count']. "Followers";?> 
+				<?php $twitter = twitter_user_info("lmartineza82"); ?> 
+				<p class="textoT"><?php echo $twitter['followers_count'] ?></p> <p class="textoT">Followers</p> 
 				</div>
 				<div class='irc'><img src='<?php bloginfo('template_directory')?>/img/rss.png'></div>
 				<div class='clear'></div>
