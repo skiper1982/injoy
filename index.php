@@ -45,7 +45,6 @@
 				</div>
 				<div class='irc'><img src='<?php bloginfo('template_directory')?>/img/rss.png'></div>
 				<div class='clear'></div>
-				
 			</div>
 			<div class='cat'>
 				<a href='#' class='tab on'>Recientes</a>
