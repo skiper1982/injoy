@@ -28,7 +28,33 @@ function service_info_func($attrs,$content = ""){
 		</div>
 	";
 }
+/*
+ * función que devuelve el numero de fans que se tienen en Facebook
+ * solo necesitamos el ID de facebook y que la cuenta tenga activado la opcion de recibir likes
+ * este link sirve http://findmyfacebookid.com/
+*/
+/*inicio funcion*/
+function get_fans(){
+	$page_id="198300823665756"; //ID FANS PAGE FACEBOOK//
+	$xml = @simplexml_load_file("http://api.facebook.com/restserver.php?method=facebook.fql.query&query=SELECT%20fan_count%20FROM%20page%20WHERE%20page_id=".$page_id."") or die ("a lot");
+	$fans = $xml->page->fan_count;
+	return $fans;
+	}
+/*fin funcion*/
 
+/*
+ * funcion que devuelve el numero de seguidores en twitter
+ * solo recibe por parametro el nombre de usuario de twitter 
+ * 
+*/
+/*inicio de la funcion*/
+function twitter_user_info($screen_name){
+
+    $data = file_get_contents("https://cdn.api.twitter.com/1/users/lookup.json?screen_name=" . $screen_name);
+    $data = json_decode($data, true);
+    return $data[0];
+}
+/*fin de la funcion*/
 function get_mes($mes,$lang)
 {
 	switch($mes)
