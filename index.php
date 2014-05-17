@@ -9,7 +9,7 @@
 <div id='blog'>
 	<div class='banner'>
 		<img src='<?php bloginfo('template_directory')?>/img/blogslide.png' class='on' />
-		<h1>BLOG</h1>
+		<h1><span>BLOG</span></h1>
 	</div>
 	<div class='container'>
 		<section class='posts'>
@@ -37,13 +37,13 @@
 			<div class='search'><?php get_search_form(); ?></div>
 			<div class='snet'>
 				<div class='facebook'><img src='<?php bloginfo('template_directory')?>/img/fb.png'>
-				<p class="textoF"><?php echo get_fans(); ?> <p class="textoF">Fans</p>
+				<p class="textoF"><?php echo get_fans(); ?> <br /><span class='small'>Fans</span></p>
 				</div>
 				<div class='twitter'><img src='<?php bloginfo('template_directory')?>/img/twitter2.png'>
 				<?php $twitter = twitter_user_info("lmartineza82"); ?> 
-				<p class="textoT"><?php echo $twitter['followers_count'] ?></p> <p class="textoT">Followers</p> 
+				<p class="textoT"><?php echo $twitter['followers_count'] ?><br /> <span class="small">Followers</span></p> 
 				</div>
-				<div class='irc'><img src='<?php bloginfo('template_directory')?>/img/rss.png'></div>
+				<!-- <div class='irc'><img src='<?php bloginfo('template_directory')?>/img/rss.png'></div> -->
 				<div class='clear'></div>
 			</div>
 			<div class='cat'>
