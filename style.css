@@ -12,3 +12,63 @@ License:
 License URI:
 	
 */
+
+@import url('css/reset.css');
+@import url('css/stickyFooter.css');
+
+
+@font-face {
+    font-family: "open sans";
+    src: url('css/opensans/OpenSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "open sans bold";
+    src: url('css/opensans/OpenSans-Bold.ttf') format("truetype");
+}
+
+
+
+body{font-size: 12pt;font-family:'open sans', Arial}
+a {text-decoration: none;font-family:'open sans',Arial}
+.clear{clear:both}
+
+/*Header*/
+header{height: 76px;background-color: #F2F2F2;width: 100%;position: relative;}
+/*header .container{width: 1669px;height: 76px;margin:0px auto;background-color: #F2F2F2}*/
+header .container{width: 100%;height: 76px;margin:0px auto;background-color: #F2F2F2}
+/*header a.logo{float: left;margin-left: 13.72%;width: 186px}*/
+header a.logo{float: left;margin-left: 5.99%;width: 186px;position: relative;}
+header a.logo img{width: 100%;position: absolute;z-index: 2}
+/*header nav{margin-left: 13.06%;margin-top: 23px;float: left}*/
+header nav{margin-left: 27%;margin-top: 23px;float: left}
+header nav li{float: left;margin-left: 10px;margin-right: 10px;padding-left: 14px;padding-right: 9px;height: 29px}
+header nav li.on{border-bottom: 3px solid #B0D847}
+header nav a{color:#6D6D6D;font-weight: bold;font-size: 13px;}
+header nav a.on{}
+
+/*General*/
+/*.content{position: relative;width: 1669px}*/
+.content{position: relative;width: 100%;margin-top: -51px}
+.line-top{height: 7px;background-color: rgba(255, 255, 255, 0.5);width: 100%;position: absolute;z-index: 1;top:0px;}
+.line-bottom{height: 7px;background-color: rgba(255, 255, 255, 0.5);width: 100%;position: absolute;z-index: 1;margin-top: -7px}
+.banner{position: relative;width: 100%}
+.banner img{width: 100%;float: left;}
+.content-white{position: absolute;height: 100%;width: 637px;background-color: rgba(255, 255, 255, 0.5);}
+.content-white h2{margin:128px auto 0;text-align: center;width: 441px;font-size: 22px;font-weight: bold;color: #4E4E4E}
+.content-white h3{margin:0px auto 50px;text-align: center;font-size: 19px;color: #4E4E4E;width: 313px;line-height: 26px}
+.content-white p{margin:0px auto;text-align: center;font-size: 17px;color:#6D6D6D;width: 441px;line-height: 25px;letter-spacing: 1px}
+
+/*Home*/
+
+/*specialist*/
+#specialist .pictures img{float: left;}
+#specialist .conten-text{width: 1150px;min-height: 232px;margin: 39px auto 0px;text-align: center;}
+#specialist .conten-text h1{font-size: 32px;margin-bottom: 9px;color:#4E4E4E;font-family: 'open sans bold'}
+#specialist .conten-text p{font-size: 18px;line-height: 25px;color:#6D6D6D;}
+#specialist .slide1{width: 38.04%}
+#specialist .slide2{width: 17.73%}
+
+footer{height:117px;}
+/*footer .container{width: 1669px;height: 115px;margin:0px auto;background-color: #F2F2F2;border-top: 4px solid #E4E4E4}*/
+footer .container{width: 100%;height: 115px;margin:0px auto;background-color: #F2F2F2;border-top: 4px solid #E4E4E4}
