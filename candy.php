@@ -4,56 +4,77 @@
 */
 ?>
 <?php get_header(); ?>
-<div class='clear'></div>
-<div id='contact'>
-	<div class='map'>
-		<iframe style='width:100%;border:none;overflow:hidden;height:100%'  src="https://maps.google.com.mx/maps/ms?msa=0&amp;msid=206393643423893916463.0004ea9e62a8c608dad9e&amp;ie=UTF8&amp;t=h&amp;ll=21.150635,-86.772079&amp;spn=0.06564,0.17149&amp;z=13&amp;output=embed"></iframe>
+<div id='candy' class='content'>
+	<div class='line-top'></div>
+	<div class='banner style1'>
+		<img src='<?php bloginfo('template_directory')?>/img/candy/candy-slide.png' class='on' />
+		<div class='content-white'>
+			<h2>BARRA DE POSTRES Y DULCES</h2>
+			<h3>En Cancún, Playa del Carmen, Tulúm, Riviera Maya y Chichen Itzá.</h3>
+			<p>Uno de los productos estrella de Injoy! Pasteles de Boda,
+				mesas de dulces y postres hermosamente
+				decoradas con deliciosas creaciones de postres y
+				dulces para deleitar a tus invitados.
+			</p>
+		</div>
+		<div class='clear'></div>
 	</div>
-	<section class='formulario'>
+	<div class='line-bottom'></div>
+	<div class='content-slider'>
 		<div class='container'>
-			<form id='form1' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
-			<p class='title'>Contáctanos:</p>
-			<p><input type='text' name='Name' id='Name' class='gris2' required></p>
-			<p><label for='Name'>Nombre (Requerido)</label></p>
-			<div class='clear'></div>
-			<p><input type='email' name='Email' id='Email' class='gris2' required></p>
-			<p><label for='Email'>Email (Requerido)</label></p>
-			<div class='clear'></div>
-			<p><input type='text' name='subject' id='subject' class='gris2' required></p>
-			<p><label for='subject'>Asunto (Requerido)</label></p>
-			<div class='clear'></div>
-			<p><label for='message'></label></p>
-			<p><textarea  name='Message' id='Message' class='gris2'></textarea></p>
-			<div class='clear'></div>
-			<p><input type="submit" class='submit gris2' value="Enviar"></p>
-			<p class='success note' style='display:none'><?= $lang=="es"?"Mensaje Enviado, Gracias !":"Mensaje Enviado, Gracias !"?></p>
-			<p class='error note' style='display:none'><?= $lang=="es"?"Error Intente de nuevo":"Error"?></p>
-
-		</form>
-		<div class='address'>
-			<p class='title'>Información de Contacto</span></p>
-			<div class='text'>
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<?php the_content(); ?>
-				<?php endwhile; endif;?>
-			</div>
-			<div class='direccion'>
-				<p>Armistice Building</p>
-				<p>Kuningan Raya Street</p>
-				<p>Jakarta, JKT 1220</p>
-				<p>PO BOX 1234</p>
-			</div>
-
-			<div class='telefonos'>
-				<p>Phone: + 621 55566671</p>
-			</div>
-			<div class='hours'>
-				<p>Mon-Fri: 8:00 until 17:00</p>
-				<p>Sat: 10:00 until 16:00</p>
-			</div>			
+			<a href='#' class='arrow-left'></a>
+			<p><span class='comilla1'></span>Buscas la mejor calidad en barras de dulces, postres y pasteles en Cancún, Riviera Maya o Playa del Carmen para tu boda o evento?
+				Injoy es la opción <span class='comilla2'></span></p>
+			<a href='#' class='arrow-right'></a>			
 		</div>
-		</div>
-	</section>
+	</div>
+	<div class='line-coffe'></div>
+	<div class='candy-image'>
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can1.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can4.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can7.png' />
+		<div class='clear'></div>
+	</div>
+	<div class='line-white'></div>
+	<div class='candy-menu'>
+		<div class='flower-left-top'></div>
+		<div class='flower-left-bottom'></div>
+		<div class='flower-right-top'></div>
+		<div class='flower-right-bottom'></div>
+		<img class='logo' src='<?php bloginfo('template_directory')?>/img/candy/logo.png' />
 
+		<div class='titles'>
+			<h2>GRAN SURTIDO DE DULCES Y POSTRES DE LA MEJOR CALIDAD:</h2>
+			<p>Dulces Tradicionales de Mexico</p>
+			<p>Pasteles para bodas y ocaciones especiales (Cumpleaños y Aniversarios)</p>
+		</div>
+		<div class='box-content'>
+			<div class='box first'>
+				<h2 class='title-desert'>DESSERT BUFFET</h2>
+				<p>Crea tu propio buffet de postres, pasteles,
+					macarrones, cake pops, browies, mini tortas y
+					mucho mas.. una gran 
+					variedad de postres para
+					crear la mesa mas dulce.</p>
+			</div>
+			<div class='box'>
+				<h2 class='title-cookie'>PASTELES</h2>
+				<p>No es una fiesta hasta 
+					que hay pastel! De 2, 3 o 
+					4 pisos lo que quieras lo hacemos.</p>
+			</div>
+			<div class='box last'>
+				<h2 class='title-candy'>CANDY BUFFET</h2>
+				<p>Ofrecemos cinco diferentes 
+					temas, diseñado 
+					y decorado con productos 
+					de alta calidad.
+				</p>
+			</div>
+		</div>
+		<div class='transparent-line'></div>
+	</div>
 </div>
 <?php get_footer(); ?>
