@@ -76,7 +76,7 @@ p span{float: left;}
 /*Home*/
 
 /*specialist*/
-#specialist{background-image: url(./img/home/pattern.png)}
+#specialist{background-image: url(./img/home/pattern.png);padding-bottom: 47px}
 #specialist .text-banner{background-color: #272727;width: 1280px;margin: 0px auto;height: 87px;color:#6D6D6D;text-align: center;}
 #specialist .text-banner p{width: 691px;padding-top:23px;font-family: 'open sans italic';font-size: 25px;margin: 0px auto;line-height: 27px}
 #specialist .text-banner p.author{font-size: 15px;text-align: right;padding: 0px}
@@ -144,7 +144,7 @@ p span{float: left;}
 #candy .candy-menu h2.title-cookie{color:#719A8C;border-bottom: 3px solid #719A8C;margin:8px 7px 12px;}
 #candy .candy-menu h2.title-candy{color:#939266;border-bottom: 3px solid #939266;margin:8px 7px 12px;}
 
-footer{height:133px;background-color: #F2F2F2;}
+footer{height:133px;background-color: #F2F2F2;border-top: 2px solid #EBEBEB}
 footer .paypal{background-image: url(./img/paypal.png);display: block;width: 51px;height: 32px;float: left;margin-top:9px;}
 footer .visa{background-image: url(./img/visa.png);display: block;width: 53px;height: 32px;float: left;margin-top:9px;}
 footer .masterdcard{background-image: url(./img/mastercard.png );display: block;width: 50px;height: 32px;float: left;margin-top:9px;}
