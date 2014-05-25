@@ -70,12 +70,31 @@ header nav a.on{}
 /*Home*/
 
 /*specialist*/
-#specialist .pictures img{float: left;}
-#specialist .conten-text{width: 1150px;min-height: 232px;margin: 0px auto;text-align: center;padding-top:39px;}
-#specialist .conten-text h1{font-size: 32px;margin-bottom: 9px;color:#4E4E4E;font-family: 'open sans bold'}
-#specialist .conten-text p{font-size: 18px;line-height: 25px;color:#6D6D6D;}
+#specialist{background-image: url(./img/home/pattern.png)}
+#specialist .text-banner{background-color: #272727;width: 1280px;margin: 0px auto;height: 87px}
+#specialist .pictures{width: 1280px;margin: 0px auto}
+#specialist .pictures img{float: left;height: 225px;}
+#specialist .conten-text{width: 920px;min-height: 232px;margin: 0px auto;text-align: center;padding-top:33px;}
+#specialist .conten-text h1{font-size: 27px;margin-bottom: -3px;color:#4E4E4E;font-family: 'open sans bold'}
+#specialist .conten-text p{font-size: 14px;line-height: 25px;color:#6D6D6D;}
+#specialist .conten-text h2{color: #D5A5BF;font-family: 'open sans bold';font-size: 21px}
 #specialist .slide1{width: 38.04%}
 #specialist .slide2{width: 17.73%}
+#specialist .column-left,#specialist .column-right{float: left;width: 33%;margin-top: 65px}
+#specialist .column-right{float: right;}
+#specialist .column-left h2, #specialist .column-left h3{text-align: left;}
+#specialist .column-left h4{font-size: 13px;font-style: italic;margin-bottom: 2px}
+#specialist .conten-text h3{color: #D5A5BF;font-family: 'open sans bold';font-size: 18px;text-align: right;margin-top: 17px;line-height: 18px;margin-bottom: -3px}
+#specialist .column-left h2{line-height: 18px}
+#specialist .column-left p{text-align: justify;font-size: 11px;line-height: 15px}
+#specialist .column-left ul,#specialist .column-right ul{line-height: 15px;font-size: 11px;font-family: 'open sans';color:#6D6D6D;text-align: left;margin-top: 15px;margin-bottom: 15px;margin-left:12px;list-style-type: disc;}
+#specialist .center-column{float: left;width: 34%}
+#specialist .center-column img{margin-top: 99px}
+
+#specialist .column-right h2{text-align: right;line-height: 18px}
+#specialist .column-right h4{font-size: 13px;font-style: italic;margin-bottom: 2px;text-align: right;}
+#specialist .column-right p{text-align: right;font-size: 11px;line-height: 15px}
+
 
 /*Catering*/
 #catering{padding-bottom: 19px}
