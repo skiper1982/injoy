@@ -77,9 +77,25 @@ header nav a.on{}
 #specialist .slide1{width: 38.04%}
 #specialist .slide2{width: 17.73%}
 
+/*Catering*/
+#catering{padding-bottom: 19px}
+#catering .container-catering{width: 1140px;margin: 0px auto;padding-top: 17px}
+#catering .container-catering .colum{width: 50%;float: left;padding-right: 13px}
+#catering .container-catering .colum.last{padding-right: 0px}
+#catering .container-catering .colum .banner1{width: 100%;margin-bottom: 14px;float: left;margin-bottom: 0px}
+#catering .container-catering .green-text{background-color: #A8D327;height: 114px;padding: 15px 10px;margin-bottom: 10px}
+#catering .container-catering .green-text p{color: white;font-size: 16px;line-height: 21px}
+#catering .container-catering .normal-text{padding: 19px 19px;background-color: #F2F2F2;float: left;height: 202px}
+#catering .container-catering .normal-text p{font-size: 13px;line-height: 18px;color:#6D6D6D;}
+#catering .container-catering img.chef{float: left;width: 202px;}
+#catering .container-catering img.pina{width: 355px;margin-left: 9px}
+#catering .container-catering p.vegans{font-size: 13px;width: 355px;margin-left: 211px;background-color: #F2F2F2;color: #6D6D6D}
+#catering .container-catering .servicios{float: left;background-color: #F2F2F2;width: 325px;height: 230px;margin-right: 12px;margin-bottom: 15px}
+#catering .container-catering .logo{float: left;background-color: #1B1B1B;width: 230px;height: 230px}
+
 /*Candy*/
 
-#candy .line-coffe,#catering .line-coffe{width: 100%;height: 4px;background-color: #3B3B3B}
+#candy .line-coffe,#catering .line-coffe{width: 100%;height: 4px;background-color: #292C31}
 #candy .line-white{width: 100%;height: 4px;background-color: white}
 #candy .candy-image,#catering .candy-image{margin:0px auto;width: 1280px}
 #candy .candy-image img,#catering .candy-image img{float: left;height: 221px}

@@ -38,44 +38,53 @@
 		<img src='<?php bloginfo('template_directory')?>/img/catering/cat7.png' />
 		<div class='clear'></div>
 	</div>
-	<div class='line-white'></div>
-	<div class='candy-menu'>
-		<div class='flower-left-top'></div>
-		<div class='flower-left-bottom'></div>
-		<div class='flower-right-top'></div>
-		<div class='flower-right-bottom'></div>
-		<img class='logo' src='<?php bloginfo('template_directory')?>/img/candy/logo.png' />
-
-		<div class='titles'>
-			<h2>GRAN SURTIDO DE DULCES Y POSTRES DE LA MEJOR CALIDAD:</h2>
-			<p>Dulces Tradicionales de Mexico</p>
-			<p>Pasteles para bodas y ocaciones especiales (Cumpleaños y Aniversarios)</p>
-		</div>
-		<div class='box-content'>
-			<div class='box first'>
-				<h2 class='title-desert'>DESSERT BUFFET</h2>
-				<p>Crea tu propio buffet de postres, pasteles,
-					macarrones, cake pops, browies, mini tortas y
-					mucho mas.. una gran 
-					variedad de postres para
-					crear la mesa mas dulce.</p>
+	<div class='container-catering'>
+		<div class='colum'>
+			<div class='green-text'>
+				<p>Hoy en dia la alimentación se ha convertido en un estilo
+					de vida, te ofrecemos una gran variedad de opciones de menus para
+					satisfacer tu palabra y compartir una experiencia culinaria única con 
+					tus invitados</p>
 			</div>
-			<div class='box'>
-				<h2 class='title-cookie'>PASTELES</h2>
-				<p>No es una fiesta hasta 
-					que hay pastel! De 2, 3 o 
-					4 pisos lo que quieras lo hacemos.</p>
-			</div>
-			<div class='box last'>
-				<h2 class='title-candy'>CANDY BUFFET</h2>
-				<p>Ofrecemos cinco diferentes 
-					temas, diseñado 
-					y decorado con productos 
-					de alta calidad.
+			<img class='banner1' src='<?php bloginfo('template_directory')?>/img/catering/cat8.png' />
+			<div class='normal-text'>
+				<p>
+					Mientras que nuestro staff te atiende con una sonrisa y la mejor actitud,
+					el chef se encuentra tras bambalinas creando sus platillos con la major calidad y
+					presentación
+					<br />
+					<br />
+					Somos una empresa completamente móvil, vamos a donde  nos pidan  que vayamos!
+					(Cancún - Isla mujeres - Playa del Carmen - Riviera Maya y Tulum) Contamos con
+					altos niveles de higiene y capacitación para nuestro staff para operar en cualquier
+					locación, ya sea en una boda de playa o en el salon  de un hotel.
 				</p>
 			</div>
 		</div>
-		<div class='transparent-line'></div>
+		<div class='colum last'>
+			<div class='servicios'>
+				<h2>SERVICIOS</h2>
+				<ul>
+					<li>Menús prediseñados</li>
+					<li>Buffet</li>
+					<li>Canapes / Houres de Oeuvre</li>
+					<li>Bebidas y cocteles</li>
+					<li>Chef a domicilio</li>
+					<li>Coffe break</li>
+				</ul>
+			</div>
+			<div class='logo'></div>
+
+
+			<div class='clear'></div>
+			<img class='chef' src='<?php bloginfo('template_directory')?>/img/catering/chef.png' />
+			<p class='vegans'>Para todos los amentes de los VEGGIES contamos con
+				menus vegetarianos, veganos y orgánicos.
+				Con deliciosos menus omita la carne/pollo o pescado y 
+				sorprenda a sus invitados con alimentos deferentes y saludables.</p>
+			<img class='pina' src='<?php bloginfo('template_directory')?>/img/catering/pinas.png' />
+		</div>		
 	</div>
+	<div class='clear'></div>
 </div>
 <?php get_footer(); ?>
