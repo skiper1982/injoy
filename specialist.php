@@ -27,7 +27,11 @@
 		<div class='clear'></div>
 	</div>
 	<div class='line-bottom'></div>
-	<div class='text-banner'></div>
+	<div class='text-banner'>
+		<p><span class='comilla1'></span> <span>Fuel el mejor día de mi vida, todo salio mejor de lo planedo!</span> <span class='comilla2'></span></p>
+		<div class='clear'></div>
+		<p class='author'>Carla García Cancún, México</p>
+	</div>
 	<div class='conten-text'>
 		<h1>PLANEAMOS CADA DETALLE PARA QUE DISFRUTES CADA MOMENTO</h1>
 		<p>Detrás  de cada evento exitoso un plan bien pensado para mantener todo en marcha, dentro del presupuesto y

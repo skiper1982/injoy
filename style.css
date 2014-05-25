@@ -27,6 +27,11 @@ License URI:
     src: url('css/opensans/OpenSans-Bold.ttf') format("truetype");
 }
 
+@font-face {
+    font-family: "open sans italic";
+    src: url('css/opensans/OpenSans-Italic.ttf') format("truetype");
+}
+
 
 
 body{font-size: 12pt;font-family:'open sans', Arial}
@@ -65,13 +70,16 @@ header nav a.on{}
 .content .content-slider .arrow-left {position:absolute;width: 40px;height: 40px;display: block;float: left;left: 73px;background: url(./img/arrow-left.png) no-repeat scroll 8px 0 #272727}
 .content .content-slider .arrow-right{position:absolute;width: 40px;height: 40px;display: block;float: right;right: 73px;background: url(./img/arrow-right.png) no-repeat scroll 8px 0 #272727}
 .content .content-slider p{position:relative;margin:0px auto;text-align: center;width: 77%;padding-top: 28px;font-style: italic;}
-.content .content-slider span.comilla1{background: url(./img/comillas1.png);width: 18px;height: 16px;display: block;float: left;}
-.content .content-slider span.comilla2{background: url(./img/comillas2.png);width: 18px;height: 16px;display: block;float: right;}
+span.comilla1{background: url(./img/comillas1.png);width: 18px;height: 16px;display: block;float: left;}
+span.comilla2{background: url(./img/comillas2.png);width: 18px;height: 16px;display: block;}
+p span{float: left;}
 /*Home*/
 
 /*specialist*/
 #specialist{background-image: url(./img/home/pattern.png)}
-#specialist .text-banner{background-color: #272727;width: 1280px;margin: 0px auto;height: 87px}
+#specialist .text-banner{background-color: #272727;width: 1280px;margin: 0px auto;height: 87px;color:#6D6D6D;text-align: center;}
+#specialist .text-banner p{width: 691px;padding-top:23px;font-family: 'open sans italic';font-size: 25px;margin: 0px auto;line-height: 27px}
+#specialist .text-banner p.author{font-size: 15px;text-align: right;padding: 0px}
 #specialist .pictures{width: 1280px;margin: 0px auto}
 #specialist .pictures img{float: left;height: 225px;}
 #specialist .conten-text{width: 920px;min-height: 232px;margin: 0px auto;text-align: center;padding-top:33px;}
