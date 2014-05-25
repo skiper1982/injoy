@@ -79,7 +79,7 @@ header nav a.on{}
 
 /*Candy*/
 
-#candy .line-coffe{width: 100%;height: 4px;background-color: #3B3B3B}
+#candy .line-coffe,#catering .line-coffe{width: 100%;height: 4px;background-color: #3B3B3B}
 #candy .line-white{width: 100%;height: 4px;background-color: white}
 #candy .candy-image,#catering .candy-image{margin:0px auto;width: 1280px}
 #candy .candy-image img,#catering .candy-image img{float: left;height: 221px}
@@ -92,16 +92,23 @@ header nav a.on{}
 #candy .candy-menu .logo{display:block;margin:0px auto;padding-top:12px;margin-bottom: 23px}
 #candy .candy-menu .titles{width: 100%;margin: 0px auto;height: 117px}
 #candy .candy-menu h2{text-align: center;font-family: 'open sans bold';color: #DFDFDF;font-size: 18px;letter-spacing: 1px;margin-bottom:11px }
-#candy .candy-menu p{text-align: center;color: #DFDFDF;font-size: 14px;line-height: 16px}
+#candy .candy-menu p{text-align: center;color: #DFDFDF;font-size: 14px;line-height: 16px;margin: 0px 7px}
 #candy .candy-menu .box-content{width: 687px;margin:0px auto;}
 #candy .candy-menu .box{width: 193px;height: 193px;display: block;border: 3px solid #DFDFDF;border-radius: 10px;float: left;}
 #candy .candy-menu .box-content .box:first-child{margin-right: 54px}
 #candy .candy-menu .box-content .box:last-child{margin-left: 54px}
+#candy .candy-menu h2.title-desert{color:#A96A73;border-bottom: 3px solid #A96A73;margin:8px 7px 12px;}
+#candy .candy-menu h2.title-cookie{color:#719A8C;border-bottom: 3px solid #719A8C;margin:8px 7px 12px;}
+#candy .candy-menu h2.title-candy{color:#939266;border-bottom: 3px solid #939266;margin:8px 7px 12px;}
 
 footer{height:133px;background-color: #F2F2F2;}
+footer .paypal{background-image: url(./img/paypal.png);display: block;width: 51px;height: 32px;float: left;margin-top:9px;}
+footer .visa{background-image: url(./img/visa.png);display: block;width: 53px;height: 32px;float: left;margin-top:9px;}
+footer .masterdcard{background-image: url(./img/mastercard.png );display: block;width: 50px;height: 32px;float: left;margin-top:9px;}
+footer .american{background-image: url(./img/american.png);display: block;width: 54px;height: 32px;float: left;margin-top:9px;}
 /*footer .container{width: 1669px;height: 115px;margin:0px auto;background-color: #F2F2F2;border-top: 4px solid #E4E4E4}*/
 footer .container{width: 980px;height: 133px;margin:0px auto;}
 footer .container p{font-size: 12px;color:#6D6D6D;}
-footer .container p.title{font-size: 14px;font-family: 'open sans bold'}
-footer .container .colum:first-child{margin-left: 30px}
+footer .container p.title{font-size: 14px;font-family: 'open sans bold';border-bottom: 2px solid;padding-right: 20px}
+footer .container .colum:first-child{margin-left: 10px}
 footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 45px;margin-top: 7px}

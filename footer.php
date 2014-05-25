@@ -11,15 +11,29 @@
 	</div>
 	<div class='colum'>
 		<p class='title'>Formas de Pago</p>
+		<p>
+			<span class='paypal'></span>
+			<span class='visa'></span>
+			<span class='masterdcard'></span>
+			<span class='american'></span>
+		</p>
 	</div>
 	<div class='colum'>
 		<p class='title'>Dirección</p>
+		<p>Cancún Quintana Roo <br />
+			México</p>
 	</div>		
 	<div class='colum'>
 		<p class='title'>Contacto</p>
+		<p>Tel: +52 998 880 81 53</p>
+		<p>info@injoy-weddings.com</p>	
 	</div>	
 	<div class='colum'>
 		<p class='title'>Redes Sociales</p>
+		<p>Facebook</p>
+		<p>Twitter</p>
+		<p>Pinterest</p>
+		<p>Instragram</p>
 	</div>	
 </div></footer>
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.js' ></script>

@@ -37,8 +37,8 @@
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can7.png' />
 		<div class='clear'></div>
 	</div>
-	<div class='line-white'></div>
 	<div class='candy-menu'>
+		<div class='line-top'></div>
 		<div class='flower-left-top'></div>
 		<div class='flower-left-bottom'></div>
 		<div class='flower-right-top'></div>
