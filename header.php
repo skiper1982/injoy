@@ -11,12 +11,16 @@
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico" type="image/x-icon"/>
 
 	<?php wp_head(); ?>	
+	
 </head>
 <body>
 	<input type='hidden' value='<?php bloginfo('template_directory'); ?>' id='template_directory'>
 <div id="wrap"><div id="main" class="clearfix"><div id="topBackRepeat">
 <header>
 	<div class='container'>
+		<div class="telefono">
+	<p>+52 (998) 881 87 53</p>
+	</div>
 		<a href='/' class='logo <?= $last ?>'><img src='<?php bloginfo('template_directory')?>/img/home/logo.png' /></a>
 	<nav>
 		<ul>
