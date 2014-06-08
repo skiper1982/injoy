@@ -4,18 +4,14 @@
 */
 ?>
 <?php get_header(); ?>
-<div id='candy' class='content'>
+<div id='candy' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
 	<div class='banner style1'>
 		<img src='<?php bloginfo('template_directory')?>/img/candy/candy-slide.png' class='on' />
 		<div class='content-white'>
-			<h2>BARRA DE POSTRES Y DULCES</h2>
-			<h3>En Cancún, Playa del Carmen, Tulúm, Riviera Maya y Chichen Itzá.</h3>
-			<p>Uno de los productos estrella de Injoy! Pasteles de Boda,
-				mesas de dulces y postres hermosamente
-				decoradas con deliciosas creaciones de postres y
-				dulces para deleitar a tus invitados.
-			</p>
+			<h2><?php echo get_post_meta(get_the_ID(),'banner_title',true); ?></h2>
+			<h3><?php echo get_post_meta(get_the_ID(),'banner_subtitle',true); ?></h3>
+			<p><?php echo get_post_meta(get_the_ID(),'banner_text',true); ?></p>
 		</div>
 		<div class='clear'></div>
 	</div>
@@ -46,9 +42,10 @@
 		<img class='logo' src='<?php bloginfo('template_directory')?>/img/candy/logo.png' />
 
 		<div class='titles'>
-			<h2>GRAN SURTIDO DE DULCES Y POSTRES DE LA MEJOR CALIDAD:</h2>
+			<?php the_content(); ?>
+			<!--h2>GRAN SURTIDO DE DULCES Y POSTRES DE LA MEJOR CALIDAD:</h2>
 			<p>Dulces Tradicionales de Mexico</p>
-			<p>Pasteles para bodas y ocaciones especiales (Cumpleaños y Aniversarios)</p>
+			<p>Pasteles para bodas y ocaciones especiales (Cumpleaños y Aniversarios)</p-->
 		</div>
 		<div class='box-content'>
 			<div class='box first'>
@@ -76,5 +73,5 @@
 		</div>
 		<div class='transparent-line'></div>
 	</div>
-</div>
+<?php endwhile; endif;?></div>
 <?php get_footer(); ?>

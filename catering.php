@@ -4,18 +4,14 @@
 */
 ?>
 <?php get_header(); ?>
-<div id='catering' class='content'>
+<div id='catering' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
 	<div class='banner style1'>
 		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-slide.png' class='on' />
 		<div class='content-white'>
-			<h2>BARRA DE POSTRES Y DULCES</h2>
-			<h3>En Cancún, Playa del Carmen, Tulúm, Riviera Maya y Chichen Itzá.</h3>
-			<p>Uno de los productos estrella de Injoy! Pasteles de Boda,
-				mesas de dulces y postres hermosamente
-				decoradas con deliciosas creaciones de postres y
-				dulces para deleitar a tus invitados.
-			</p>
+			<h2><?php echo get_post_meta(get_the_ID(),'banner_title',true); ?></h2>
+			<h3><?php echo get_post_meta(get_the_ID(),'banner_subtitle',true); ?></h3>
+			<p><?php echo get_post_meta(get_the_ID(),'banner_text',true); ?></p>
 		</div>
 		<div class='clear'></div>
 	</div>
@@ -78,13 +74,14 @@
 
 			<div class='clear'></div>
 			<img class='chef' src='<?php bloginfo('template_directory')?>/img/catering/chef.png' />
-			<p class='vegans'>Para todos los amentes de los VEGGIES contamos con
+			<div class='vegans'><p>Para todos los amentes de los VEGGIES contamos con
 				menus vegetarianos, veganos y orgánicos.
 				Con deliciosos menus omita la carne/pollo o pescado y 
 				sorprenda a sus invitados con alimentos deferentes y saludables.</p>
+			</div>
 			<img class='pina' src='<?php bloginfo('template_directory')?>/img/catering/pinas.png' />
 		</div>		
 	</div>
 	<div class='clear'></div>
-</div>
+<?php endwhile; endif;?></div>
 <?php get_footer(); ?>

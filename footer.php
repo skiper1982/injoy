@@ -4,10 +4,18 @@
 	<div class='colum'>
 		<p class='title'>Politicas</p>
 
-		<p>Politica de Huracanes</p>
-		<p>Politica de Privacidad</p>
-		<p>Terminos y condiciones</p>
-		<p>Politica de pagos</p>
+		<div class='popup_text'><p>Politica de Huracanes</p>
+			<div class='answer'></div>
+		</div>
+		<div class='popup_text'><p>Politica de Privacidad</p>
+			<div class='answer'></div>
+		</div>
+		<div class='popup_text'><p>Terminos y condiciones</p>
+			<div class='answer'></div>	
+		</div>
+		<div class='popup_text'><p>Politica de pagos</p>
+			<div class='answer'></div>
+		</div>
 	</div>
 	<div class='colum'>
 		<p class='title'>Formas de Pago</p>
