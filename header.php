@@ -11,6 +11,7 @@
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico" type="image/x-icon"/>
 
 	<?php wp_head(); ?>	
+	
 </head>
 <body>
 	<div id="overlay"><div class="cell"><div class='hidden ajax-loader'></div><div class='clickarea'></div><div class='box'><div class='close'></div><div class='content'></div></div></div></div>				
@@ -18,6 +19,9 @@
 <div id="wrap"><div id="main" class="clearfix"><div id="topBackRepeat">
 <header>
 	<div class='container'>
+		<div class="telefono">
+	<p>+52 (998) 881 87 53</p>
+	</div>
 		<a href='/' class='logo <?= $last ?>'><img src='<?php bloginfo('template_directory')?>/img/home/logo.png' /></a>
 	<nav>
 		<ul>
