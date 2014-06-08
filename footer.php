@@ -36,7 +36,7 @@
 		<p>Tel: +52 998 880 81 53</p>
 		<p>info@injoy-weddings.com</p>	
 	</div>	
-	<div class='colum'>
+	<div class='colum last'>
 		<p class='title'>Redes Sociales</p>
 		<a href="http://www.facebook.com" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
 		<a href="https://twitter.com/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
