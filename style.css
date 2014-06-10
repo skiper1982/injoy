@@ -49,7 +49,7 @@ header a.logo img{width: 100%;position: absolute;z-index: 2}
 /*header nav{margin-left: 13.06%;margin-top: 23px;float: left}*/
 header nav{margin-left: 27%;margin-top: 43px;float: left}
 header nav li{float: left;margin-left: 10px;margin-right: 10px;padding-left: 14px;padding-right: 9px;height: 29px}
-header nav li.on{border-bottom: 3px solid #d0d0d0}
+header nav li.on{border-bottom: 3px solid #cccccc}
 header nav a{color:#afafaf;font-weight: bold;font-size: 13px;}
 header nav a.on{}
 
@@ -61,9 +61,9 @@ header nav a.on{}
 .banner{position: relative;width: 1280px;margin:0px auto;}
 .banner img{width: 100%;float: left;}
 .content-white{position: absolute;height: 100%;width: 487px;background-color: rgba(255, 255, 255, 0.5);}
-.content-white h2{margin:108px auto 0;font-family: 'open sans bold';text-align: center;width: 441px;font-size: 17px;color: #353535}
-.content-white h3{margin:0px auto 50px;text-align: center;font-size: 14px;color: #353535;width: 261px;line-height: 19px}
-.content-white p{margin:0px auto;text-align: center;font-size: 13px;color:#353535;width: 357px;line-height: 20px;letter-spacing: 1px}
+.content-white h2{margin:108px auto 0;font-family: 'open sans bold';text-align: center;width: 441px;font-size: 17px;color: #202022}
+.content-white h3{margin:0px auto 50px;text-align: center;font-size: 14px;color: #7f7573;width: 261px;line-height: 19px}
+.content-white p{margin:0px auto;text-align: center;font-size: 13px;color:#63625e;width: 357px;line-height: 20px;letter-spacing: 1px}
 .content .content-slider{background-color: #F2F2F2;height: 94px}
 .content .content-slider .container{position: relative;height: 100%}
 .content .content-slider .arrow-left,.content .content-slider .arrow-right{bottom: 0px}
@@ -92,7 +92,6 @@ p span{color:#d5d5d5;float: left;}
 #specialist .slide2{width: 17.73%}
 #specialist .column-left,#specialist .column-right{float: left;width: 33%;margin-top: 65px}
 #specialist .column-right{float: right;}
-
 #specialist .column-right h2{color:#fb9abd;line-height: 18px}
 #specialist .column-right h4{color:#626262;font-size: 13px;font-style: italic;margin-bottom: 2px}
 #specialist .column-right p{color:#8a8a8a;text-align: justify;font-size: 11px;line-height: 15px}
@@ -115,16 +114,17 @@ p span{color:#d5d5d5;float: left;}
 #catering .container-catering .colum{width: 50%;float: left;padding-right: 13px}
 #catering .container-catering .colum.last{padding-right: 0px}
 #catering .container-catering .colum .banner1{width: 100%;margin-bottom: 14px;float: left;margin-bottom: 0px}
-#catering .container-catering .green-text{background-color: #b3c53f;height: 114px;padding: 15px 10px;margin-bottom: 10px}
+#catering .container-catering .green-text{background-color: #b6c630;height: 114px;padding: 15px 10px;margin-bottom: 10px}
 #catering .container-catering .green-text p{color: white;font-size: 16px;line-height: 21px}
 #catering .container-catering .normal-text{padding: 19px 19px;background-color: #fbf9fa;float: left;height: 202px}
 #catering .container-catering .normal-text p{font-size: 13px;line-height: 18px;color:#9a9a9a;}
 #catering .container-catering img.chef{float: left;width: 202px;}
 #catering .container-catering img.pina{width: 355px;margin-left: 9px}
 #catering .container-catering p.vegans{font-size: 13px;width: 355px;margin-left: 211px;background-color: #fbf9fa;color: #6D6D6D}
-#catering .container-catering .servicios{float: left;background-color: #F2F2F2;width: 325px;height: 230px;margin-right: 12px;margin-bottom: 15px}
-#catering .container-catering .servicios h2{color:#b3c53f;font-family: 'open sans bold';font-weight: bold;line-height: 58px; font-size: 27px; margin-left: 30px;}
-#catering .container-catering .servicios ul {line-height: 20px;font-size: 14px;font-family: 'open sans';color:#8a8a8a;text-align: left;margin-top: 0px;margin-bottom: 15px;margin-left:40px;list-style-type: disc;}
+#catering .container-catering .servicios{float: left;background-color: #f5f5f5;width: 325px;height: 230px;margin-right: 12px;margin-bottom: 15px}
+#catering .container-catering .servicios h2{color:#b3c426;font-family: 'open sans bold';font-weight: bold;line-height: 58px; font-size: 27px; margin-left: 30px;}
+#catering .container-catering .servicios ul {line-height: 20px;font-size: 14px;font-family: 'open sans';color:#8a8a8a;text-align: left;margin-top: 0px;margin-bottom: 15px;margin-left:40px;}
+#catering .container-catering .servicios li:before {content:'\2022';display: block;position: relative;max-width: 0px;max-height: 0px;left: -10px;top: -0px;color:#b3c426;font-size: 15px;}
 #catering .container-catering .logo{float: left;background-color: #1B1B1B;width: 230px;height: 230px}
 
 /*Candy*/
@@ -157,23 +157,8 @@ footer .visa{background-image: url(./img/visa.png);display: block;width: 53px;he
 footer .masterdcard{background-image: url(./img/mastercard.png );display: block;width: 50px;height: 32px;float: left;margin-top:9px;}
 footer .american{background-image: url(./img/american.png);display: block;width: 54px;height: 32px;float: left;margin-top:9px;}
 /*footer .container{width: 1669px;height: 115px;margin:0px auto;background-color: #F2F2F2;border-top: 4px solid #E4E4E4}*/
-footer .container{width: 980px;height: 133px;margin:0px auto;}
+footer .container{width: 995px;height: 133px;margin:0px auto;}
 footer .container p{font-size: 12px;color:#6D6D6D;}
 footer .container p.title{font-size: 14px;font-family: 'open sans bold';border-bottom: 2px solid;padding-right: 20px; margin-bottom: 10px;}
 footer .container .colum:first-child{margin-left: 10px}
-footer .container .colum.last{margin-right: 0px}
 footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 45px;margin-top: 7px;}
-footer .popup_text{cursor:pointer}
-footer .popup_text .answer{display:none}
-#overlay{position:fixed;top:0px;left:0px;width:100%;height:100%;background-image:url(./img/rolloverdarkpixel.png);z-index:3;display:none}
-#overlay .cell{display:table-cell;vertical-align:middle;}
-#overlay .clickarea{position:fixed;width:100%;height:100%;left:0px;top:0px;z-index:0}
-#overlay .box{max-height:600px;width:650px;background-color:white;border-radius:10px;-moz-border-radius:10px;margin:0px auto;padding:25px;font-size:12px;z-index:1;position:relative;display:none}
-#overlay .box .content{overflow:auto;max-height:461px;}
-#overlay .box h1{font-size:24px;font-weight:bold;margin:10px 0px}
-#overlay .box p{margin:7px 0px;}
-#overlay .box a{font-weight:bold}
-#overlay .box li{margin-left:20px;list-style-type:disc}
-#overlay .box .close{position:absolute;display:block;top:10px;right:10px;width:23px;height:23px;background-image:url(./img/customroute-closeoff.png)}
-#overlay .box .close:hover{background-image:url(./img/customroute-closeover.png)}
-
