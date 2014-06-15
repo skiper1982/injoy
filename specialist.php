@@ -10,7 +10,7 @@
 	<div class='banner style1'>
 		<img src='<?php bloginfo('template_directory')?>/img/home/slide-home.png' class='on' />
 		<div class='content-white'>
-			<h2><?php echo get_post_meta(get_the_ID(),"banner_title_{$lang}",true); ?></h2>
+			<p class='title'><?php echo get_post_meta(get_the_ID(),"banner_title_{$lang}",true); ?></p>
 			<h3><?php echo get_post_meta(get_the_ID(),"banner_subtitle_{$lang}",true); ?></h3>
 			<p><?php echo get_post_meta(get_the_ID(),"banner_text_{$lang}",true); ?></p>
 		</div>
