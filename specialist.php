@@ -4,14 +4,15 @@
 */
 ?>
 <?php get_header(); ?>
+<?php $lang = qtrans_getLanguage();?>
 <div id='specialist' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
 	<div class='banner style1'>
 		<img src='<?php bloginfo('template_directory')?>/img/home/slide-home.png' class='on' />
 		<div class='content-white'>
-			<h2><?php echo get_post_meta(get_the_ID(),'banner_title',true); ?></h2>
-			<h3><?php echo get_post_meta(get_the_ID(),'banner_subtitle',true); ?></h3>
-			<p><?php echo get_post_meta(get_the_ID(),'banner_text',true); ?></p>
+			<h2><?php echo get_post_meta(get_the_ID(),"banner_title_{$lang}",true); ?></h2>
+			<h3><?php echo get_post_meta(get_the_ID(),"banner_subtitle_{$lang}",true); ?></h3>
+			<p><?php echo get_post_meta(get_the_ID(),"banner_text_{$lang}",true); ?></p>
 		</div>
 		<div class='clear'></div>
 	</div>
@@ -24,9 +25,9 @@
 	</div>
 	<div class='line-bottom'></div>
 	<div class='text-banner'>
-		<p><span class='comilla1'></span> <span><?php echo get_post_meta(get_the_ID(),'quote_home',true); ?></span> <span class='comilla2'></span></p>
+		<p><span class='comilla1'></span> <span><?php echo get_post_meta(get_the_ID(),"quote_home_{$lang}",true); ?></span> <span class='comilla2'></span></p>
 		<div class='clear'></div>
-		<p class='author'><?php echo get_post_meta(get_the_ID(),'quote_author',true); ?></p>
+		<p class='author'><?php echo get_post_meta(get_the_ID(),"quote_author_{$lang}",true); ?></p>
 	</div>
 	<div class='conten-text'>
 		<?php the_content(); ?>	

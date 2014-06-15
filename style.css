@@ -97,7 +97,7 @@ p span{color:#d5d5d5;float: left;}
 #specialist .column-right h4{color:#626262;font-size: 13px;font-style: italic;margin-bottom: 2px}
 #specialist .column-right p{color:#8a8a8a;text-align: justify;font-size: 11px;line-height: 15px}
 #specialist .column-left h2, #special	ist .column-left h3{text-align: left;}
-#specialist .column-left h4{color:#626262;font-size: 13px;font-style: italic;margin-bottom: 2px}
+#specialist .column-left h4{color:#626262;font-size: 13px;font-style: italic;margin-bottom: 2px;text-align: left;}
 #specialist .conten-text h3{color: #fb9abd;font-family: 'open sans bold';font-size: 18px;text-align: right;margin-top: 17px;line-height: 18px;margin-bottom: -3px}
 #specialist .column-left h2{color:#fb9abd;line-height: 18px}
 #specialist .column-left p{color:#8a8a8a;text-align: justify;font-size: 11px;line-height: 15px}
@@ -162,7 +162,7 @@ footer .container p{font-size: 12px;color:#6D6D6D;}
 footer .container p.title{font-size: 14px;font-family: 'open sans bold';border-bottom: 2px solid;padding-right: 20px; margin-bottom: 10px;}
 footer .container .colum:first-child{margin-left: 10px}
 footer .container .colum.last{margin-right: 0px}
-footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 45px;margin-top: 7px;}
+footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 44px;margin-top: 7px;}
 footer .popup_text{cursor:pointer}
 footer .popup_text .answer{display:none}
 #overlay{position:fixed;top:0px;left:0px;width:100%;height:100%;background-image:url(./img/rolloverdarkpixel.png);z-index:3;display:none}
