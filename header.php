@@ -14,6 +14,7 @@
 	
 </head>
 <body>
+	<div id='size'>1000px</div>
 	<div id="overlay"><div class="cell"><div class='hidden ajax-loader'></div><div class='clickarea'></div><div class='box'><div class='close'></div><div class='content'></div></div></div></div>				
 	<input type='hidden' value='<?php bloginfo('template_directory'); ?>' id='template_directory'>
 <div id="wrap"><div id="main" class="clearfix"><div id="topBackRepeat">

@@ -11,7 +11,8 @@ function register_menus() {
 }
 
 function specialist_content_left_func($attrs,$content = ""){
-	return "<div class='column-left'>$content</div>";
+	$dir = get_bloginfo('template_directory');
+	return "<img src='{$dir}/img/home/dani.png' class='hidden-image-home'/><div class='column-left'>$content</div>";
 }
 function specialist_content_right_func($attrs,$content = ""){
 	return "<div class='column-right'>$content</div>";

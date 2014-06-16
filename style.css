@@ -32,6 +32,7 @@ License URI:
     src: url('css/opensans/OpenSans-Italic.ttf') format("truetype");
 }
 
+#size{position: fixed;top:0px;z-index: 1000}
 body{font-size: 12pt;font-family:'open sans', Arial}
 a {text-decoration: none;font-family:'open sans',Arial}
 .clear{clear:both}
@@ -39,12 +40,9 @@ a {text-decoration: none;font-family:'open sans',Arial}
 
 /*Header*/
 header{height: 86px;background-color: #F2F2F2;width: 100%;position: relative;}
-/*header .container{width: 1669px;height: 76px;margin:0px auto;background-color: #F2F2F2}*/
-header .container{width: 1280px;height: 86px;margin:0px auto;background-color: #F2F2F2}
-/*header a.logo{float: left;margin-left: 13.72%;width: 186px}*/
+header .container{width:100%;max-width: 1280px;height: 86px;margin:0px auto;background-color: #F2F2F2}
 header a.logo{float: left;margin-left: 4.99%;width: 142px;position: relative;}
 header a.logo img{width: 100%;position: absolute;z-index: 2}
-/*header nav{margin-left: 13.06%;margin-top: 23px;float: left}*/
 header nav{margin-left: 27%;margin-top: 43px;float: left}
 header nav li{float: left;margin-left: 10px;margin-right: 10px;padding-left: 14px;padding-right: 9px;height: 29px}
 header nav li.on{border-bottom: 3px solid #cccccc}
@@ -56,7 +54,7 @@ header nav a.on{}
 .content{position: relative;width: 100%;}
 .line-top{height: 5px;background-color: rgba(255, 255, 255, 0.5);width: 100%;position: absolute;z-index: 1;top:0px;}
 .line-bottom{height: 5px;background-color: rgba(255, 255, 255, 0.5);width: 100%;position: absolute;z-index: 1;margin-top: -5px}
-.banner{position: relative;width: 1280px;margin:0px auto;}
+.banner{position: relative;width:100%;max-width: 1280px;margin:0px auto;}
 .banner img{width: 100%;float: left;}
 .content-white{position: absolute;height: 100%;width: 487px;background-color: rgba(255, 255, 255, 0.5);}
 .content-white p.title{margin:108px auto 0;font-family: 'open sans bold';text-align: center;width: 441px;font-size: 17px;color: #202022}
@@ -77,14 +75,20 @@ p span{color:#d5d5d5;float: left;}
 .telefono p{color: white;font-family: 'open sans bold';text-align: center;font-size: 13px;}
 /*specialist*/
 #specialist{background-image: url(./img/home/pattern.png);padding-bottom: 47px}
-#specialist .text-banner{background-color: #272727;width: 1280px;margin: 0px auto;height: 87px;color:#6D6D6D;text-align: center;}
-#specialist .text-banner p{color:#6D6D6D;width: 691px;padding-top:23px;font-family: 'open sans italic';font-size: 25px;margin: 0px auto;line-height: 27px}
-#specialist .text-banner p.author{color:#dfdfdf;font-size: 15px;text-align: right;padding: 0px}
-#specialist .pictures{width: 1280px;margin: 0px auto}
-#specialist .pictures img{float: left;height: 225px;}
-#specialist .conten-text{width: 920px;min-height: 232px;margin: 0px auto;text-align: center;padding-top:33px;}
+#specialist .text-banner{background-color: #272727;width:100%;max-width: 1280px;margin: 0px auto;height: 87px;color:#6D6D6D;text-align: center;}
+#specialist .text-banner p{color:#6D6D6D;width:100%;max-width: 691px;padding-top:23px;font-family: 'open sans italic';font-size: 1.5em;margin: 0px auto;line-height: 27px}
+#specialist .text-banner p.author{color:#dfdfdf;font-size: 15px;text-align: right;padding: 0px;padding-right: 10px}
+#specialist .pictures{width:100%;max-width: 1280px;margin: 0px auto}
+#specialist .pictures img{float: left;max-height: 225px;}
+#specialist .pictures img.home-image1{width: 38%}
+#specialist .pictures img.home-image2{width: 17.9%}
+#specialist .pictures img.home-image3{width: 26.72%}
+#specialist .pictures img.home-image4{width: 17.35%;}
+#specialist .hidden-image-home{display: none;}
+
+#specialist .conten-text{width:100%;max-width: 920px;min-height: 232px;margin: 0px auto;text-align: center;padding:33px 15px 0px;}
 #specialist .conten-text h1{font-size: 27px;margin-bottom: -3px;color:#313131;font-family: 'open sans bold'}
-#specialist .conten-text p{font-size: 14px;line-height: 25px;color:#6D6D6D;}
+#specialist .conten-text p{font-size: 14px;line-height: 25px;color:#6D6D6D;text-align: justify;}
 #specialist .conten-text h2{font-family:'open sans', Arial;font-size: 14px;line-height: 25px;color:#6D6D6D;}
 #specialist .conten-text h3{color: #D5A5BF;font-family: 'open sans bold';font-size: 21px}
 #specialist .slide1{width: 38.04%}
@@ -149,28 +153,66 @@ p span{color:#d5d5d5;float: left;}
 #candy .candy-menu h2.title-cookie{color:#719A8C;border-bottom: 3px solid #719A8C;margin:8px 7px 12px;}
 #candy .candy-menu h2.title-candy{color:#939266;border-bottom: 3px solid #939266;margin:8px 7px 12px;}
 
-footer{height:133px;background-color: #F2F2F2;border-top: 2px solid #EBEBEB}
+footer{height:auto;min-height:133px;background-color: #F2F2F2;border-top: 2px solid #EBEBEB}
 footer .paypal{background-image: url(./img/paypal.png);display: block;width: 51px;height: 32px;float: left;margin-top:9px;}
 footer .visa{background-image: url(./img/visa.png);display: block;width: 53px;height: 32px;float: left;margin-top:9px;}
 footer .masterdcard{background-image: url(./img/mastercard.png );display: block;width: 50px;height: 32px;float: left;margin-top:9px;}
 footer .american{background-image: url(./img/american.png);display: block;width: 54px;height: 32px;float: left;margin-top:9px;}
 /*footer .container{width: 1669px;height: 115px;margin:0px auto;background-color: #F2F2F2;border-top: 4px solid #E4E4E4}*/
-footer .container{width: 995px;height: 133px;margin:0px auto;}
+footer .container{width:100%;max-width: 995px;height:auto;min-height: 133px;margin:0px auto;padding-left: 10px}
 footer .container p{font-size: 12px;color:#6D6D6D;}
 footer .container p.title{font-size: 14px;font-family: 'open sans bold';border-bottom: 2px solid;padding-right: 20px; margin-bottom: 10px;}
-footer .container .colum:first-child{margin-left: 10px}
+footer .container .colum:first-child{}
 footer .container .colum.last{margin-right: 0px}
-footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 44px;margin-top: 7px;}
+footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 44px;margin-top: 7px;min-height: 133px}
 footer .popup_text{cursor:pointer}
 footer .popup_text .answer{display:none}
 #overlay{position:fixed;top:0px;left:0px;width:100%;height:100%;background-image:url(./img/rolloverdarkpixel.png);z-index:3;display:none}
 #overlay .cell{display:table-cell;vertical-align:middle;}
 #overlay .clickarea{position:fixed;width:100%;height:100%;left:0px;top:0px;z-index:0}
-#overlay .box{max-height:600px;width:650px;background-color:white;border-radius:10px;-moz-border-radius:10px;margin:0px auto;padding:25px;font-size:12px;z-index:1;position:relative;display:none}
+#overlay .box{max-height:600px;width:100%;max-width:650px;background-color:white;border-radius:10px;-moz-border-radius:10px;margin:0px auto;padding:25px;font-size:12px;z-index:1;position:relative;display:none}
 #overlay .box .content{overflow:auto;max-height:461px;}
 #overlay .box h1{font-size:24px;font-weight:bold;margin:10px 0px}
 #overlay .box p{margin:7px 0px;}
 #overlay .box a{font-weight:bold}
 #overlay .box li{margin-left:20px;list-style-type:disc}
-#overlay .box .close{position:absolute;display:block;top:10px;right:10px;width:23px;height:23px;background-image:url(./img/customroute-closeoff.png)}
+#overlay .box .close{position:absolute;display:block;top:10px;right:10px;width:23px;height:23px;background-image:url(./img/customroute-closeoff.png);cursor: pointer;}
 #overlay .box .close:hover{background-image:url(./img/customroute-closeover.png)}
+
+/*resolutions*/
+@media screen and (max-width:1280px){
+	#specialist .conten-text h1{font-size: 25px}
+}
+@media screen and (max-width:1000px){
+	.content-white p.title{margin-top:72px;}
+	#specialist .conten-text h1{font-size: 23px}
+}
+@media screen and (max-width:900px){
+	.content-white p.title{margin-top:72px;}
+	.content-white h3{margin-bottom: 20px}
+	#specialist .conten-text h1{font-size: 23px}
+}
+@media screen and (max-width:820px){
+	#specialist .center-column{display: none}
+	#specialist .column-left, #specialist .column-right{width: 47%}
+}
+@media screen and (max-width:665px){
+	#specialist .text-banner p{font-size: 1.4em}
+	#specialist .column-left, #specialist .column-right{width: 100%;margin-top: 20px}
+	#specialist .column-right h4{text-align: left;}
+	#specialist .column-right h3{text-align: left;}
+	#specialist .column-right p{text-align: left;}
+	#specialist .hidden-image-home{display: block;margin: 0px auto;margin-top: 20px}
+	#overlay .box{width: 95%;min-width: 420px}
+}
+@media screen and (max-width:625px){
+	#specialist .text-banner p{font-size: 1.3em}
+}
+
+@media screen and (max-width:580px){
+	#specialist .text-banner p{font-size: 1.2em}
+}
+@media screen and (max-width:550px){
+	#specialist .text-banner p{font-size: 1em}
+	#specialist .text-banner p.author{font-size: 13px}
+}

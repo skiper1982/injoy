@@ -17,10 +17,10 @@
 		<div class='clear'></div>
 	</div>
 	<div class='pictures'>
-		<img src='<?php bloginfo('template_directory')?>/img/home/2.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/home/3.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/home/4.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/home/5.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/home/2.png' class='home-image1' />
+		<img src='<?php bloginfo('template_directory')?>/img/home/3.png' class='home-image2' />
+		<img src='<?php bloginfo('template_directory')?>/img/home/4.png' class='home-image3' />
+		<img src='<?php bloginfo('template_directory')?>/img/home/5.png' class='home-image4' />
 		<div class='clear'></div>
 	</div>
 	<div class='line-bottom'></div>

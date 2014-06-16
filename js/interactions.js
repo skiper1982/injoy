@@ -1,4 +1,9 @@
 $(document).ready(function(e){
+	$('#size').html($(window).width());
+	$(window).resize(function(e){
+		var width = $(window).width();
+		$('#size').html(width);
+	});
 	$(".popup_text").click(function(e){
 		e.preventDefault();
 		$("#overlay").css({"z-index":"7","display":'table'});
