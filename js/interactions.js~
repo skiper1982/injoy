@@ -1,0 +1,8 @@
+var timer_banner_1;
+var px1=0;
+var px2=73;
+var px3=-32;
+var timer;
+var aux;
+$(document).ready(function(e){
+}
