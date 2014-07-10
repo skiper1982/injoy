@@ -4,18 +4,15 @@
 */
 ?>
 <?php get_header(); ?>
-<div id='catering' class='content'>
+<?php $lang = qtrans_getLanguage();?>
+<div id='catering' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
 	<div class='banner style1'>
 		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-slide.png' class='on' />
 		<div class='content-white'>
-			<h2>BARRA DE POSTRES Y DULCES</h2>
-			<h3>En Cancún, Playa del Carmen, Tulúm, Riviera Maya y Chichen Itzá.</h3>
-			<p>Uno de los productos estrella de Injoy! Pasteles de Boda,
-				mesas de dulces y postres hermosamente
-				decoradas con deliciosas creaciones de postres y
-				dulces para deleitar a tus invitados.
-			</p>
+			<p class='title'><?php echo get_post_meta(get_the_ID(),"banner_title_{$lang}",true); ?></p>
+			<h3><?php echo get_post_meta(get_the_ID(),"banner_subtitle_{$lang}",true); ?></h3>
+			<p><?php echo get_post_meta(get_the_ID(),"banner_text_{$lang}",true); ?></p>
 		</div>
 		<div class='clear'></div>
 	</div>
@@ -23,8 +20,7 @@
 	<div class='content-slider'>
 		<div class='container'>
 			<a href='#' class='arrow-left'></a>
-			<p><span class='comilla1'></span>Buscas la mejor calidad en barras de dulces, postres y pasteles en Cancún, Riviera Maya o Playa del Carmen para tu boda o evento?
-				Injoy es la opción <span class='comilla2'></span></p>
+			<p><span class='comilla1'></span><?php echo get_post_meta(get_the_ID(),"quote_home_{$lang}",true); ?><span class='comilla2'></span></p>
 			<a href='#' class='arrow-right'></a>			
 		</div>
 	</div>
@@ -41,49 +37,37 @@
 	<div class='container-catering'>
 		<div class='colum'>
 			<div class='green-text'>
-				<p>Hoy en dia la alimentación se ha convertido en un estilo
-					de vida, te ofrecemos una gran variedad de opciones de menus para
-					satisfacer tu palabra y compartir una experiencia culinaria única con 
-					tus invitados</p>
+				<p><?php echo get_post_meta(get_the_ID(),"green_text_{$lang}",true); ?></p>
 			</div>
 			<img class='banner1' src='<?php bloginfo('template_directory')?>/img/catering/cat8.png' />
 			<div class='normal-text'>
-				<p>
-					Mientras que nuestro staff te atiende con una sonrisa y la mejor actitud,
-					el chef se encuentra tras bambalinas creando sus platillos con la major calidad y
-					presentación
+				<p><?php echo get_post_meta(get_the_ID(),"normal_text1_{$lang}",true); ?>
 					<br />
 					<br />
-					Somos una empresa completamente móvil, vamos a donde  nos pidan  que vayamos!
-					(Cancún - Isla mujeres - Playa del Carmen - Riviera Maya y Tulum) Contamos con
-					altos niveles de higiene y capacitación para nuestro staff para operar en cualquier
-					locación, ya sea en una boda de playa o en el salon  de un hotel.
+					<?php echo get_post_meta(get_the_ID(),"normal_text2_{$lang}",true); ?>
 				</p>
 			</div>
 		</div>
 		<div class='colum last'>
 			<div class='servicios'>
-				<h2>SERVICIOS</h2>
+				<h2><?php echo get_post_meta(get_the_ID(),"services_title_{$lang}",true); ?></h2>
 				<ul>
-					<li>Menús prediseñados</li>
-					<li>Buffet</li>
-					<li>Canapes / Houres de Oeuvre</li>
-					<li>Bebidas y cocteles</li>
-					<li>Chef a domicilio</li>
-					<li>Coffe break</li>
+					<li><?php echo get_post_meta(get_the_ID(),"services_option1_{$lang}",true); ?></li>
+					<li><?php echo get_post_meta(get_the_ID(),"services_option2_{$lang}",true); ?></li>
+					<li><?php echo get_post_meta(get_the_ID(),"services_option3_{$lang}",true); ?></li>
+					<li><?php echo get_post_meta(get_the_ID(),"services_option4_{$lang}",true); ?></li>
+					<li><?php echo get_post_meta(get_the_ID(),"services_option5_{$lang}",true); ?></li>
+					<li><?php echo get_post_meta(get_the_ID(),"services_option6_{$lang}",true); ?></li>
 				</ul>
 			</div>
 			<div class='logo'><img class='logo' src='<?php bloginfo('template_directory')?>/img/catering/veggie.png' /></div>
 			
 			<div class='clear'></div>
 			<img class='chef' src='<?php bloginfo('template_directory')?>/img/catering/chef.png' />
-			<p class='vegans'>Para todos los amentes de los VEGGIES contamos con
-				menus vegetarianos, veganos y orgánicos.
-				Con deliciosos menus omita la carne/pollo o pescado y 
-				sorprenda a sus invitados con alimentos deferentes y saludables.</p>
+			<p class='vegans'><?php echo get_post_meta(get_the_ID(),"veggies_text_{$lang}",true); ?></p>
 			<img class='pina' src='<?php bloginfo('template_directory')?>/img/catering/pinas.png' />
 		</div>		
 	</div>
 	<div class='clear'></div>
-</div>
+<?php endwhile; endif;?></div>
 <?php get_footer(); ?>

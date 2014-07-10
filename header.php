@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico" type="image/x-icon"/>
 
 	<?php wp_head(); ?>	
-	
+
 </head>
 <body>
 	<!-- <div id='size'>1000px</div> -->

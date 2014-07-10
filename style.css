@@ -69,8 +69,14 @@ header a.open_nav img{display: block;margin: 0px auto;width: 50px}
 .content .content-slider .arrow-right{position:absolute;width: 40px;height: 40px;display: block;float: right;right: 73px;background: url(./img/arrow-right.png) no-repeat scroll 8px 0 #272727}
 .content .content-slider p{color:#6D6D6D;position:relative;margin:0px auto;text-align: center;width: 77%;padding-top: 28px;font-style: italic;}
 span.comilla1{background: url(./img/comillas1.png);width: 18px;height: 16px;display: block;float: left;}
-span.comilla2{background: url(./img/comillas2.png);width: 18px;height: 16px;display: block;}
+span.comilla2{background: url(./img/comillas2.png);width: 18px;height: 16px;position: absolute;}
 p span{color:#d5d5d5;float: left;}
+/*content candy buffet*/
+.content-candy{position: absolute;height: 100%;max-width: 487px;width:100%;background-color: rgba(0, 0, 0, 0.3);}
+.content-candy p.title{margin:108px auto 0;font-family: 'open sans bold';text-align: center;width:100%;max-width: 441px;font-size: 17px;color: #ffffff}
+.content-candy h3{margin:0px auto 50px;text-align: center;font-size: 14px;color: #ffffff;width: 261px;line-height: 19px}
+.content-candy p{margin:0px auto;text-align: center;font-size: 13px;color:#ffffff;width: 357px;line-height: 20px;letter-spacing: 1px}
+/*en content candy bufett*/
 /*Home*/
 /*telefono*/
 .telefono {position: absolute;right: 5%;background-color: #282828;width: 150px;height: 32px;}
@@ -154,6 +160,39 @@ p span{color:#d5d5d5;float: left;}
 #candy .candy-menu h2.title-desert{color:#A96A73;border-bottom: 3px solid #A96A73;margin:8px 7px 12px;}
 #candy .candy-menu h2.title-cookie{color:#719A8C;border-bottom: 3px solid #719A8C;margin:8px 7px 12px;}
 #candy .candy-menu h2.title-candy{color:#939266;border-bottom: 3px solid #939266;margin:8px 7px 12px;}
+/*Contacto*/
+
+#contact .principal .container{padding: 0 0}
+#contact .principal h1{font-weight: 100;display: inline-block;vertical-align: top;width: 100%;font-size: 32px;line-height: 33px;color: #6e6e6e}
+#contact .principal h1 span{font-size: 43px;font-weight: 100}
+#contact .map{width: 100%;height: 374px;overflow: hidden;margen-bottom:0px;border: 1px solid black;}
+#contact .formulario{padding: 22px 0;color: #6E6E6E;width: 920px;margin: 0px 228px}
+#contact .formulario .container{overflow: hidden;width: 920px}
+#contact form{width: 52%;float: left;}
+#contact .address{float: right;width: 370px;height: 304px;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;background-color: #F9F9F9}
+#contact section.container{height: 1250px;padding-top: 55px}
+#contact form input{float: left;width: 194px;margin:0 12px 18px 0;height: 26px;padding: 0 11px;border: solid 1px #D4D4D4;border-radius: 6px}
+#contact form label{float: left; width: 40%;font-weight: 600;font-size: 12px}
+#contact form textarea{float: left;width: 333px;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+#contact h2{width: 95%;padding: 25px 2.5%;display: block;background:#E6E6E6;margin: 63px 0;font-size: 13px;font-weight: 600px;border-radius: 5px;}
+#contact form .title{margin-left: 3px;margin-bottom: 15px;margin-top:10px;font-size: 17px;font-weight: 700;color: black;line-height: 26px}
+#contact form .title span{font-size: 19px}
+#contact form .submit{cursor: pointer;width: 104px;margin-top: 20px;color: black;display: block;font-size: 14px;padding:  7px 0;text-align: center;border-radius: 7px;font-weight: 600;height: 35px;font-family: 'Titillium Web',sans-serif}
+#contact .address .title{font-size: 18px;font-weight: 700;line-height: 27px;color:black;margin-bottom: 16px }
+#contact .address .title span{font-size: 19px;font-weight: normal;}
+#contact .address .direccion, #contact .address .telefonos, #contact .address .hours{margin-bottom: 10px;padding-left: 22px}
+#contact .address .direccion p, #contact .address .telefonos p, contact .address .hours p{line-height: 16px}
+#contact .address .direccion{background: url(./img/house.png) no-repeat}
+#contact .address .telefonos{background: url(./img/telephone.png) no-repeat}
+#contact .address .hours{background: url(./img/clock.png) no-repeat}
+
+#contact .address .telefonos p{}
+#contact .address .telefonos .title{font-size: 20px;background: url(img/telephone_icon.png) no-repeat center left;height: 45px;padding: 8px 55px;margin-top: 30px}
+#contact .address  p{font-size: 12px;color:#9B9B9B;font-weight: lighter; margin-top:0px; line-height: 14px}
+#contact .address .tel{color: #6E6E6E}
+#contact .address .text{margin-bottom:20px}
+#contant .address .bottom{margin-bottom: 10px}
+/*fin contacto*/
 
 footer{height:auto;min-height:133px;background-color: #F2F2F2;border-top: 2px solid #EBEBEB}
 footer .paypal{background-image: url(./img/paypal.png);display: block;width: 51px;height: 32px;float: left;margin-top:9px;}
@@ -240,8 +279,6 @@ footer .popup_text .answer{display:none}
 @media screen and (max-width:480px){
 	.banner img{width: 200%}
 	.telefono{display: none;}
-	#specialist .text-banner p{font-size: 0.8em}
-	#specialist .text-banner p.author{font-size: 11px}	
 }
 @media screen and (max-width:320px){
 	.banner img{width: 240%}
