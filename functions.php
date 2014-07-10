@@ -3,6 +3,7 @@ add_action('init','register_menus');
 add_theme_support('post-thumbnails' );
 add_shortcode('specialist_left_info','specialist_content_left_func');
 add_shortcode('specialist_right_info','specialist_content_right_func');
+add_shortcode('home_banner','home_banner_func');
 function register_menus() {
 	register_nav_menus(array(
 		'header-menu' => __('Header Menu'),
