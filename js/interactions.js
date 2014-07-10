@@ -21,4 +21,18 @@ $(document).ready(function(e){
 		$(".details .content").html("");
 		$(".details").hide();
 	});
+	$(".open_nav").click(function(e)
+	{
+		e.preventDefault();
+		if($(this).hasClass("on"))
+		{
+			$("header").animate({right:100 + "%"},"fast");
+			$(this).removeClass("on");
+		}
+		else
+		{
+			$("header").animate({right:20 + "%"},"fast");
+			$(this).addClass("on");
+		}
+	});
 });
