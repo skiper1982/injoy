@@ -38,9 +38,9 @@
 	</div>	
 	<div class='colum last'>
 		<p class='title'>Redes Sociales</p>
-		<a href="http://www.facebook.com" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
-		<a href="https://twitter.com/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
-       	<a href="https://es.pinterest.com/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/pinterest.png'></a>
+		<a href="https://www.facebook.com/injoyevents" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
+		<a href="https://twitter.com/InJoyweddings" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
+       	<a href="http://www.pinterest.com/danyplanny/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/pinterest.png'></a>
         	<a href="https://plus.google.com/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/google+.png'></a>
   	</div>
   	<div class='clear'></div>	

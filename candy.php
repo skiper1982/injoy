@@ -7,8 +7,14 @@
 <?php $lang = qtrans_getLanguage();?>
 <div id='candy' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
-	<div class='banner style1'>
-		<img src='<?php bloginfo('template_directory')?>/img/candy/candy-slide.png' class='on' />
+	<div class='banner style1'><?php $on = 'on'; $style="style='display: inline;'"; if(get_post_gallery()) { ?>
+		<?php $gallery = get_post_gallery(get_the_ID(), false ); ?>
+		<?php  foreach( $gallery['src'] AS $src ){ ?>
+			<img src="<?php echo $src; ?>" class="<?= $on ?>" <?= $style ?> alt="Cancun Weddings" />
+			<?php $on = '';?>
+			<?php $style = ''; ?>
+		<?php } ?>		
+		<?php } ?>
 		<div class='content-candy'>
 			<p class='title'><?php echo get_post_meta(get_the_ID(),"banner_title_{$lang}",true); ?></p>
 			<h3><?php echo get_post_meta(get_the_ID(),"banner_subtitle_{$lang}",true); ?></h3>

@@ -1,4 +1,3 @@
-
 var px1=0;
 var px2=73;
 var px3=-32;
@@ -31,7 +30,7 @@ $(document).ready(function(e){
 $(document).ready(function(e){
 	$(".gallery img").load(function(e)
 	{
-		$(".gallery").height($(".gallery img").height());
+		$(".gallery").height(253);
 	});
 	banner_init();
 	$(".gallery .arrow.right").click(function(e){
@@ -68,6 +67,6 @@ function banner()
 function move_banner(actual,next)
 {
 	var imgs=$(".gallery img");
-	imgs.eq(actual).fadeOut(1000).removeClass('on');
+	imgs.eq(actual).fadeOut(1200).removeClass('on');
 	imgs.eq(next).fadeIn(1000).addClass('on');
 }

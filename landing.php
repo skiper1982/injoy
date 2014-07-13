@@ -23,6 +23,9 @@
 	<link href='<?php bloginfo('template_directory')?>/css/jquery.ui.css' rel='stylesheet'/>
 	<link href='<?php bloginfo('template_directory')?>/css/landing.css' rel='stylesheet'/>
 	<title><?php single_post_title(); ?></title>
+	<title><?php single_post_title(); ?></title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,100italic,300italic,400italic,900,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'>	
 
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.js' ></script>
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.ui.js'></script>
@@ -36,9 +39,18 @@
 </head>
 <body class='language_<?= $lang ?>'>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&appId=622309971197041&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>	
+
 <div id="opacity">
 	<div id="sign">
-		 <!-- <img src="<?php bloginfo("template_directory")?>/img/logo_header.png" alt="albatros"> -->
+
 	</div>
 </div>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -49,20 +61,19 @@
 			<?php if($lang=="en"){ ?>
 				<h2>Get in Touch!</h2>
 				<p>
-					<span>TEL: <?= get_post_meta(get_the_ID(),"landing_tel",true) ?></span><br />
+					<span>TEL: </span><?= get_post_meta(get_the_ID(),"landing_tel",true) ?></span>
 				</p>
 			<?php } else{ ?>
-				<h2>Contactanos!</h2>
+				<h2>¡Contactanos!</h2>
 				<p>
-					<span>TEL: +52 (998) 881 87 53</span> <br />
+					<span>TEL: </span>+52 (998) 881 87 53
 				</p>			
 			<?php } ?>
 		</div>
 	</div></header>
 	<div id='content'><div class='container'>
 		<div class='content-left'>
-			<div class='picture'></div>
-			<!-- <img src='<?php bloginfo('template_directory')?>/img/landing/people.png' alt='Weddings cancun'> -->
+			<img src='<?php bloginfo('template_directory')?>/img/landing/imgbegin.png' alt='Weddings cancun'>
 
 			<div class='testimonial'>
 				<p class='title'>Testimonials</p>
@@ -70,7 +81,7 @@
 				<p class='author'><?= get_post_meta(get_the_ID(),"landing_testimonial1_author_$lang",true) ?></p>
 
 				<p class='quote'><?= get_post_meta(get_the_ID(),"landing_testimonial2_$lang",true) ?></p>
-				<p class='author'><?= get_post_meta(get_the_ID(),"landing_testimonial2_author$lang",true) ?></p>
+				<p class='author'><?= get_post_meta(get_the_ID(),"landing_testimonial2_author_$lang",true) ?></p>
 			</div>
 		</div>
 		<div class='content-right'>
@@ -83,22 +94,19 @@
 				<p class='the_company_subtitle'><?= get_post_meta(get_the_ID(),"the_company_subtitle_$lang",true) ?></p>
 					
 				<p><?= get_post_meta(get_the_ID(),"the_company_content_$lang",true) ?></p>
-
-				<a href='https://zaviaerp.com/booking/albatrossailaway/<?= $lang ?>/cart/m=<?= $m ?>'><img src='<?php bloginfo('template_directory')?>/img/reserva-<?= $lang ?>.png' class='book-here-right'></a>
+				<?php $link = $lang == 'es'?"/es/":"/en/" ?>
+				<a href='<?php $link ?>'><img src='<?php bloginfo('template_directory')?>/img/landing/iwanttoknow_<?= $lang ?>.png' class='book-here-right'></a>
 			</div>
 			<div class='trip-advisor'>
-				
+				<div class="fb-like-box" data-href="https://www.facebook.com/injoyevents?fref=ts" data-width="580px" data-height="226px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>				
 			</div>
 		</div>
 		<div class='clear'></div>
 		<div class='banner gallery'>
-			<img class='on' src='<?php bloginfo('template_directory')?>/img/landing/banner/slie-landing-page.png' alt='Weddings cancun' />
-			<img src='<?php bloginfo('template_directory')?>/img/landing/banner/slie-landing-page1.png' alt='Weddings cancun' />
-			<img src='<?php bloginfo('template_directory')?>/img/landing/banner/slie-landing-page-2.png' alt='Weddings cancun' />
-			<img src='<?php bloginfo('template_directory')?>/img/landing/banner/slie-landing-page-3.png' alt='Weddings cancun' />
-			<img src='<?php bloginfo('template_directory')?>/img/landing/banner/slie-landing-page-4.png' alt='Weddings cancun' />
-			<img src='<?php bloginfo('template_directory')?>/img/landing/banner/slie-landing-page-5.png' alt='Weddings cancun' />
-			<img src='<?php bloginfo('template_directory')?>/img/landing/banner/slie-landing-page-7.png' alt='Weddings cancun' />
+			<img src='<?php bloginfo('template_directory')?>/img/landing/slide-home5.png' class='on' style="display:inline" alt='Weddings cancun' />
+			<img src='<?php bloginfo('template_directory')?>/img/landing/slide-home7.png' alt='Weddings cancun' />
+			<img src='<?php bloginfo('template_directory')?>/img/landing/candy-slide5.png' alt='Weddings cancun' />
+			<img src='<?php bloginfo('template_directory')?>/img/landing/slide-catering6.png' alt='Weddings cancun' />
 			<a href='#' class='arrow-left arrow left'></a>
 			<a href='#' class='arrow-right arrow right'></a>
 			<div class='clear'></div>
@@ -108,75 +116,80 @@
 		</div>
 		<section class='all_tours'>
 		<div class='container'>
-				<article class='_1'><a href='#' title='--'><a href='#'>
+				<?php $link = $lang == 'es'?"/es/banquetes-y-catering-en-cancun-y-riviera-maya/":"/en/catering-in-cancun-playa-del-carmen-and-riviera-maya/" ?>
+				<article class='_1'><a href='<?= $link ?>'>
 					<h3 class='color_1'>
 						<?php if($lang == 'en'){ ?>
-							CATERING
+							· CATERING ·
 						<?php }else{ ?>
-							BANQUETES
+							· BANQUETES ·
 						<?php } ?>
 					</h3>
-					<img />
+					<img src='<?php bloginfo('template_directory')?>/img/landing/banquetes.png' alt='Weddings cancun'>
 				</a></article>	
 
-				<article class='_2'><a href='#' title='--'><a href='#'>
+				<?php $link = $lang == 'es'?"/es/barra-de-postres-y-dulces-en-cancun-riviera-maya/":"/en/wedding-cakes-and-candy-buffet-in-cancun/" ?>
+				<article class='_2'><a href='<?= $link ?>'>
 					<h3 class='color_2'>
 						<?php if($lang == 'en'){ ?>
-							CANDY BUFFET
+							· CANDY BUFFET ·
 						<?php }else{ ?>
-							CANDY BUFFET
+							· CANDY BUFFET ·
 						<?php } ?>
 					</h3>
-					<img />
+					<img src='<?php bloginfo('template_directory')?>/img/landing/candy.png' alt='Weddings cancun'>
 				</a></article>	
 
-				<article class='_3'><a href='#' title='--'><a href='#'>
+				<?php $link = $lang == 'es'?"/es/":"/en/" ?>
+				<article class='_3'><a href='<?= $link ?>'>
 					<h3 class='color_3'>
 						<?php if($lang == 'en'){ ?>
-							PLACES
+							· PLACES ·
 						<?php }else{ ?>
-							LOCACIONES
+							· LOCACIONES ·
 						<?php } ?>
 					</h3>
-					<img />
+					<img src='<?php bloginfo('template_directory')?>/img/landing/locaciones.png' alt='Weddings cancun'>
 				</a></article>	
 
-				<article class='_4'><a href='#' title='--'><a href='#'>
+				<?php $link = $lang == 'es'?"/es/":"/en/" ?>
+				<article class='_4'><a href='<?= $link ?>'>
 					<h3 class='color_4'>
 						<?php if($lang == 'en'){ ?>
-							REAL WEDDINGS
+							· REAL WEDDINGS ·
 						<?php }else{ ?>
-							BODAS REALES
+							· BODAS REALES ·
 						<?php } ?>
 					</h3>
-					<img />
+					<img src='<?php bloginfo('template_directory')?>/img/landing/bodas.png' alt='Weddings cancun'>
 				</a></article>									
 
 
 				<div class='clear'></div>
 			<p class='bottom'><?= preg_replace("/\n/","<br/>",get_post_meta(get_the_ID(),"bottom_$lang",true)); ?></p>
 		</div>
-	</section>		
-	<a href='https://zaviaerp.com/booking/albatrossailaway/<?= $lang ?>/cart/m=<?= $m ?>'><img src='<?php bloginfo('template_directory')?>/img/reserva-<?= $lang ?>.png' class='book-here-bottom'></a>
+	</section>
+	<?php $link = $lang == 'es'?"/es/":"/en/" ?>		
+	<a href='<?= $link ?>'><img src='<?php bloginfo('template_directory')?>/img/landing/weddinggallery_<?= $lang ?>.png' class='book-here-bottom'></a>
 	</div></div>
 </div></div></div>
 <footer><div class='container'>
 	<div class='menu'>
 		<?php if($lang == 'en'){ ?>
-			<a href='http://www.albatrossailaway.com/'>Home</a>
-			<a href='http://www.albatrossailaway.com/about-us/'>About Us</a>
-			<a href='http://www.albatrossailaway.com/'>Privacy</a>
+			<a href='#'>Home</a>
+			<a href='#'>About Us</a>
+			<a href='#'>Privacy</a>
 		<?php }else{ ?>
-			<a href='http://www.albatrossailaway.com/es'>Inicio</a>
-			<a href='http://www.albatrossailaway.com/es/about-us/'>Sobre Nosotros</a>
-			<a href='http://www.albatrossailaway.com/'>Privacidad</a>		
+			<a href='#'>Inicio</a>
+			<a href='#'>Sobre Nosotros</a>
+			<a href='#'>Privacidad</a>		
 		<?php } ?>
 	</div>
 	<div class='social_buttons'>
-		<a href="http://www.facebook.com" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
-		<a href="https://twitter.com/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
-       	<a href="https://es.pinterest.com/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/pinterest.png'></a>
-        	<a href="https://plus.google.com/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/google+.png'></a>
+		<a href="https://www.facebook.com/injoyevents" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
+		<a href="https://twitter.com/InJoyweddings" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
+       	<a href="http://www.pinterest.com/danyplanny/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/pinterest.png'></a>
+        	<a href="#" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/google+.png'></a>
 		<div class='clear'></div>
 		<p>Cancún Q. Roo México</p>
 		<div class='clear'></div>

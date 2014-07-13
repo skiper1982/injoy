@@ -1,4 +1,7 @@
+var timer
 $(document).ready(function(e){
+	banner_init();
+
 	$('#size').html($(window).width());
 	$(window).resize(function(e){
 		var width = $(window).width();
@@ -36,3 +39,28 @@ $(document).ready(function(e){
 		}
 	});
 });
+function banner_init(){
+	timer=setTimeout("banner()",8000);
+}
+function banner(){	
+	timer=setTimeout("banner()",8000);
+	banner_right()
+}
+function move_banner(actual,next){
+	//var texts = $('.content .banner .text-banner')
+	var imgs=$(".content .banner img");
+	imgs.eq(actual).fadeOut(1200).removeClass('on');
+	imgs.eq(next).fadeIn(1000).addClass('on');
+
+	//texts .eq(actual).fadeOut(1200).removeClass('on');
+	//texts .eq(next).fadeIn(1000).addClass('on');
+
+}
+function banner_right(){
+	clearTimeout(timer);
+	var size=$(".content .banner img").size();
+	var actual=$(".content .banner img.on").index('.content .banner img');
+	var next=(actual + 1) % size;
+	move_banner(actual,next);
+	banner_init();
+}
