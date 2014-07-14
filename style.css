@@ -54,7 +54,7 @@ header a.open_nav img{display: block;margin: 0px auto;width: 50px}
 .content .content-slider .arrow-right{position:absolute;width: 40px;height: 40px;display: block;float: right;right: 73px;background: url(./img/arrow-right.png) no-repeat scroll 8px 0 #272727}
 .content .content-slider p{color:#6D6D6D;position:relative;margin:0px auto;text-align: center;width: 77%;padding-top: 28px;font-style: italic;}
 span.comilla1{background: url(./img/comillas1.png);width: 18px;height: 16px;float: left;}
-span.comilla2{background: url(./img/comillas2.png);width: 18px;height: 16px;}
+span.comilla2{background: url(./img/comillas2.png);width: 18px;height: 16px;position:absolute;}
 p span{color:#d5d5d5;float: left;display: inline;}
 /*content candy buffet*/
 .content-candy{position: absolute;height: 100%;max-width: 487px;width:100%;background-color: rgba(0, 0, 0, 0.3);}
