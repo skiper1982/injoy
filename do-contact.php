@@ -8,13 +8,23 @@ function send_email($to,$subject,$message,$from,$from_name){
 		$mailit = mail($to,$subject,$message,$headers);
 		return $mailit;
 	}
+	//$to = "info@injoy-weddings.com";
+
 	$to = "irving.sci@gmail.com";
+
+	$message = "Nombre: {$_POST['Name']} <br />";
+	$message .= "Email: {$_POST['Email']} <br />";
+	$message .= "Skype Name: {$_POST['skypename']} <br />";
+	$message .= "Nacionalidad: {$_POST['nationality']} <br />";
+	$message .= "Fecha del Evento: {$_POST['date']} <br />";
+	$message .= "Como se Entero de Nosotros: {$_POST['knowus']} <br />";
+	$message .= "Mensaje: {$_POST['Message']} <br />";
+
 	if($_POST['subject']!=""&&$_POST['Message']!=""&&$_POST['Email']!=""&&$_POST['Name']!=""){
 		$subject = $_POST['subject'];
-		$message = $_POST['Message'];
 		$from = $_POST['Email'];
 		$from_name = $_POST['Name'];
-		$result = send_email($to,$subject,$message,$from,$from_name);
+		$result = send_email($to,$subject,$message,"noreply@injoy-weddings.com",$from_name);
 	}else{$result=false;}
 	if($result){
 		echo 'success';

@@ -9,6 +9,24 @@
 	<title><?php single_post_title(); ?></title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'>
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico" type="image/x-icon"/>
+	<script async  data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+	<?php if (get_query_var('pagename') =='galeries' ){ ?>
+
+	<?php 
+		$picture = isset($_GET['picture'])?$_GET['picture']:'';
+		if($picture != ''){
+			$gallery = $_GET['gallery'];
+			?> 
+			<meta property="og:url" content="http://<?php echo $url ?>" />
+			<meta property="og:title" content="www.injoy-weddings.com" />
+			<meta property="og:description" content="" />
+			<meta property="og:image" content="http://injoy-weddings.com/wp-content/gallery/<?php echo $gallery ?>/thumbs/thumbs_<?php echo base64_decode($picture) ?>" />
+			<?php
+		}
+	?>
+	<?php } ?>
+
 
 	<?php wp_head(); ?>	
 
@@ -21,8 +39,11 @@
 <header>
 	<div class='container'>
 		<div class='menu2'>
+			<div class='language'>
+				<p><a href='<?= qTranslateSlug_getSelfUrl("es")?>'>ES</a> | <a href='<?= qTranslateSlug_getSelfUrl("en")?>'>EN</a></p>
+			</div>
 			<div class="telefono">
-				<p>+52 (998) 881 87 53</p>
+				<p><a href="tel:529988818753">+52 (998) 881 87 53</a></p>
 			</div>
 			<a href='#' class='open_nav'><img src='<?php bloginfo('template_directory')?>/img/nav-icon.png' alt='open'></a>
 			<a href='/' class='logo <?= $last ?>'><img src='<?php bloginfo('template_directory')?>/img/home/logo.png' /></a>
@@ -39,9 +60,9 @@
 					$last = "last";
 				}?>
 				<?php if($i == 3){ ?>
-					<li class='<?= $on ?>' ><a href='<?= $menu->url ?>' class='<?= $on ?> <?= $last ?>' ><?= $menu->title ?></a></li>
+					<li class='<?= $on ?>' ><a href='<?= $menu->url ?>' class='<?= $on ?> <?= $last ?>' <?= $menu->title =='BLOG'?"target='_blank'":"" ?> ><?= $menu->title ?></a></li>
 				<?php }else{ ?>
-					<li class='<?= $on ?>'><a href='<?= $menu->url ?>' class='<?= $on ?> <?= $last ?>'><?= $menu->title ?></a></li>
+					<li class='<?= $on ?>'><a href='<?= $menu->url ?>' class='<?= $on ?> <?= $last ?>' <?= $menu->title =='BLOG'?"target='_blank'":"" ?>><?= $menu->title ?></a></li>
 				<?php } ?>	
 			<?php $i++; }  ?>
 		</ul>
