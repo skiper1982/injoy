@@ -11,6 +11,17 @@
 	document.oncontextmenu = function(){return false}
 </script>
 <?php get_header(); ?>
+<?php
+		// get first all galleries & albums
+		$album_id = get_post_meta(get_the_ID(),"album_id",true);
+		$album = C_Album_Mapper::get_instance()->find($album_id);//El id 2 hace referencia al album de galeries
+		$gid = "";
+		$or = " gid = ";
+		foreach ($album->sortorder as $gallery_id) {
+			$gid .= $or.$gallery_id;
+			$or = " OR gid = ";
+		}
+?>
 <div id='sharelink' class='hidden'>
 	<p class='share-text'>Compartir via Link</p>
 	<div id='link-share'></div>
@@ -18,7 +29,7 @@
 	<a class='close' href='#'></a>
 </div>
 <div id='gallery'>
-<div class='container-galleries'>
+<div class='container-galleries'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<h1>GALERÍAS</h1>
 	<div class='dot-points'></div>
 	<div> <!-- en action para produccion se pone /galeria/ o el nombre de la pagina que usa este template -->
@@ -33,7 +44,7 @@
 	<form  method="get" action="<?= $action ?>">
 		<?php /*aqui hacemos la consulta de las galerias y las visualizamos en un combobox*/
 		global $wpdb;
-		$customers = $wpdb->get_results("SELECT gid,name,title FROM wp_ngg_gallery;");
+		$customers = $wpdb->get_results("SELECT gid,name,title FROM wp_ngg_gallery WHERE {$gid};");
 		/*la variable selección guardará el valor de seleccion del dropdown menu y asi mostrará el seleccionado*/
 		$seleccion = $_GET['gallery'];
 		
@@ -67,7 +78,7 @@
 		include_once('galleries-images.php'); 
 	}
 	?>
-</div>
+<?php endwhile; endif;?></div>
 <div class='clear'></div>
 </div>
 <?php get_footer(); ?>
