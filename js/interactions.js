@@ -1,7 +1,7 @@
 var timer
 $(document).ready(function(e){
 	banner_init();
-
+	init_reel_home_timer();
 	$('#size').html($(window).width());
 	$(window).resize(function(e){
 		var width = $(window).width();
@@ -71,7 +71,8 @@ $(document).ready(function(e){
 	$('#sharelink .close').click(function(e){
 		e.preventDefault();
 		$('#sharelink').addClass('hidden');
-	});	
+	});
+
 });
 jQuery.fn.selectText = function(){
    var doc = document;
@@ -89,6 +90,20 @@ jQuery.fn.selectText = function(){
        selection.addRange(range);
    }
 };
+function init_reel_home_timer(){
+	setTimeout("init_reel_home(691)",5000);	
+}
+function init_reel_home(left){
+	$('#specialist .text-banner .reel').animate({left:-1*left},"slow",function(){
+		left = left + 691
+		if(left <= 2073){
+			setTimeout("init_reel_home(" + left  + ")",5000);
+		}else{
+			$('#specialist .text-banner .reel').css('left',0);
+			setTimeout("init_reel_home(691)",5000);
+		}
+	});
+}
 function banner_init(){
 	timer=setTimeout("banner()",8000);
 }

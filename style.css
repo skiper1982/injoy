@@ -55,7 +55,8 @@ header a.open_nav img{display: block;margin: 0px auto;width: 50px}
 .content .content-slider p{color:#6D6D6D;position:relative;margin:0px auto;text-align: center;width: 77%;padding-top: 28px;font-style: italic;}
 span.comilla1{background: url(./img/comillas1.png);width: 18px;height: 16px;float: left;}
 span.comilla2{background: url(./img/comillas2.png);width: 18px;height: 16px;position:absolute;}
-p span{color:#d5d5d5;float: left;display: inline;}
+span.comilla{color: #FF61B4}
+/*p span{color:#d5d5d5;}*/
 /*content candy buffet*/
 .content-candy{position: absolute;height: 100%;max-width: 487px;width:100%;background-color: rgba(0, 0, 0, 0.3);}
 .content-candy p.title{margin:108px auto 0;font-family: 'open sans';font-weight:bold;text-align: center;width:100%;max-width: 441px;font-size: 17px;color: #ffffff}
@@ -74,8 +75,10 @@ p span{color:#d5d5d5;float: left;display: inline;}
 /*specialist*/
 #specialist{background-image: url(./img/home/pattern.png);padding-bottom: 47px}
 #specialist .text-banner{background-color: #272727;width:100%;margin: 0px auto;height: 87px;color:#6D6D6D;text-align: center;}
-#specialist .text-banner p{color:#6D6D6D;width:100%;max-width: 691px;padding-top:23px;font-family: 'open sans';font-style: italic;font-size: 1.5em;margin: 0px auto;line-height: 27px;font-weight: 100}
-#specialist .text-banner p.author{color:#dfdfdf;font-size: 15px;text-align: right;padding: 0px;padding-right: 10px}
+#specialist .text-banner p{color:#6D6D6D;width:100%;max-width: 691px;padding-top:23px;font-family: 'open sans';font-style: italic;font-size: 1.5em;margin: 0px auto;line-height: 27px;font-weight: 100;position: relative;float: left;}
+#specialist .text-banner span.author{color:#dfdfdf;font-size: 15px;text-align: right;padding: 0px;padding-right: 10px;display: block;}
+#specialist .text-banner .container{overflow: hidden;max-width: 691px;height: 87px;position: relative;}
+#specialist .text-banner .reel{width: 2764px;position: absolute;}
 #specialist .pictures{width:100%;max-width: 1280px;margin: 0px auto}
 #specialist .pictures img{float: left;max-height: 225px;}
 #specialist .pictures img.home-image1{width: 38%}
