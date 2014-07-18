@@ -39,24 +39,24 @@
 		</p>
 
 		<p>
-			<span class='comilla'></span>
+			<span class='comilla1'></span>
 			<?php echo get_post_meta(get_the_ID(),"quote_home2_{$lang}",true); ?> 
-			<span class='comilla'></span>
+			<span class='comilla2'></span>
 			<br />
 			<span class='author'><?php echo get_post_meta(get_the_ID(),"quote_author2_{$lang}",true); ?></span>
 		</p>
 
 		<p>
-			<span class='comilla'></span>
+			<span class='comilla1'></span>
 			<?php echo get_post_meta(get_the_ID(),"quote_home3_{$lang}",true); ?> 
-			<span class='comilla'></span>
+			<span class='comilla2'></span>
 			<br />
 			<span class='author'><?php echo get_post_meta(get_the_ID(),"quote_author3_{$lang}",true); ?></span>
 		</p>
 		<p>
-			<span class='comilla'></span>
+			<span class='comilla1'></span>
 			<?php echo get_post_meta(get_the_ID(),"quote_home4_{$lang}",true); ?> 
-			<span class='comilla'></span>
+			<span class='comilla2'></span>
 			<br />
 			<span class='author'><?php echo get_post_meta(get_the_ID(),"quote_author4_{$lang}",true); ?></span>
 		</p>		
