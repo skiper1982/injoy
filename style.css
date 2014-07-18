@@ -94,7 +94,7 @@ span.comilla{color: #FF61B4}
 #specialist .conten-text h3{color: #D5A5BF;font-family: 'open sans';font-weight:bold;font-size: 21px}
 #specialist .slide1{width: 38.04%}
 #specialist .slide2{width: 17.73%}
-#specialist .column-left,#specialist .column-right{float: left;width: 33%;margin-top: 65px}
+#specialist .column-left,#specialist .column-right{float: left;width: 33%;margin-top: 65px;text-align: right;}
 #specialist .column-right{float: right;}
 #specialist .column-right h3{color:#fb9abd;line-height: 18px}
 #specialist .column-right h5{color:#626262;font-size: 13px;font-style: italic;margin-bottom: 2px}
