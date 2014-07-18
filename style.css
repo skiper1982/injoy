@@ -75,7 +75,7 @@ span.comilla{color: #FF61B4}
 /*specialist*/
 #specialist{background-image: url(./img/home/pattern.png);padding-bottom: 47px}
 #specialist .text-banner{background-color: #272727;width:100%;margin: 0px auto;height: 87px;color:#6D6D6D;text-align: center;}
-#specialist .text-banner p{color:#6D6D6D;width:100%;max-width: 691px;padding-top:23px;font-family: 'open sans';font-style: italic;font-size: 1.5em;margin: 0px auto;line-height: 27px;font-weight: 100;position: relative;float: left;}
+#specialist .text-banner p{color:#6D6D6D;width:100%;max-width: 691px;padding-top:23px;font-family: 'open sans';font-style: italic;font-size: 1.4em;margin: 0px auto;line-height: 27px;font-weight: 100;position: relative;float: left;}
 #specialist .text-banner span.author{color:#dfdfdf;font-size: 15px;text-align: right;padding: 0px;padding-right: 10px;display: block;}
 #specialist .text-banner .container{overflow: hidden;max-width: 691px;height: 87px;position: relative;}
 #specialist .text-banner .reel{width: 2764px;position: absolute;}
@@ -96,13 +96,13 @@ span.comilla{color: #FF61B4}
 #specialist .slide2{width: 17.73%}
 #specialist .column-left,#specialist .column-right{float: left;width: 33%;margin-top: 65px;text-align: right;}
 #specialist .column-right{float: right;}
-#specialist .column-right h3{color:#fb9abd;line-height: 18px}
+#specialist .column-right h3{color:#FF61B4;line-height: 18px}
 #specialist .column-right h5{color:#626262;font-size: 13px;font-style: italic;margin-bottom: 2px}
 #specialist .column-right p{color:#8a8a8a;text-align: justify;font-size: 11px;line-height: 15px}
 #specialist .column-left h3, #special	ist .column-left h3{text-align: left;}
 #specialist .column-left h5{color:#626262;font-size: 13px;font-style: italic;margin-bottom: 2px;text-align: left;}
-#specialist .conten-text h4{color: #fb9abd;font-family: 'open sans';font-weight:bold;font-size: 18px;text-align: right;margin-top: 17px;line-height: 18px;margin-bottom: -3px}
-#specialist .column-left h3{color:#fb9abd;line-height: 18px}
+#specialist .conten-text h4{color: #FF61B4;font-family: 'open sans';font-weight:bold;font-size: 18px;text-align: right;margin-top: 17px;line-height: 18px;margin-bottom: -3px}
+#specialist .column-left h3{color:#FF61B4;line-height: 18px}
 #specialist .column-left p{color:#8a8a8a;text-align: justify;font-size: 11px;line-height: 15px}
 #specialist .column-left ul,#specialist .column-right ul{line-height: 15px;font-size: 11px;font-family: 'open sans';color:#8a8a8a;text-align: left;margin-top: 15px;margin-bottom: 15px;margin-left:12px;list-style-type: disc;}
 #specialist .center-column{float: left;width: 34%}
