@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html >
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<?php 
+		$uri = $_SERVER['REQUEST_URI'];
+		$server = $_SERVER['SERVER_NAME'];
+		$url = $server.$uri;
+	?>		
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 	<meta charset="UTF-8">
 	<meta name="google-site-verification" content="hpqpPlYGTWQCU3MlWkSgYh2xhmmHY8dtTfHec3L-2Rk" />
@@ -10,24 +15,20 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'>
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico" type="image/x-icon"/>
 	<script async  data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-
-	<?php if (get_query_var('pagename') =='galeries' ){ ?>
-
 	<?php 
-		$picture = isset($_GET['picture'])?$_GET['picture']:'';
-		if($picture != ''){
-			$gallery = $_GET['gallery'];
-			?> 
+		$picture = isset($_GET['picture']) && trim($_GET['picture']) != ''?$_GET['picture']:false;
+		$gallery = isset($_GET['gallery']) && trim($_GET['gallery']) != ''?$_GET['gallery']:false;
+		if($picture && $gallery ){ ?> 
 			<meta property="og:url" content="http://<?php echo $url ?>" />
 			<meta property="og:title" content="www.injoy-weddings.com" />
 			<meta property="og:description" content="" />
-			<meta property="og:image" content="http://injoy-weddings.com/wp-content/gallery/<?php echo $gallery ?>/thumbs/thumbs_<?php echo base64_decode($picture) ?>" />
+			<!--meta property="og:image" content="http://injoy-weddings.com/wp-content/gallery/<?php echo $gallery ?>/thumbs/thumbs_<?php echo base64_decode($picture) ?>" /-->
+			<meta property="og:image" content="http://injoy-weddings.com/wp-content/gallery/<?php echo $gallery ?>/<?php echo base64_decode($picture) ?>" />
+			<meta property="og:image:width" content="620" />
+			<meta property="og:image:height" content="541" />
 			<?php
 		}
 	?>
-	<?php } ?>
-
-
 	<?php wp_head(); ?>	
 
 </head>
