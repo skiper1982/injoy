@@ -229,7 +229,9 @@ footer .popup_text .answer{display:none}
 #sharelink .share-text{color:#898989;text-align: left;}
 #sharelink .close{background: url(img/equis.png);display: block;height: 0;overflow: hidden;padding: 22px 0 0;position: absolute;right: 11px;top:7px;width: 24px}
 #sharelink.hidden{display: none;}
-#see-link{background: url(img/icon-link.png) no-repeat;height: 20px;line-height: 20px;padding: 0 0 0 25px}
+
+#top-share{width: 100%;height: 35px;background:rgba(0,0,0,0.9);display: block;position: fixed;z-index: 100000;top:0;}
+#see-link{background: url(img/icon-link.png) no-repeat;height: 20px;line-height: 20px;padding: 0 0 0 25px;color: #F2F2F2;font-size: 13px;font-family: 'open sans';display: block;margin: 0px auto;display: block;width: 50px;margin-top: 8px}
 
 /*resolutions*/
 @media screen and (max-width:1280px){

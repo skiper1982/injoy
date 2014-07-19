@@ -38,6 +38,9 @@ $(document).ready(function(e){
 			$(this).addClass("on");
 		}
 	});
+	$('.thumbnail-info').click(function(e){
+		$('#top-share').removeClass('hidden');
+	})
 	$("#contact-form").submit(function(e){
 		e.preventDefault();
 		$('#contact-form .submit').addClass('hidden');
@@ -60,17 +63,12 @@ $(document).ready(function(e){
 	});
 	$("body").on("click",'#see-link',function(e){
 		e.preventDefault();
-		$('#sharelink').removeClass('hidden');
+		$('#sharelink').fadeIn('fast').removeClass('hidden');
 		$('#link-share').selectText();
-		//$(this).addClass('hidden');
-		//$('#copy-link2').removeClass('hidden');
-		//$('#input-link').removeClass('hidden');
-		//$('#input-link2').focus();
-		//$('#input-link2').select();
 	});
 	$('#sharelink .close').click(function(e){
 		e.preventDefault();
-		$('#sharelink').addClass('hidden');
+		$('#sharelink').fadeOut('fast').addClass('hidden');
 	});
 
 });

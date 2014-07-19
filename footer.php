@@ -34,12 +34,18 @@
             			var s = href.split('#')
             			var href_general2 = '';
             			href_general2 = href_general + '&picture=' + s[1];
-            			link = "<p><a href='#' id='see-link'><b>Link</b/></a></p>";
+            			//link = "<p><a href='#' id='see-link'><b>Link</b/></a></p>";
             			$('#link-share').html("http://" + href_general2);
-            			$('#fancybox-title').prepend(link);
+            			//$('#fancybox-title').prepend(link);
 					$('#link-share').selectText();
+					$('#see-link').attr('href',"http://" + href_general2);
             			//$('#fancybox-title').prepend("<a href='http://www.facebook.com/sharer.php?u=http://" + href_general2 + "' target='_blank' onClick='jsOnclick(this); return false' >Compartir en Facebook</a>");
                 			$('#fancybox-wrap').css('z-index', 10000);
+                			$('#top-share').removeClass('hidden');
+            		},
+            		onClosed:function(){
+    					$('#sharelink').fadeOut('fast').addClass('hidden');
+    					$('#top-share').addClass('hidden');
             		}
         		});
    		 	};
@@ -47,7 +53,8 @@
     			nextgen_fancybox_init();
 
     			$('body').on('click',"#fancybox-close",function(e){
-    				$('#sharelink').addClass('hidden');
+    				$('#sharelink').fadeOut('fast').addClass('hidden');
+    				$('#top-share').addClass('hidden');
     			});
 		});	
 	<?php } ?>
