@@ -42,6 +42,7 @@
             			//$('#fancybox-title').prepend("<a href='http://www.facebook.com/sharer.php?u=http://" + href_general2 + "' target='_blank' onClick='jsOnclick(this); return false' >Compartir en Facebook</a>");
                 			$('#fancybox-wrap').css('z-index', 10000);
                 			$('#top-share').removeClass('hidden');
+                			$('.fb-share-button').attr('data-href',"http://" + href_general2);
             		},
             		onClosed:function(){
     					$('#sharelink').fadeOut('fast').addClass('hidden');

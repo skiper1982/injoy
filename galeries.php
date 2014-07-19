@@ -22,9 +22,11 @@
 			$or = " OR gid = ";
 		}
 ?>
-<div id='top-share' class='hidden'>
+<div id='top-share' class='hidden'|>
 	<a href='#' id='see-link'>Link</a>
-
+	<div class='facebook'>
+		<div class="fb-share-button" data-type='button'  data-href="#" ></div>
+	</div>
 </div>
 <div id='sharelink' class='hidden'>
 	<p class='share-text'>Compartir via Link</p>

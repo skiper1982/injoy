@@ -39,7 +39,7 @@ $(document).ready(function(e){
 		}
 	});
 	$('.thumbnail-info').click(function(e){
-		$('#top-share').removeClass('hidden');
+		//$('#top-share').removeClass('hidden');
 	})
 	$("#contact-form").submit(function(e){
 		e.preventDefault();
