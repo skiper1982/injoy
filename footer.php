@@ -1,5 +1,6 @@
 </div></div></div>
 <?php wp_footer(); ?>
+	<?php $lang = qtrans_getLanguage();?>
 	<script type="text/javascript">
 		var template_directory = "<?php bloginfo('template_directory') ?>";
 		var href_general = "<?= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']   ?>"
@@ -42,7 +43,8 @@
             			//$('#fancybox-title').prepend("<a href='http://www.facebook.com/sharer.php?u=http://" + href_general2 + "' target='_blank' onClick='jsOnclick(this); return false' >Compartir en Facebook</a>");
                 			$('#fancybox-wrap').css('z-index', 10000);
                 			$('#top-share').removeClass('hidden');
-                			$('.fb-share-button').attr('data-href',"http://" + href_general2);
+                			var url  = "http://" + href_general2;
+                			$('.fb-share-button').attr('href', url) 
             		},
             		onClosed:function(){
     					$('#sharelink').fadeOut('fast').addClass('hidden');
@@ -62,23 +64,23 @@
 	</script>  
 <footer><div class='container'>
 	<div class='colum'>
-		<p class='title'>Politicas</p>
+		<p class='title'><?= $lang =='es'?'Politicas':'Policies' ?></p>
 
-		<div class='popup_text'><p>Politica de Huracanes</p>
+		<div class='popup_text'><p><?= $lang =='es'?'Política de Huracanes':'Hurricane Policy' ?></p>
 			<div class='answer'></div>
 		</div>
-		<div class='popup_text'><p>Politica de Privacidad</p>
+		<div class='popup_text'><p><?= $lang =='es'?'Política de Privacidad':'Privacy Policy' ?></p>
 			<div class='answer'></div>
 		</div>
-		<div class='popup_text'><p>Terminos y condiciones</p>
+		<div class='popup_text'><p><?= $lang =='es'?'Términos y condiciones':'Terms and Conditions' ?></p>
 			<div class='answer'></div>	
 		</div>
-		<div class='popup_text'><p>Politica de pagos</p>
+		<div class='popup_text'><p><?= $lang =='es'?'Política de pagos':'Payment Policy' ?>Politica de pagos</p>
 			<div class='answer'></div>
 		</div>
 	</div>
 	<div class='colum'>
-		<p class='title'>Formas de Pago</p>
+		<p class='title'><?= $lang =='es'?'Formas de Pago':'Payment Methods' ?></p>
 		<p>
 			<span class='paypal'></span>
 			<span class='visa'></span>
@@ -87,17 +89,17 @@
 		</p>
 	</div>
 	<div class='colum'>
-		<p class='title'>Dirección</p>
+		<p class='title'><?= $lang =='es'?'Dirección':'Address' ?></p>
 		<p>Cancún Quintana Roo <br />
 			México</p>
 	</div>		
 	<div class='colum'>
-		<p class='title'>Contacto</p>
+		<p class='title'><?= $lang =='es'?'Contacto':'Contact' ?></p>
 		<p><a href="tel:529988818753">Tel: +52 998 880 81 53</a></p>
 		<p><a href='mailto:info@injoy-weddings.com'>info@injoy-weddings.com</a></p>	
 	</div>	
 	<div class='colum last'>
-		<p class='title'>Redes Sociales</p>
+		<p class='title'><?= $lang =='es'?'Redes Sociales':'Social Networks' ?></p>
 		<a href="https://www.facebook.com/injoyevents" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
 		<a href="https://twitter.com/InJoyweddings" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
        	<a href="http://www.pinterest.com/danyplanny/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/pinterest.png'></a>
