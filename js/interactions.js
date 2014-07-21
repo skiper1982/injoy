@@ -127,3 +127,56 @@ function banner_right(){
 	move_banner(actual,next);
 	banner_init();
 }
+
+jQuery(document).ready(function($) {
+    // $() will work as an alias for jQuery() inside of this function
+    $('#carousel').carouFredSel({
+			width: '100%',
+			
+			items: {
+                   visible: 6,
+                   start: 0
+                   },
+		    scroll : {
+					items		: 1,
+					duration: 1000
+					},
+			prev : { 
+				button : "#carousel_prev",
+				key : "left",
+				items           : 1,
+			},
+			next : { 
+				button : "#carousel_next",
+				key : "right",
+				items           : 1,
+			}
+		});
+});
+
+jQuery(document).ready(function($) {
+    // $() will work as an alias for jQuery() inside of this function
+    $('#carocandy').carouFredSel({
+			//width: '100%',
+			align: 'left',
+			items: {
+                   visible: 5,
+                   start:0
+                   },
+			
+            scroll : {
+					items: 1,
+					duration: 1000
+					},
+			prev : { 
+				button : "#carocandy_prev",
+				key : "left",
+				items           : 1,
+			},
+			next : { 
+				button : "#carocandy_next",
+				key : "right",
+				items           : 1,
+			}
+		});
+});

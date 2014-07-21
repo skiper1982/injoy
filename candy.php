@@ -25,19 +25,20 @@
 	<div class='line-bottom'></div>
 	<div class='content-slider'>
 		<div class='container'>
-			<a href='#' class='arrow-left'></a>
+			<a href='#' class='arrow-left' id='carocandy_prev'></a>
 			<p><span class='comilla1'></span><?php echo get_post_meta(get_the_ID(),"quote_home_{$lang}",true); ?><span class='comilla2'></span></p>
-			<a href='#' class='arrow-right'></a>			
+			<a href='#' class='arrow-right' id='carocandy_next'></a>			
 		</div>
 	</div>
 	<div class='line-coffe'></div>
-	<div class='candy-image'>
+	<div id='carocandy'>
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can1.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can4.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can7.png' />
-		<div class='clear'></div>
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' />
 	</div>
 	<div class='candy-menu'>
 		<div class='line-top'></div>
