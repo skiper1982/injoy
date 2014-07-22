@@ -25,20 +25,20 @@
 	<div class='line-bottom'></div>
 	<div class='content-slider'>
 		<div class='container'>
-			<a href='#' class='arrow-left'></a>
+			<a href='#' class='arrow-left' id='carousel_prev'></a>
 			<p><span class='comilla1'></span><?php echo get_post_meta(get_the_ID(),"quote_home_{$lang}",true); ?><span class='comilla2'></span></p>
-			<a href='#' class='arrow-right'></a>			
+			<a href='#' class='arrow-right' id='carousel_next'></a>			
 		</div>
 	</div>
 	<div class='line-coffe'></div>
-	<div class='candy-image'>
+	<div id='carousel'>
 		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/catering/cat2.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/catering/cat3.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/catering/cat5.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/catering/cat6.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/catering/cat7.png' />
-		<div class='clear'></div>
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' />
 	</div>
 	<div class='container-catering'>
 		<div class='colum'>

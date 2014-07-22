@@ -1,6 +1,5 @@
 </div></div></div>
 <?php wp_footer(); ?>
-	<?php $lang = qtrans_getLanguage();?>
 	<script type="text/javascript">
 		var template_directory = "<?php bloginfo('template_directory') ?>";
 		var href_general = "<?= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']   ?>"
@@ -43,8 +42,7 @@
             			//$('#fancybox-title').prepend("<a href='http://www.facebook.com/sharer.php?u=http://" + href_general2 + "' target='_blank' onClick='jsOnclick(this); return false' >Compartir en Facebook</a>");
                 			$('#fancybox-wrap').css('z-index', 10000);
                 			$('#top-share').removeClass('hidden');
-                			var url  = "http://" + href_general2;
-                			$('.fb-share-button').attr('href', url) 
+                			$('.fb-share-button').attr('data-href',"http://" + href_general2);
             		},
             		onClosed:function(){
     					$('#sharelink').fadeOut('fast').addClass('hidden');
@@ -62,6 +60,8 @@
 		});	
 	<?php } ?>
 	</script>  
+	 
+	
 <footer><div class='container'>
 	<div class='colum'>
 		<p class='title'><?= $lang =='es'?'Politicas':'Policies' ?></p>
@@ -80,7 +80,7 @@
 		</div>
 	</div>
 	<div class='colum'>
-		<p class='title'><?= $lang =='es'?'Formas de Pago':'Payment Methods' ?></p>
+		<p class='title'><?= $lang =='es'?'Formas de Pago':'Payment methods' ?></p>
 		<p>
 			<span class='paypal'></span>
 			<span class='visa'></span>
@@ -99,7 +99,7 @@
 		<p><a href='mailto:info@injoy-weddings.com'>info@injoy-weddings.com</a></p>	
 	</div>	
 	<div class='colum last'>
-		<p class='title'><?= $lang =='es'?'Redes Sociales':'Social Networks' ?></p>
+		<p class='title'>Redes Sociales</p>
 		<a href="https://www.facebook.com/injoyevents" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
 		<a href="https://twitter.com/InJoyweddings" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
        	<a href="http://www.pinterest.com/danyplanny/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/pinterest.png'></a>
@@ -112,5 +112,6 @@
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.validate.js'></script>
 	<script src='<?php bloginfo('template_directory') ?>/js/jQuery.migrate.min.js'></script>
 	<script src='<?php bloginfo('template_directory') ?>/js/interactions.js'></script>
+	<script src='<?php bloginfo('template_directory') ?>/js/jquery.carouFredSel-6.2.1-packed.js'></script>
 </body>
 </html>
