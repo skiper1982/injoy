@@ -31,7 +31,7 @@
 		</div>
 	</div>
 	<div class='line-coffe'></div>
-	<div id='carocandy'>
+	<div class='container-candy'><div id='carocandy'>
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can1.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can4.png' />
@@ -39,7 +39,7 @@
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can7.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' />
 		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' />
-	</div>
+	</div><div class='clear'></div></div>
 	<div class='candy-menu'>
 		<div class='line-top'></div>
 		<div class='flower-left-top'></div>
