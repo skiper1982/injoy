@@ -32,13 +32,13 @@
 	</div>
 	<div class='line-coffe'></div>
 	<div class='container-candy'><div id='carocandy'>
-		<img src='<?php bloginfo('template_directory')?>/img/candy/can1.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/candy/can4.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/candy/can7.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can1.png' width='258' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' width='258' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can4.png' width='258' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' width='258' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can7.png' width='258' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can2.png' width='258' />
+		<img src='<?php bloginfo('template_directory')?>/img/candy/can5.png' width='258' />
 	</div><div class='clear'></div></div>
 	<div class='candy-menu'>
 		<div class='line-top'></div>

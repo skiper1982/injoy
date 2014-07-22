@@ -132,13 +132,13 @@ jQuery(document).ready(function($) {
     // $() will work as an alias for jQuery() inside of this function
     $('#carousel').carouFredSel({
 			width: '100%',
-			
 			items: {
                    visible: 6,
                    start: 0
                    },
 		    scroll : {
 					items		: 1,
+					easing          : "elastic",
 					duration: 1000
 					},
 			prev : { 

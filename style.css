@@ -155,6 +155,7 @@ span.comilla{color: #FF61B4}
 #candy .candy-menu h2.title-cookie{color:#78d2b8;border-bottom: 3px solid #719A8C;margin:8px 7px 12px;}
 #candy .candy-menu h2.title-candy{color:#c5bf4f;border-bottom: 3px solid #939266;margin:8px 7px 12px;}
 #candy .container-candy{max-width: 1280px;width:100%;margin: 0px auto;overflow: hidden;}
+#candy .container-candy img{float: left;}
 /*Contacto*/
 
 #contact .principal .container{padding: 0 0}
