@@ -11,6 +11,7 @@
 	document.oncontextmenu = function(){return false}
 </script>
 <?php get_header(); ?>
+<?php $lang = qtrans_getLanguage();?>
 <?php
 		// get first all galleries & albums
 		$album_id = get_post_meta(get_the_ID(),"album_id",true);
@@ -24,9 +25,9 @@
 ?>
 <div id='top-share' class='hidden'|>
 	<a href='#' id='see-link'>Link</a>
-	<div class='facebook'>
+	<!--div class='facebook'>
 		<div class="fb-share-button" data-type='button'  data-href="#" ></div>
-	</div>
+	</div-->
 </div>
 <div id='sharelink' class='hidden'>
 	<p class='share-text'>Compartir via Link</p>
@@ -36,7 +37,7 @@
 </div>
 <div id='gallery'>
 <div class='container-galleries'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<h1>GALERÍAS</h1>
+	<h1><?php the_title() ?></h1>
 	<div class='dot-points'></div>
 	<div> <!-- en action para produccion se pone /galeria/ o el nombre de la pagina que usa este template -->
 	<?php $lang = qtrans_getLanguage();?>
