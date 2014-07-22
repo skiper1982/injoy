@@ -5,6 +5,9 @@ add_shortcode('specialist_content','specialist_content_func');
 add_shortcode('specialist_left_info','specialist_content_left_func');
 add_shortcode('specialist_right_info','specialist_content_right_func');
 add_shortcode('home_banner','home_banner_func');
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'resize-cateting-img', 214, 225 );
+}
 function register_menus() {
 	register_nav_menus(array(
 		'header-menu' => __('Header Menu'),

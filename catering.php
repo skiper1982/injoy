@@ -32,13 +32,13 @@
 	</div>
 	<div class='line-coffe'></div>
 	<div id='carousel'>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat2.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat3.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat5.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat6.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat7.png' />
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' width='214' height='225' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat2.png' width='214' height='225' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat3.png' width='214' height='225' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat5.png' width='214' height='225' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat6.png' width='214' height='225' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat7.png' width='214' height='225' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' width='214' height='225' />
 	</div>
 	<div class='container-catering'>
 		<div class='colum'>
