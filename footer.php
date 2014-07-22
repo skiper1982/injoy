@@ -99,7 +99,7 @@
 		<p><a href='mailto:info@injoy-weddings.com'>info@injoy-weddings.com</a></p>	
 	</div>	
 	<div class='colum last'>
-		<p class='title'>Redes Sociales</p>
+		<p class='title'><?= $lang =='es'?'Redes Sociales':'Social Networks' ?></p>
 		<a href="https://www.facebook.com/injoyevents" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/face.png'></a>
 		<a href="https://twitter.com/InJoyweddings" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/twitter.png'></a>
        	<a href="http://www.pinterest.com/danyplanny/" target="_blank"><img src='<?php bloginfo('template_directory')?>/img/social/pinterest.png'></a>
