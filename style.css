@@ -201,7 +201,7 @@ footer .container p a{color:#6D6D6D}
 footer .container p.title{font-size: 14px;font-family: 'open sans';font-weight:bold;border-bottom: 2px solid;padding-right: 20px; margin-bottom: 10px;}
 footer .container .colum:first-child{}
 footer .container .colum.last{margin-right: 0px}
-footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 10%;margin-top: 7px;min-height: 133px}
+footer .container .colum{float: left;min-width: 100px;width: auto;margin-right: 9%;margin-top: 7px;min-height: 133px}
 footer .popup_text{cursor:pointer}
 footer .popup_text .answer{display:none}
 #overlay{position:fixed;top:0px;left:0px;width:100%;height:100%;background-image:url(./img/rolloverdarkpixel.png);z-index:3;display:none}

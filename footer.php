@@ -75,7 +75,7 @@
 		<div class='popup_text'><p><?= $lang =='es'?'Términos y condiciones':'Terms and Conditions' ?></p>
 			<div class='answer'></div>	
 		</div>
-		<div class='popup_text'><p><?= $lang =='es'?'Política de pagos':'Payment Policy' ?>Politica de pagos</p>
+		<div class='popup_text'><p><?= $lang =='es'?'Política de pagos':'Payment Policy' ?></p>
 			<div class='answer'></div>
 		</div>
 	</div>
