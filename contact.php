@@ -20,32 +20,32 @@
 			<p><label for='Name'><?php echo get_post_meta(get_the_ID(),"name_title_{$lang}",true); ?></label></p>
 			<div class='clear'></div>
 
+			<p><input type='text' name='nationality' id='nationality' class='gris2' required></p>
+			<p><label for='nationality'><?php echo get_post_meta(get_the_ID(),"nationality_{$lang}",true); ?></label></p>
+			<div class='clear'></div>			
+
 			<p><input type='email' name='Email' id='Email' class='gris2' required></p>
 			<p><label for='Email'><?php echo get_post_meta(get_the_ID(),"email_title_{$lang}",true); ?></label></p>
 			<div class='clear'></div>
-
-			<p><input type='text' name='nationality' id='nationality' class='gris2' required></p>
-			<p><label for='nationality'>Nacionalidad</label></p>
-			<div class='clear'></div>	
 
 
 			<p><input type='text' name='skypename' id='skypename' class='gris2' required></p>
 			<p><label for='skypename' >Skype Name</label></p>
 			<div class='clear'></div>
 
-
-			<p><input type='text' name='date' id='date' class='gris2' required></p>
-			<p><label for='date'>Fecha del Evento</label></p>
-			<div class='clear'></div>										
+			<p><input type='text' name='knowus' id='knowus' class='gris2' required /></p>
+			<p><label for='knowus'><?php echo get_post_meta(get_the_ID(),"you_now_us_{$lang}",true); ?></label></p>
+			<div class='clear'></div>
 
 			<p><input type='text' name='subject' id='subject' class='gris2' required /></p>
 			<p><label for='subject'><?php echo get_post_meta(get_the_ID(),"subject_title_{$lang}",true); ?></label></p>
-			<div class='clear'></div>
+			<div class='clear'></div>						
 
 
-			<p><input type='text' name='knowus' id='knowus' class='gris2' required /></p>
-			<p><label for='knowus'>¿Cómo se Entero de Nosotros?</label></p>
-			<div class='clear'></div>			
+			<p><input type='text' name='date' id='date' class='gris2' required></p>
+			<p><label for='date'><?php echo get_post_meta(get_the_ID(),"date_event_{$lang}",true); ?></label></p>
+			<div class='clear'></div>										
+
 
 			<p><label for='message'></label></p>
 			<p><textarea  name='Message' id='Message' class='gris2'></textarea></p>
@@ -55,7 +55,7 @@
 				<input type="submit" class='submit gris2' value=<?php echo get_post_meta(get_the_ID(),"button_title_{$lang}",true); ?> />
 				<span class='loader hidden'></span>
 			</p>
-			<p class='success note' style='display:none'><?= $lang=="es"?"Mensaje Enviado, Gracias !":"Message sended, Thank you !"?></p>
+			<p class='success note' style='display:none'><?= $lang=="es"?"Mensaje Enviado, Gracias !":"Message sent, Thank you !"?></p>
 			<p class='error note' style='display:none'><?= $lang=="es"?"Error Intente de nuevo":"Error, Try Again"?></p>
 
 		</form>

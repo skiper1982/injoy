@@ -89,16 +89,16 @@ jQuery.fn.selectText = function(){
    }
 };
 function init_reel_home_timer(){
-	setTimeout("init_reel_home(691)",5000);	
+	setTimeout("init_reel_home(720)",50000);	
 }
 function init_reel_home(left){
 	$('#specialist .text-banner .reel').animate({left:-1*left},"slow",function(){
-		left = left + 691
-		if(left <= 2073){
-			setTimeout("init_reel_home(" + left  + ")",5000);
+		left = left + 720
+		if(left <= 2160){
+			setTimeout("init_reel_home(" + left  + ")",50000);
 		}else{
 			$('#specialist .text-banner .reel').css('left',0);
-			setTimeout("init_reel_home(691)",5000);
+			setTimeout("init_reel_home(720)",50000);
 		}
 	});
 }
