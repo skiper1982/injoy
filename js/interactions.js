@@ -6,6 +6,10 @@ $(document).ready(function(e){
 	$(window).resize(function(e){
 		var width = $(window).width();
 		$('#size').html(width);
+		if(width > 665){
+			$('header').attr('style','');
+			$('header a.open_nav').removeClass('on')
+		}
 	});
 	$(".popup_text").click(function(e){
 		e.preventDefault();
@@ -89,16 +93,16 @@ jQuery.fn.selectText = function(){
    }
 };
 function init_reel_home_timer(){
-	setTimeout("init_reel_home(720)",50000);	
+	setTimeout("init_reel_home(720)",5000);	
 }
 function init_reel_home(left){
 	$('#specialist .text-banner .reel').animate({left:-1*left},"slow",function(){
 		left = left + 720
 		if(left <= 2160){
-			setTimeout("init_reel_home(" + left  + ")",50000);
+			setTimeout("init_reel_home(" + left  + ")",5000);
 		}else{
 			$('#specialist .text-banner .reel').css('left',0);
-			setTimeout("init_reel_home(720)",50000);
+			setTimeout("init_reel_home(720)",5000);
 		}
 	});
 }
@@ -131,16 +135,15 @@ function banner_right(){
 jQuery(document).ready(function($) {
     // $() will work as an alias for jQuery() inside of this function
     $('#carousel').carouFredSel({
-			width: '100%',
+			align: 'left',
 			items: {
-                   visible: 6,
-                   start: 0
-                   },
-		    scroll : {
-					items		: 1,
-					easing          : "elastic",
-					duration: 1000
-					},
+                  	visible: 6,
+                   	start: 0
+                  },
+		    	scroll : {
+				items		: 1,
+				duration: 1000
+			},
 			prev : { 
 				button : "#carousel_prev",
 				key : "left",
@@ -151,7 +154,7 @@ jQuery(document).ready(function($) {
 				key : "right",
 				items           : 1,
 			}
-		});
+	});
 });
 
 jQuery(document).ready(function($) {
@@ -163,7 +166,6 @@ jQuery(document).ready(function($) {
                    visible: 5,
                    start:0
                    },
-			
             scroll : {
 					items: 1,
 					duration: 1000

@@ -62,6 +62,7 @@
 		</blockquote>		
 	</div></div></div>
 	<div class='conten-text'>
+		<img src='<?php bloginfo('template_directory')?>/img/home/dani.png' />
 		<?php
 			$pattern = get_shortcode_regex();
 			preg_match_all('/'.$pattern.'/s', get_the_content(),$matches);
@@ -77,9 +78,6 @@
 				}
 			}
 		?>
-		<div class='center-column'>
-			<img src='<?php bloginfo('template_directory')?>/img/home/dani.png' />
-		</div>
 	</div>
 	<div class='clear'></div>
 <?php endwhile; endif;?></div>
