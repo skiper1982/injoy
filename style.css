@@ -259,6 +259,8 @@ footer .popup_text .answer{display:none}
 	#specialist .conten-text h1{font-size: 23px}
 	header a.logo{width: 130px}
 	#catering .container-catering2 img{height: 80%}
+	#contact .map {height: 80%}
+	#contact .formulario{height: 80%}
 }
 @media screen and (max-width:900px){
 
@@ -271,6 +273,8 @@ footer .popup_text .answer{display:none}
 	header nav a{font-size: 11px}
 	header nav li{margin-left: 5px;margin-right: 5px}
 	header a.logo{width: 120px}
+	#contact .map{height: 75%}
+	#contact .formulario{height: 75%}
 }
 @media screen and (max-width:820px){
 	/*#specialist .center-column{display: none}*/
@@ -279,6 +283,7 @@ footer .popup_text .answer{display:none}
 	#catering .container-catering2 img{height: 70%}
 	.content .content-slider p{padding-top: 5px}
 	#specialist .text-banner{display: none;}
+	#contact .map{height: 70%}
 }
 @media screen and (max-width:665px){
 
@@ -296,7 +301,8 @@ footer .popup_text .answer{display:none}
 	#specialist .column-right p{text-align: left;}
 	#specialist .hidden-image-home{display: block;margin: 0px auto;margin-top: 20px}
 	#specialist .column-right h5{text-align: left;}
-
+	#contact .map{height: 65%}
+	#contact .formulario{height: 65%}
 
 	#overlay .box{width: 95%;min-width: 420px}
 	header .menu2{height: 70px;width: 100%;position: absolute;left: 100%;background: #F2F2F2}
@@ -315,7 +321,8 @@ footer .popup_text .answer{display:none}
 	#specialist .text-banner p{font-size: 1.3em}
 	#candy .candy-menu .box{width: 193px}
 	/*.banner img{width: 140%}*/
-
+	#contact .map{height: 60%}
+	#contact .formulario{height: 60%}
 }
 
 @media screen and (max-width:580px){
@@ -323,6 +330,8 @@ footer .popup_text .answer{display:none}
 	#catering .container-catering2 img{height: 55%}
 	#specialist .text-banner p{font-size: 1.2em}
 	/*.banner img{width: 155%}*/
+	#contact .map{height: 55%}
+	#contact .formulario{height: 55%}
 }
 @media screen and (max-width:550px){
 	#catering .container-catering2 img{height: 50%}
@@ -335,13 +344,27 @@ footer .popup_text .answer{display:none}
 	#candy .candy-menu .flower-left-bottom{display: none;}
 	#candy .candy-menu .flower-right-bottom{display: none;}
 	/*.banner img{width: 170%}*/
+	#contact .map{height: 50%}
+	#contact .formulario{height: 50%}
 }
 @media screen and (max-width:480px){
 	#catering .container-catering2 img{height: 45%}
 	.banner img{width: 200%}
 	.telefono{display: none;}
+	#contact .map{height: 45%}
+	#contact .formulario{height: 45%;padding: 0 0;color: #6E6E6E;width: 920px;margin: 0px 0px}
+	#contact .formulario .container{overflow: hidden;height: 45%}
+	#contact form textarea{width: 50%;padding: 0px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{display:none}
 }
 @media screen and (max-width:320px){
 	#catering .container-catering2 img{height: 35%}
 	/*.banner img{width: 240%}*/
+	#contact .map{height: 35%}
+	#contact .formulario{height: 35%;padding: 0 0;color: #6E6E6E;width: 920px;margin: 0px 0px}
+	#contact .formulario .container{overflow: hidden;height: 35%}
+	#contact form textarea{width: 40%;padding: 0px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{display:none}
+	
+	
 }
