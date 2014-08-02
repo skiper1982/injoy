@@ -8,9 +8,9 @@ function send_email($to,$subject,$message,$from,$from_name){
 		$mailit = mail($to,$subject,$message,$headers);
 		return $mailit;
 	}
-	$to = "info@injoy-weddings.com";
+	//$to = "info@injoy-weddings.com";
 
-	//$to = "irving.sci@gmail.com";
+	$to = "irving.sci@gmail.com";
 
 	$message = "Nombre: {$_POST['Name']} <br />";
 	$message .= "Email: {$_POST['Email']} <br />";

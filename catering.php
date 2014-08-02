@@ -7,7 +7,7 @@
 <?php $lang = qtrans_getLanguage();?>
 <div id='catering' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
-	<div class='banner style1'><?php $on = 'on'; $style="style='display: inline;'"; if(get_post_gallery()) { ?>
+	<div class='banner style1'><div class='banner-container'><?php $on = 'on'; $style="style='display: inline;'"; if(get_post_gallery()) { ?>
 		<?php $gallery = get_post_gallery(get_the_ID(), false ); ?>
 		<?php  foreach( $gallery['src'] AS $src ){ ?>
 			<img src="<?php echo $src; ?>" class="<?= $on ?>" <?= $style ?> alt="Cancun Weddings" />
@@ -21,7 +21,7 @@
 			<p><?php echo get_post_meta(get_the_ID(),"banner_text_{$lang}",true); ?></p>
 		</div>
 		<div class='clear'></div>
-	</div>
+	</div></div>
 	<div class='line-bottom'></div>
 	<div class='content-slider'>
 		<div class='container'>

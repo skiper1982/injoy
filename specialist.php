@@ -7,7 +7,7 @@
 <?php $lang = qtrans_getLanguage();?>
 <div id='specialist' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
-	<div class='banner style1'><?php $on = 'on'; $style="style='display: inline;'"; if(get_post_gallery()) { ?>
+	<div class='banner style1'><div class='banner-container'><?php $on = 'on'; $style="style='display: inline;'"; if(get_post_gallery()) { ?>
 		<?php $gallery = get_post_gallery(get_the_ID(), false ); ?>
 		<?php  foreach( $gallery['src'] AS $src ){ ?>
 			<img src="<?php echo $src; ?>" class="<?= $on ?>" <?= $style ?> alt="Cancun Weddings" />
@@ -20,7 +20,7 @@
 			<p><?php echo get_post_meta(get_the_ID(),"banner_text_{$lang}",true); ?></p>
 		</div>
 		<div class='clear'></div>
-	<?php } ?></div>
+	<?php } ?></div></div>
 	<div class='pictures'>
 		<img src='<?php bloginfo('template_directory')?>/img/home/2.png' class='home-image1' />
 		<img src='<?php bloginfo('template_directory')?>/img/home/3.png' class='home-image2' />
@@ -62,7 +62,6 @@
 		</blockquote>		
 	</div></div></div>
 	<div class='conten-text'>
-		<img src='<?php bloginfo('template_directory')?>/img/home/dani.png' />
 		<?php
 			$pattern = get_shortcode_regex();
 			preg_match_all('/'.$pattern.'/s', get_the_content(),$matches);
@@ -71,6 +70,7 @@
 					if($row == 'specialist_content'){
 						echo do_shortcode($matches[0][$key]);
 					}else if($row == 'specialist_left_info'){
+						?> <img src='<?php bloginfo('template_directory')?>/img/home/dani.png' /> <?php
 						echo do_shortcode($matches[0][$key]);
 					}else if($row == 'specialist_right_info'){
 						echo do_shortcode($matches[0][$key]);

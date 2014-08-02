@@ -7,7 +7,7 @@
 <?php $lang = qtrans_getLanguage();?>
 <div id='candy' class='content'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='line-top'></div>
-	<div class='banner style1'><?php $on = 'on'; $style="style='display: inline;'"; if(get_post_gallery()) { ?>
+	<div class='banner style1'><div class='banner-container'><?php $on = 'on'; $style="style='display: inline;'"; if(get_post_gallery()) { ?>
 		<?php $gallery = get_post_gallery(get_the_ID(), false ); ?>
 		<?php  foreach( $gallery['src'] AS $src ){ ?>
 			<img src="<?php echo $src; ?>" class="<?= $on ?>" <?= $style ?> alt="Cancun Weddings" />
@@ -21,7 +21,7 @@
 			<p><?php echo get_post_meta(get_the_ID(),"banner_text_{$lang}",true); ?></p>
 		</div>
 		<div class='clear'></div>
-	</div>
+	</div></div>
 	<div class='line-bottom'></div>
 	<div class='content-slider'>
 		<div class='container'>
@@ -50,9 +50,9 @@
 
 		<div class='titles'>
 			
-			<!--h2>GRAN SURTIDO DE DULCES Y POSTRES DE LA MEJOR CALIDAD:</h2>
-			<p>Dulces Tradicionales de Mexico</p>
-			<p>Pasteles para bodas y ocaciones especiales (Cumpleaños y Aniversarios)</p-->
+			<h2><?php echo get_post_meta(get_the_ID(),"candy_h2_{$lang}",true); ?></h2>
+			<p><?php echo get_post_meta(get_the_ID(),"candy_p1_{$lang}",true); ?></p>
+			<p><?php echo get_post_meta(get_the_ID(),"candy_p2_{$lang}",true); ?></p>
 		</div>
 		<div class='box-content'>
 			<div class='box first'>
