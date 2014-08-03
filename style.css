@@ -452,6 +452,7 @@ footer .popup_text .answer{display:none}
 @media screen and (max-width:320px){
 	#catering .container-catering2 img{height: 35%}
 	/*.banner img{width: 240%}*/
+	.telefono{display: none;}
 	#contact .map{height: 25%}
 	#contact section.container{height:100%;padding-top: 55px}
 	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
