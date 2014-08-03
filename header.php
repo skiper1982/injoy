@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta name="google-site-verification" content="hpqpPlYGTWQCU3MlWkSgYh2xhmmHY8dtTfHec3L-2Rk" />
 	<link href='<?php bloginfo('template_directory')?>/css/jquery.ui.css' rel='stylesheet'/>
-	<link href='<?php bloginfo( 'stylesheet_url' ); ?>?v=10' rel='stylesheet'/>
+	<link href='<?php bloginfo( 'stylesheet_url' ); ?>?v=12' rel='stylesheet'/>
 	<title><?php single_post_title(); ?></title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'>
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico" type="image/x-icon"/>

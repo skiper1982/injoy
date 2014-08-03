@@ -74,9 +74,9 @@
 			</div>
 			<img class='logo' src='<?php bloginfo('template_directory')?>/img/catering/veggie.png' />
 			
-			<div class='clear'></div>
+			<div class='clear clear-no-display'></div>
 			<img class='chef' src='<?php bloginfo('template_directory')?>/img/catering/chef.png' />
-			<p class='vegans'><?php echo get_post_meta(get_the_ID(),"veggies_text_{$lang}",true); ?></p>
+			<div class='vegans'><p><?php echo get_post_meta(get_the_ID(),"veggies_text_{$lang}",true); ?></p></div>
 			<img class='pina' src='<?php bloginfo('template_directory')?>/img/catering/pinas.png' />
 		</div>		
 	</div>
