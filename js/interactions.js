@@ -57,7 +57,8 @@ $(document).ready(function(e){
 			Email       : $("#Email").val(),
 			Name        : $("#Name").val(),
 			date        : $("#date").val(),
-			knowus      : $("#knowus").val() 
+			knowus      : $("#knowus").val(),
+			ajax_contact: true 
 		},function(r){
 			$(".note").hide();
 			$("." + r).show();

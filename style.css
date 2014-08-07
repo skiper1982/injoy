@@ -140,14 +140,14 @@ span.comilla{color: #FF61B4}
 #catering .container-catering .logo{float: left;background-color: #1B1B1B;max-width: 230px;width:41%;height: auto;}
 #catering .container-catering .logo img{width: 100%;height: auto;}
 #catering .container-catering2 {max-width: 1280px;width:100%;margin: 0px auto;overflow: hidden;}
-#catering .container-catering2 img{float: left;height: 100%!important}
+#catering .container-catering2 img{float: left;}
 /*Candy*/
 #candy .line-coffe,#catering .line-coffe{width: 100%;height: 4px;background-color: #292C31}
 #candy .line-white{width: 100%;height: 4px;background-color: white}
 #candy .candy-image,#catering .candy-image{margin:0px auto;width: 1280px;max-height: 219px;overflow: hidden;}
 #candy .candy-image img{float: left;width: 20%}
 #catering .candy-image img{float: left;width: 16.6%}
-#candy .candy-menu{background-color: #272727;min-height: 525px;max-width: 1280px;width: 95%;margin:0px auto;position: relative;padding-bottom: 20px}
+#candy .candy-menu{background-color: #272727;min-height: 525px;max-width: 1280px;width: 100%;margin:0px auto;position: relative;padding-bottom: 20px}
 #candy .candy-menu .transparent-line{bottom: 0px;width: 100%;height: 5px;background-color: rgba(255, 255, 255, 0.5);width: 100%;position: absolute;}
 #candy .candy-menu .flower-left-top:before{content: '';display: block;margin-top: 83.1% }
 #candy .candy-menu .flower-left-top{background: url(./img/candy/flores1.png) no-repeat;background-size:100% 100%;position: absolute;max-width: 249px;width:19.5%;}
@@ -161,25 +161,26 @@ span.comilla{color: #FF61B4}
 #candy .candy-menu .flower-right-bottom{background: url(./img/candy/flores4.png) no-repeat;background-size:100% 100%;position: absolute;max-width: 178px;width:14%;right: 0px;bottom: 0px}
 
 
-#candy .candy-menu .logo{display:block;margin:0px auto;padding-top:12px;margin-bottom: 23px}
+#candy .candy-menu .logo{display:block;margin:0px auto;padding-top:12px;margin-bottom: 23px;width: 85%;height: auto;max-width: 311px}
 #candy .candy-menu .titles{width: 100%;margin: 0px auto;min-height: 117px}
 #candy .candy-menu h2{text-align: center;font-family: 'open sans';font-weight:bold;color: #e2e2e2;font-size: 18px;letter-spacing: 1px;margin-bottom:11px }
 #candy .candy-menu p{text-align: center;color: #DFDFDF;font-size: 14px;line-height: 16px;margin: 0px 7px}
 #candy .candy-menu .box-content{max-width: 687px;width:95%;margin:0px auto;}
 #candy .candy-menu .box{max-width: 193px;width:28.1%;height: 193px;display: block;border: 3px solid #DFDFDF;border-radius: 10px;float: left;}
 #candy .candy-menu .box-content .box:first-child{margin-right: 7.8%}
-#candy .candy-menu .box-content .box:last-child{margin-left: 7.8%}
+#candy .candy-menu .box-content .box.last{margin-left: 7.8%}
 #candy .candy-menu h2.title-desert{color:#ff7386;border-bottom: 3px solid #A96A73;margin:8px 7px 12px;}
 #candy .candy-menu h2.title-cookie{color:#78d2b8;border-bottom: 3px solid #719A8C;margin:8px 7px 12px;}
 #candy .candy-menu h2.title-candy{color:#c5bf4f;border-bottom: 3px solid #939266;margin:8px 7px 12px;}
-#candy .container-candy{max-width: 1280px;width:95%;margin: 0px auto;overflow: hidden;}
+#candy .container-candy{max-width: 1280px;width:100%;margin: 0px auto;overflow: hidden;}
 #candy .container-candy img{float: left;}
 /*Contacto*/
 
 #contact .principal .container{padding: 0 0}
 #contact .principal h1{font-weight: 100;display: inline-block;vertical-align: top;width: 100%;font-size: 32px;line-height: 33px;color: #6e6e6e}
 #contact .principal h1 span{font-size: 43px;font-weight: 100}
-#contact .map{width: 100%;height: 374px;overflow: hidden;margen-bottom:0px;border: 1px solid black;}
+#contact .map:before{display: block;content: '';padding-top: 27.6%}
+#contact .map{width: 100%;max-height: 374px;min-height:120px;overflow: hidden;margen-bottom:0px;border: 1px solid black;position: relative;}
 #contact .formulario{padding: 22px 0;color: #6E6E6E;width: 920px;margin: 0px 228px}
 #contact .formulario .container{overflow: hidden;width: 920px}
 #contact form{width: 52%;float: left;}
@@ -239,7 +240,8 @@ footer .popup_text .answer{display:none}
 /*Galeries*/
 /*#gallery {background: url(./img/pattern.png) repeat-x scroll center bottom transparent}*/
 #gallery {}
-.container-galleries{width: 1125px;margin: 0px auto}
+.container-galleries{max-width: 1125px;width:98%;margin: 0px auto}
+.gallery-aux{width: 100%;height:auto;position: relative;margin: 0px auto}
 .container-galleries .dot-points{width: 100%;border-bottom-style:dotted;height: 2px;border-color:#080808;border-width:2px;margin: 20px 0px}
 .container-galleries h1{font-size: 20px;font-weight:bold;width: 121px;margin: 0px auto;background-color: black;color: white;padding: 5px 10px;margin-top:20px;text-align: center;}
 #sharelink{position: fixed;width: 620px;height: 155px;top:50%;left: 50%;z-index: 10010;margin: -77px 0 0 -310px;}
@@ -253,13 +255,23 @@ footer .popup_text .answer{display:none}
 #top-share{width: 100%;height: 35px;background:rgba(0,0,0,0.9);display: block;position: fixed;z-index: 100000;top:0;}
 #top-share .facebook{width: 100px;height: 17px;display: block;top:-20px;position: relative;margin: 0px auto;left: -63px}
 #see-link{background: url(img/icon-link.png) no-repeat;height: 20px;line-height: 20px;padding: 0 0 0 25px;color: #F2F2F2;font-size: 13px;font-family: 'open sans';display: block;margin: 0px auto;display: block;width: 50px;margin-top: 8px}
+.ngg-gallery-thumbnail-box:nth-child(6n){margin-right: 0px}
+
 
 /*resolutions*/
 @media screen and (max-width:1280px){
-	#specialist .conten-text h1{font-size: 25px}
+	#specialist .conten-text h1{font-size: 23px}
 	.content-candy p.title{margin-top:14%;}
 	.content-candy h3{margin-bottom: 5.5%}
 }
+
+@media screen and (max-width:1125px){
+	.ngg-gallery-thumbnail-box:nth-child(5n){margin-right: 0px}
+	.ngg-gallery-thumbnail-box:nth-child(6n){margin-right: 15px}
+	.gallery-aux{max-width: 934px}
+}
+
+
 @media screen and (max-width:1100px){
 	#catering .container-catering .vegans:before{padding-top: 67%;display: block;content: ''}
 	#catering .container-catering img.pina{margin-top: 10px;margin-left: auto;margin-right: auto;width: 100%}
@@ -267,47 +279,60 @@ footer .popup_text .answer{display:none}
 
 @media screen and (max-width:1000px){
 	.content-white p.title{margin-top:72px;}
-	#specialist .conten-text h1{font-size: 23px}
+	#specialist .conten-text h1{font-size: 20px}
 	header a.logo{width: 130px}
-	#catering .container-catering2 img{height: 80%}
-	#contact .map {height: 80%}
 	#contact .formulario{height: 80%}
+}
+
+@media screen and (max-width:965px){
+	.ngg-gallery-thumbnail-box:nth-child(6n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(5n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(4n){margin-right: 0px}
+	.gallery-aux{max-width: 743px}
 }
 
 @media screen and (max-width:950px){
 	.content-candy p.title{margin-top:12%;}
-	.content-candy h3{margin-bottom: 1.5%}	
-}
+	.content-candy h3{margin-bottom: 1.5%}
 
+}
 @media screen and (max-width:920px){
 	#catering .container-catering .servicios{font-size: 23px}	
 }
 
 @media screen and (max-width:900px){
 
-	#catering .container-catering2 img{height: 75%}
 	.content .content-slider p{font-size: 14px}
 
 	.content-white p.title{margin-top:72px;}
 	.content-white h3{margin-bottom: 20px}
-	#specialist .conten-text h1{font-size: 23px}
+	#specialist .conten-text img{margin-top: 30px}
+	#specialist .conten-text{padding-top: 10px}
+	#specialist .conten-text h1{font-size: 17px}
 	header nav a{font-size: 11px}
 	header nav li{margin-left: 5px;margin-right: 5px}
 	header a.logo{width: 120px}
-	#contact .map{height: 75%}
 	#contact .formulario{height: 75%}
 }
+
+@media screen and (max-width:765px){
+	.ngg-gallery-thumbnail-box:nth-child(6n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(5n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(4n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(3n){margin-right: 0px}
+	.gallery-aux{max-width: 555px}
+}
+
 @media screen and (max-width:820px){
 	/*#specialist .center-column{display: none}*/
 	/*#specialist .column-left, #specialist .column-right{width: 47%}*/
 	/*.banner img{width: 130%}*/
-	#catering .container-catering2 img{height: 70%}
 	.content .content-slider p{padding-top: 5px}
 	#specialist .text-banner{display: none;}
-	#contact .map{height: 70%}
 
 	#catering .container-catering .servicios{font-size: 19px}
 }
+
 @media screen and (max-width:665px){
 
 	/*header responsive*/
@@ -315,15 +340,17 @@ footer .popup_text .answer{display:none}
 	#overlay .box{width: 95%;min-width: 420px}
 	header .menu2{height: 70px;width: 100%;position: absolute;left: 100%;background: #F2F2F2}
 	header a.logo{width: 100px;margin-left: 40%}
-	header{height: 100%;position: fixed;z-index: 10;right: 100%}
+	header{height: 100%;position: fixed;z-index: 10;right: 100%;top:0%;}
 	header nav{position: absolute;left: 0;width: 100% !important;padding-top: 23px;height: 100%;overflow: auto;padding-left: 20%}
 	header nav{margin-left: 0%;margin-top: 0%}
 	header nav ul{width: 80%}
 	header nav ul li{width: 100%;height: auto;}
 	header nav ul li a{border-bottom: 1px solid #D2D1D2;padding:15px 0 15px 17%;font-size: 13px;position: relative;display: block;}
 	header a.open_nav{display: block;}
-	.content{top:70px;padding-bottom: 80px!important}	
-	.language{float: left;left: 17%;}
+	.content{margin-top:70px}	
+	.language{float: left;right: 1%;}
+	.telefono{display: none;}
+	#contact{position: relative;top:70px;}
 
 
 	/*Catering responsive*/
@@ -342,7 +369,6 @@ footer .popup_text .answer{display:none}
 
 	/*Home responsive*/
 
-	#catering .container-catering2 img{height: 65%}
 	#specialist .text-banner p{font-size: 1.4em}
 	#specialist .conten-text img{width: 219px}
 	#specialist .column-left, #specialist .column-right{width: 100%;margin-top: 20px}
@@ -351,34 +377,37 @@ footer .popup_text .answer{display:none}
 	#specialist .column-right p{text-align: left;}
 	#specialist .hidden-image-home{display: block;margin: 0px auto;margin-top: 20px}
 	#specialist .column-right h5{text-align: left;}
-	#contact .map{height: 65%}
 	#contact .formulario{height: 65%}
 
 }
 
 @media screen and (max-width:625px){
-	#catering .container-catering2 img{height: 60%}
 	#specialist .text-banner p{font-size: 1.3em}
 	#candy .candy-menu .box{width: 193px}
 	/*.banner img{width: 140%}*/
-	#contact .map{height: 60%}
 	#contact .formulario{height: 60%}
 }
 
 @media screen and (max-width:580px){
 	#candy .candy-menu .box{float: none;margin-top:20px;margin-left: auto!important;margin-right:auto!important;}
-	#catering .container-catering2 img{height: 55%}
 	#specialist .text-banner p{font-size: 1.2em}
 	/*.banner img{width: 155%}*/
-	#contact .map{height: 55%}
 	#contact .formulario{height: 55%}
+
+	.ngg-gallery-thumbnail-box:nth-child(6n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(5n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(4n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(3n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(2n){margin-right: 0px}
+	.gallery-aux{max-width: 366px}
+
 }
+
 @media screen and (max-width:550px){
 
 	/*Catergin responsive*/
 	#catering .container-catering .servicios{font-size: 22px}
 
-	#catering .container-catering2 img{height: 50%}
 	#specialist .text-banner p{font-size: 1em}
 	#specialist .text-banner p.author{font-size: 13px}
 
@@ -388,21 +417,22 @@ footer .popup_text .answer{display:none}
 	#candy .candy-menu .flower-left-bottom{display: none;}
 	#candy .candy-menu .flower-right-bottom{display: none;}
 	/*.banner img{width: 170%}*/
-	#contact .map{height: 50%}
 	#contact .formulario{height: 50%}
+	#candy .candy-menu h2{font-size:17px}
 }
 @media screen and (max-width:480px){
 	.content .content-slider p{width: 68%}
 	.content .content-slider{height: 100px}
-	#catering .container-catering2 img{height: 45%}
 	.banner img{width: 200%}
 	.telefono{width: 120px}
 	.telefono p{font-size: 13px}
+	.content-white p{width: auto;}
+	#candy .candy-menu h2{font-size:16px}
+	.content-candy p{width: auto;}
 }
 @media screen and (max-width:400px){
 	.content .content-slider{height: 125px}
 	.telefono{display: none;}
-	#contact .map{height: 45%}
 	#contact .formulario{height: 45%;padding: 0 0;color: #6E6E6E;width: 920px;margin: 0px 0px}
 	#contact .formulario .container{overflow: hidden;height: 45%}
 	#contact form textarea{width: 50%;padding: 0px;border-radius: 5px;border: solid 2px #D4D4D4}
@@ -416,11 +446,29 @@ footer .popup_text .answer{display:none}
 	#catering .container-catering .servicios{width: 100%;max-width: none;font-size: 25px}
 	#catering .container-catering .vegans p{top:10px;}
 	#catering .container-catering .vegans:before{padding-top:40%}
+
+	footer .container .colum{float: none;margin-left: auto;margin-right: auto;width: 90%;min-height: 70px;margin-bottom: 20px}
+	footer .container .colum.last{margin-right: auto}
+	#candy .candy-menu h2{font-size:15px}
+
 }
+
+
+@media screen and (max-width:400px){
+
+	.ngg-gallery-thumbnail-box:nth-child(6n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(5n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(4n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(3n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(2n){margin-right: 15px}
+	.ngg-gallery-thumbnail-box:nth-child(1n){margin-right: 0px}
+	.gallery-aux{min-width: 190px}
+	.gallery-aux{max-width: 190px}
+
+}
+
 @media screen and (max-width:320px){
-	#catering .container-catering2 img{height: 35%}
 	/*.banner img{width: 240%}*/
-	#contact .map{height: 35%}
 	#contact .formulario{height: 35%;padding: 0 0;color: #6E6E6E;width: 920px;margin: 0px 0px}
 	#contact .formulario .container{overflow: hidden;height: 35%}
 	#contact form textarea{width: 40%;padding: 0px;border-radius: 5px;border: solid 2px #D4D4D4}

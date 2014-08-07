@@ -86,6 +86,7 @@
 			<span class='visa'></span>
 			<span class='masterdcard'></span>
 			<span class='american'></span>
+			<span class='clear'></span>
 		</p>
 	</div>
 	<div class='colum'>
@@ -111,7 +112,7 @@
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.ui.js'></script>
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.validate.js'></script>
 	<script src='<?php bloginfo('template_directory') ?>/js/jQuery.migrate.min.js'></script>
-	<script src='<?php bloginfo('template_directory') ?>/js/interactions.js'></script>
+	<script src='<?php bloginfo('template_directory') ?>/js/interactions.js?v=1'></script>
 	<script src='<?php bloginfo('template_directory') ?>/js/jquery.carouFredSel-6.2.1-packed.js'></script>
 </body>
 </html>

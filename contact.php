@@ -3,16 +3,17 @@
 	Template Name: CONTACT
 */
 ?>
+<?php if(!isset($_POST['ajax_contact'])){?>
 <?php get_header(); ?>
 <?php $lang = qtrans_getLanguage();?>
 <div class='clear'></div>
 <div id='contact'><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class='map'>
-		<iframe style='width:100%;border:none;overflow:hidden;height:100%'   src="https://maps.google.com.mx/maps/ms?ie=UTF8&amp;t=m&amp;ecpose=21.17570938,-86.82919239,5252.45,1.235,19.153,0&amp;oe=UTF8&amp;msa=0&amp;msid=214937501704490531195.00048781a7a25a158b691&amp;ll=21.196056,-86.840487&amp;spn=0,0&amp;output=embed"></iframe>
+		<iframe style='width:100%;border:none;overflow:hidden;height:100%;position:absolute;top:0px' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=InJoy+Weddings+and+Events+Cancun&amp;aq=&amp;sll=40.396764,-3.713379&amp;sspn=10.319598,21.643066&amp;ie=UTF8&amp;hq=InJoy+Weddings+and+Events&amp;hnear=Canc%C3%BAn,+Quintana+Roo,+M%C3%A9xico&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=6643502732217443948&amp;ll=21.149942,-86.828245&amp;output=embed"></iframe>
 	</div>
 	<section class='formulario'>
 		<div class='container'>
-			<form id='contact-form' method='post' action="<?php bloginfo("template_directory") ?>/do-contact.php">
+			<form id='contact-form' method='post' action="/contac-us/">
 
 			<p class='title'><?php echo get_post_meta(get_the_ID(),"contact_title_{$lang}",true); ?></p>
 
@@ -79,3 +80,28 @@
 	</section>
 <?php endwhile; endif;?></div>
 <?php get_footer(); ?>
+<?php }else{
+	if($_POST['subject']!=""&&$_POST['Message']!=""&&$_POST['Email']!=""&&$_POST['Name']!=""){
+		//$to=array('daniela@injoy-weddings.com');
+		$to=array('irving.sci@gmail.com');
+		$subject = "Contacto de injoy-weddings.com";
+		$message = "Nombre: {$_POST['Name']} \n";
+		$message .= "Email: {$_POST['Email']} \n";
+		$message .= "Skype Name: {$_POST['skypename']} \n";
+		$message .= "Nacionalidad: {$_POST['nationality']} \n";
+		$message .= "Fecha del Evento: {$_POST['date']} \n";
+		$message .= "Como se Entero de Nosotros: {$_POST['knowus']} \n";
+		$message .= "Mensaje: {$_POST['Message']} \n";
+		$headers = array(
+			'From: injoy-weddings.com <noreply@injoy-weddings.com>'
+			);
+		$result = wp_mail($to,$subject,$message,$headers);
+	}else{
+		$result=false;
+	}
+	if($result){
+		echo 'success';
+	}else{
+		echo 'error';
+	}	
+}?>

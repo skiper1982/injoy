@@ -32,19 +32,19 @@
 	</div>
 	<div class='line-coffe'></div>
 	<div class='container-catering2'><div id='carousel'>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' width='218' height='224' />
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat2.png' width='218' height='224'/>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat3.png' width='218' height='224'/>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat5.png' width='218' height='224'/>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat6.png' width='218' height='224'/>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat7.png' width='218' height='224'/>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' width='218' height='224'/>
-		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide1.png' width='218' height='224'/> 
-		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide2.png' width='218' height='224'/> 
-		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide3.png' width='218' height='224'/> 
-		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide4.png' width='218' height='224'/> 
-		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide5.png' width='218' height='224'/> 
-		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide6.png' width='218' height='224'/> 
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' width='213.3' height='219.17' />
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat2.png' width='213.3' height='219.17'/>
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat3.png' width='213.3' height='219.17'/>
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat5.png' width='213.3' height='219.17'/>
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat6.png' width='213.3' height='219.17'/>
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat7.png' width='213.3' height='219.17'/>
+		<img src='<?php bloginfo('template_directory')?>/img/catering/cat1.png' width='213.3' height='219.17'/>
+		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide1.png' width='213.3' height='219.17'/> 
+		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide2.png' width='213.3' height='219.17'/> 
+		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide3.png' width='213.3' height='219.17'/> 
+		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide4.png' width='213.3' height='219.17'/> 
+		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide5.png' width='213.3' height='219.17'/> 
+		<img src='<?php bloginfo('template_directory')?>/img/catering/catering-subslide6.png' width='213.3' height='219.17'/> 
 	</div><div class='clear'></div></div>
 	<div class='container-catering'>
 		<div class='colum'>

@@ -25,9 +25,9 @@
 ?>
 <div id='top-share' class='hidden'|>
 	<a href='#' id='see-link'>Link</a>
-	<!--div class='facebook'>
+	<div class='facebook'>
 		<div class="fb-share-button" data-type='button'  data-href="#" ></div>
-	</div-->
+	</div>
 </div>
 <div id='sharelink' class='hidden'>
 	<p class='share-text'>Compartir via Link</p>
@@ -43,9 +43,9 @@
 	<?php $lang = qtrans_getLanguage();?>
 	<?php 
 		if($lang == 'es'){
-			$action = "/es/galeries/nggallery/page/1";
+			$action = "/es/galeria/nggallery/page/1";
 		}else{
-			$action = "/galeries/nggallery/page/1";
+			$action = "/gallery/nggallery/page/1";
 		}
 	?>
 	<form  method="get" action="<?= $action ?>">
@@ -81,10 +81,9 @@
 	if($picture != ''){
 		$gallery = $_GET['gallery'];
 		?> <img src="http://injoy-weddings.com/wp-content/gallery/<?= $gallery ?>/<?= base64_decode($picture) ?>" class='image-direction'/> <?php
-	}else{
-		include_once('galleries-images.php'); 
-	}
-	?>
+	}else{ ?>
+		<div class='gallery-aux'><?php include_once('galleries-images.php'); ?><div class='clear'></div></div><div class='clear'></div>
+	<?php } ?>
 <?php endwhile; endif;?></div>
 <div class='clear'></div>
 </div>

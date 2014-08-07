@@ -67,6 +67,7 @@
 				<h2 class='title-candy'><?php echo get_post_meta(get_the_ID(),"candy_title_{$lang}",true); ?></h2>
 				<p><?php echo get_post_meta(get_the_ID(),"candy_text_{$lang}",true); ?></p>
 			</div>
+			<div class='clear'></div>
 		</div>
 		<div class='transparent-line'></div>
 	</div>
