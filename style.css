@@ -179,14 +179,16 @@ span.comilla{color: #FF61B4}
 #contact .principal .container{padding: 0 0}
 #contact .principal h1{font-weight: 100;display: inline-block;vertical-align: top;width: 100%;font-size: 32px;line-height: 33px;color: #6e6e6e}
 #contact .principal h1 span{font-size: 43px;font-weight: 100}
+
 #contact .map:before{display: block;content: '';padding-top: 27.6%}
 #contact .map{width: 100%;max-height: 374px;min-height:120px;overflow: hidden;margen-bottom:0px;border: 1px solid black;position: relative;}
 #contact .formulario{padding: 22px 0;color: #6E6E6E;width: 920px;margin: 0px 228px}
 #contact .formulario .container{overflow: hidden;width: 920px}
+
 #contact form{width: 52%;float: left;}
-#contact .address{float: right;width: 370px;height: 304px;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;background-color: #F9F9F9}
-#contact section.container{height: 1250px;padding-top: 55px}
-#contact form input{float: left;width: 194px;margin:0 12px 18px 0;height: 26px;padding: 0 11px;border: solid 1px #D4D4D4;border-radius: 6px}
+#contact .address{float: right;max-width: 370px;width:100%;max-height: 304px;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;background-color: #F9F9F9}
+#contact section.container{max-height: 1250px;height:100%;padding-top: 55px}
+#contact form input{float: left;width: 40%;margin:0 12px 18px 0;height: 26px;padding: 0 11px;border: solid 1px #D4D4D4;border-radius: 6px}
 #contact form label{float: left; width: 40%;font-weight: 600;font-size: 12px}
 #contact form textarea{float: left;width: 333px;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
 #contact h2{width: 95%;padding: 25px 2.5%;display: block;background:#E6E6E6;margin: 63px 0;font-size: 13px;font-weight: 600px;border-radius: 5px;}
@@ -282,6 +284,9 @@ footer .popup_text .answer{display:none}
 	#specialist .conten-text h1{font-size: 20px}
 	header a.logo{width: 130px}
 	#contact .formulario{height: 80%}
+	#catering .container-catering2 img{height: 80%}
+	
+
 }
 
 @media screen and (max-width:965px){
@@ -294,10 +299,23 @@ footer .popup_text .answer{display:none}
 @media screen and (max-width:950px){
 	.content-candy p.title{margin-top:12%;}
 	.content-candy h3{margin-bottom: 1.5%}
-
+	.content-candy h3{margin-bottom: 1.5%}	
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
+
 @media screen and (max-width:920px){
 	#catering .container-catering .servicios{font-size: 23px}	
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
 
 @media screen and (max-width:900px){
@@ -313,6 +331,12 @@ footer .popup_text .answer{display:none}
 	header nav li{margin-left: 5px;margin-right: 5px}
 	header a.logo{width: 120px}
 	#contact .formulario{height: 75%}
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
 
 @media screen and (max-width:765px){
@@ -329,8 +353,13 @@ footer .popup_text .answer{display:none}
 	/*.banner img{width: 130%}*/
 	.content .content-slider p{padding-top: 5px}
 	#specialist .text-banner{display: none;}
-
 	#catering .container-catering .servicios{font-size: 19px}
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
 
 @media screen and (max-width:665px){
@@ -378,6 +407,12 @@ footer .popup_text .answer{display:none}
 	#specialist .hidden-image-home{display: block;margin: 0px auto;margin-top: 20px}
 	#specialist .column-right h5{text-align: left;}
 	#contact .formulario{height: 65%}
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 
 }
 
@@ -386,6 +421,12 @@ footer .popup_text .answer{display:none}
 	#candy .candy-menu .box{width: 193px}
 	/*.banner img{width: 140%}*/
 	#contact .formulario{height: 60%}
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
 
 @media screen and (max-width:580px){
@@ -401,6 +442,13 @@ footer .popup_text .answer{display:none}
 	.ngg-gallery-thumbnail-box:nth-child(2n){margin-right: 0px}
 	.gallery-aux{max-width: 366px}
 
+
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
 
 @media screen and (max-width:550px){
@@ -417,8 +465,16 @@ footer .popup_text .answer{display:none}
 	#candy .candy-menu .flower-left-bottom{display: none;}
 	#candy .candy-menu .flower-right-bottom{display: none;}
 	/*.banner img{width: 170%}*/
+
 	#contact .formulario{height: 50%}
 	#candy .candy-menu h2{font-size:17px}
+
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
 @media screen and (max-width:480px){
 	.content .content-slider p{width: 68%}
@@ -426,18 +482,36 @@ footer .popup_text .answer{display:none}
 	.banner img{width: 200%}
 	.telefono{width: 120px}
 	.telefono p{font-size: 13px}
+
 	.content-white p{width: auto;}
 	#candy .candy-menu h2{font-size:16px}
 	.content-candy p{width: auto;}
+
+	#contact .map{height: 25%}
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 70%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 }
 @media screen and (max-width:400px){
 	.content .content-slider{height: 125px}
 	.telefono{display: none;}
+
 	#contact .formulario{height: 45%;padding: 0 0;color: #6E6E6E;width: 920px;margin: 0px 0px}
 	#contact .formulario .container{overflow: hidden;height: 45%}
 	#contact form textarea{width: 50%;padding: 0px;border-radius: 5px;border: solid 2px #D4D4D4}
 	#contact .address{display:none}
 
+
+	#contact .map{height: 25%}
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 80%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
 	/*Catergin responsive*/
 	.clear-no-display{display: none;}
 	#catering .container-catering .logo{width: 54.3%}
@@ -469,10 +543,22 @@ footer .popup_text .answer{display:none}
 
 @media screen and (max-width:320px){
 	/*.banner img{width: 240%}*/
+
 	#contact .formulario{height: 35%;padding: 0 0;color: #6E6E6E;width: 920px;margin: 0px 0px}
 	#contact .formulario .container{overflow: hidden;height: 35%}
 	#contact form textarea{width: 40%;padding: 0px;border-radius: 5px;border: solid 2px #D4D4D4}
 	#contact .address{display:none}
 	#catering .container-catering .vegans:before{padding-top:60%}
 	
+
+	.telefono{display: none;}
+	#contact .map{height: 25%}
+	#contact section.container{height:100%;padding-top: 55px}
+	#contact .formulario{padding: 0 0;color: #6E6E6E;margin: 0px 0px 0px 10px}
+	#contact .formulario .container{overflow: hidden;}
+	#contact form input{float: left;width: 70%;margin:10px 0 0 0;height: 26px;padding: 0 0;border: solid 1px #D4D4D4;border-radius: 6px}
+	#contact form label{position:absolute;float: left; width: 65%;font-size: 12px;margin:12px 0 0 5px;}
+	#contact form textarea{float: left;margin:10px 0 0 0;width: 100%;height: 119px;padding: 10px;border-radius: 5px;border: solid 2px #D4D4D4}
+	#contact .address{width:100%;height:100%;border-radius: 0px;border: 1px solid #D4D4D4;padding: 5px 18px;margin:10px 0 10px 0}
+
 }
