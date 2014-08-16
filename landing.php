@@ -59,12 +59,12 @@
 		<img src='<?php bloginfo('template_directory')?>/img/landing/logo.png' alt='Weddings cancun'>
 		<div class='phone'>
 			<?php if($lang=="en"){ ?>
-				<h2>Get in Touch!</h2>
+				<h2>CONTACT US!</h2>
 				<p>
 					<span>TEL: </span><?= get_post_meta(get_the_ID(),"landing_tel",true) ?></span>
 				</p>
 			<?php } else{ ?>
-				<h2>¡Contactanos!</h2>
+				<h2>¡CONTACTANOS!</h2>
 				<p>
 					<span>TEL: </span>+52 (998) 881 87 53
 				</p>			
@@ -98,7 +98,7 @@
 				<a href='<?php $link ?>'><img src='<?php bloginfo('template_directory')?>/img/landing/iwanttoknow_<?= $lang ?>.png' class='book-here-right'></a>
 			</div>
 			<div class='trip-advisor'>
-				<div class="fb-like-box" data-href="https://www.facebook.com/injoyevents?fref=ts" data-width="580px" data-height="226px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>				
+				<div class="fb-like-box" data-href="https://www.facebook.com/injoyevents?fref=ts" data-width="580px" data-height="226px" data-colorscheme="light" data-show-faces="true" data-stream="true" data-show-border="true"></div>				
 			</div>
 		</div>
 		<div class='clear'></div>
@@ -140,11 +140,11 @@
 					<img src='<?php bloginfo('template_directory')?>/img/landing/candy.png' alt='Weddings cancun'>
 				</a></article>	
 
-				<?php $link = $lang == 'es'?"/es/":"/en/" ?>
+				<?php $link = $lang == 'es'?"/es/locaciones/":"/venues/" ?>
 				<article class='_3'><a href='<?= $link ?>'>
 					<h3 class='color_3'>
 						<?php if($lang == 'en'){ ?>
-							· PLACES ·
+							· VENUES ·
 						<?php }else{ ?>
 							· LOCACIONES ·
 						<?php } ?>
@@ -152,13 +152,13 @@
 					<img src='<?php bloginfo('template_directory')?>/img/landing/locaciones.png' alt='Weddings cancun'>
 				</a></article>	
 
-				<?php $link = $lang == 'es'?"/es/":"/en/" ?>
+				<?php $link = $lang == 'es'?"/es/galeria/":"/gallery/" ?>
 				<article class='_4'><a href='<?= $link ?>'>
 					<h3 class='color_4'>
 						<?php if($lang == 'en'){ ?>
-							· REAL WEDDINGS ·
+							· GALLERY ·
 						<?php }else{ ?>
-							· BODAS REALES ·
+							· GALERIA ·
 						<?php } ?>
 					</h3>
 					<img src='<?php bloginfo('template_directory')?>/img/landing/bodas.png' alt='Weddings cancun'>
@@ -169,7 +169,7 @@
 			<p class='bottom'><?= preg_replace("/\n/","<br/>",get_post_meta(get_the_ID(),"bottom_$lang",true)); ?></p>
 		</div>
 	</section>
-	<?php $link = $lang == 'es'?"/es/":"/en/" ?>		
+	<?php $link = $lang == 'es'?"/es/galeria/":"/gallery/" ?>		
 	<a href='<?= $link ?>'><img src='<?php bloginfo('template_directory')?>/img/landing/weddinggallery_<?= $lang ?>.png' class='book-here-bottom'></a>
 	</div></div>
 </div></div></div>

@@ -13,7 +13,7 @@
 	</div>
 	<section class='formulario'>
 		<div class='container'>
-			<form id='contact-form' method='post' action="/contac-us/">
+			<form id='contact-form' method='post' action="/contact-us/">
 
 			<p class='title'><?php echo get_post_meta(get_the_ID(),"contact_title_{$lang}",true); ?></p>
 
@@ -82,8 +82,9 @@
 <?php get_footer(); ?>
 <?php }else{
 	if($_POST['subject']!=""&&$_POST['Message']!=""&&$_POST['Email']!=""&&$_POST['Name']!=""){
+		$email = $_POST['Email'];
 		//$to=array('daniela@injoy-weddings.com');
-		$to=array('irving.sci@gmail.com');
+		$to=array('daniela.in.joy@gmail.com');
 		$subject = "Contacto de injoy-weddings.com";
 		$message = "Nombre: {$_POST['Name']} \n";
 		$message .= "Email: {$_POST['Email']} \n";
